@@ -1,0 +1,11 @@
+<manifest>
+	<name>Aide à domicile (personne agée)</name>
+	<author>Logipro</author>
+	<description>Aide à domicile (personne agée)</description>
+	<uuid>5c909a21-d6c9-4b1b-8dfe-841ab6d1bfef</uuid>
+	<version>1.0</version>
+	<color_code>#00A5B8</color_code>
+	<color_name>bleu</color_name>
+	<order>1</order>
+	<theme>Aide à domicile</theme>
+</manifest>

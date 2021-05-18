@@ -1,0 +1,11 @@
+<manifest>
+	<name>Bien-être (brun)</name>
+	<author>Logipro</author>
+	<description>Template Bien-être (brun)</description>
+	<uuid>f5910579-0803-47f8-b447-bde545fbd5e0</uuid>
+	<version>1.0</version>
+	<color_code>#04ae20</color_code>
+	<color_name>Vert</color_name>
+	<order>4</order>
+	<theme>Bien être</theme>
+</manifest>

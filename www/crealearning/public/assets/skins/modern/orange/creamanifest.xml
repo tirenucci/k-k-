@@ -1,0 +1,11 @@
+<manifest>
+	<name>Moderne (Orange)</name>
+	<author>Logipro</author>
+	<description>Template moderne (Orange)</description>
+	<uuid>607b0252-5898-447d-b5cf-c03f8067bdc4</uuid>
+	<version>1.0</version>
+	<color_code>#ce6d13</color_code>
+	<color_name>Orange</color_name>
+	<order>3</order>
+	<theme>Moderne</theme>
+</manifest>

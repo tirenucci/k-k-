@@ -1,0 +1,82 @@
+@import './../../responsive.scss';
+
+.grain__section{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #393939, #4d4c4c) repeat scroll 0 0;
+    width: 250px;
+    height: calc(100vh - 159px);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    @media  #{$large-down}{
+        width: 35%;
+    }
+
+    @media  #{$medium-down}{
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        overflow: auto;
+    }
+
+    /**Button et select des langues*/
+    .grain__tools{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid #5d5d5d;
+        box-shadow: 0 1px 0px 0 rgba(50, 50, 50, 0.7);
+        padding: 10px 0px;
+
+        @media  #{$medium-down}{        
+            width: 50%;
+            display: flex;
+            align-self: center;
+            border: 0;
+            box-shadow: none;
+        }
+
+        li{
+            padding: 5px 10px;
+            color: #fff;
+        }
+
+        /**Select des langues*/
+        .grain__lang__selector{
+            display: flex;
+            flex-direction: column;
+
+            @media  #{$small-down}{        
+               padding: 0;
+               text-align: center;
+            }
+    
+            label{
+                font-size: 0.9em;
+            }
+    
+            select{
+                border: 2px #adadad solid !important;
+                border-radius: 5px;
+                padding: 3px;
+            }
+        }
+    }
+
+    /**Liste des grains*/
+    #grain__list{
+        display: flex;
+        flex-direction: column;
+
+        @media  #{$medium-down} {
+            flex-direction: row;
+            overflow: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            margin-left: 5px;
+        }
+    }
+}

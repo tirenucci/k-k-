@@ -1,0 +1,15 @@
+{
+    "baseUrl": "http://localhost:3000",
+    "viewportWidth": 1600,
+    "chromeWebSecurity": false,
+    "viewportHeight": 1000,
+    "fixturesFolder": false,
+    "pluginsFile": false,
+    "ignoreTestFiles": "*.scss",
+    "env": {
+        "cypress-react-unit-test": {
+          "react": "node_modules/react/umd/react.development.js",
+          "react-dom": "node_modules/react-dom/umd/react-dom.development.js"
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import './../../responsive.scss';
+
+.grain__element{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+    margin: 10px;
+
+    .p__name_grain{
+        cursor: pointer;
+    }
+
+    ul:first-child {
+        width: 100%;
+        display: inline-flex;
+        justify-content: flex-end;
+        position: relative;
+        text-align: right;
+        width: 100%;
+        padding: 0 5px 5px 0;
+        border-radius: 5px 5px 0 0;
+        background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fff, #e8e8e8) repeat scroll 0 0;
+
+        li{
+            padding: 0 5px;
+            width: 100%;
+            .btn__notes{
+                width: 100%;
+            }
+            .btn__preview{
+                background-position: 8px 4px;
+            }
+            .btn__duplicate{
+                background-position: -21px 4px;
+            }
+            .btn__delete{
+                background-position: -83px 4px;
+        
+                &:hover, &:focus{
+                    background-color: inherit!important;
+                }
+            }
+            .btn__configure{
+                background-position: -52px 4px;
+            }
+        }
+    }
+
+    label{
+        display: flex;
+        flex: none;
+        align-self: center;
+    }
+
+    ul:last-child {
+        background: #fff none repeat scroll 0 0;
+        min-height: 50px;
+        padding: 5px;
+        margin-top: -5px;
+        position: relative;
+        border-radius: 5px;
+        width: 100%;
+
+        @media  #{$medium-down} {
+            padding: 2px;
+        }
+
+        li{
+            display: flex;
+            width: 100%;
+            .btn__notes{
+                width: 100%;
+            }
+        }
+        
+        input{
+            background: transparent;
+            border: 0;
+            padding: 0 5px;
+            max-width: 170px;
+        }
+    }
+
+    ul.selected{
+        color: #fff;
+        background: rgba(0, 0, 0, 0) linear-gradient(to right, #ff6600, #ff7f2a) repeat scroll 0 0;
+        width: 100%;
+        .btn__notes{
+            background-position: 0 -18px;
+            color:#fff;
+            width: 100%;
+        }
+
+        input{
+            color: #fff;
+        }
+    }
+}

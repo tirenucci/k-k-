@@ -1,0 +1,32 @@
+{% apply inline_css(source("mail.css")) %}
+
+
+{% block body %}
+<main>
+    <table cellspacing='0' cellpadding='10' border='0' width='100%'>
+        <tbody>
+            <tr>
+                <td>
+                    <div>
+                        <img src='{{ absolute_url(asset('images/logo_cercle.png')) }}' alt='logo Créa Learning'/>
+                    </div>
+                    <p>
+                        {{ emailText|raw }}
+                    </p>
+                    <small>
+                        <ul class='link__list'>
+                            <li>
+                                <a href={{termsLink}}>{{terms}}</a> -&nbsp;
+                                <a href={{legalLink}}>{{legal}}</a> -&nbsp;
+                                <a href={{contactLink}}>{{contact}}</a>
+                            </li>
+                        </ul>
+                    </small>
+                </td>
+            <tr>
+        </tbody>
+    </table>
+</main>
+{% endblock %}
+
+{% endapply %}

@@ -1,0 +1,121 @@
+@import '../../responsive.scss';
+.section_modal_title{
+    padding: 10px !important;
+}
+.section__video{
+    width: 960px !important;
+    @media #{$small-down}{
+        width: 300px !important;
+    }
+    .modal__video{
+        height: 225px;
+    }
+    .modal__img {
+        width: 400px;
+        height: 223px;
+        @media #{$small-down} {
+            margin-top: 20px;
+            height: auto;
+        }
+    }
+    .modal_video{
+        display: flex;
+        @media #{$small-down}{
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .modal_video_time{
+        color: gray;
+        @media #{$small-down} {
+            font-size: 15px;
+        }
+    }
+    .modal_text_time{
+        @media #{$small-down} {
+            font-size: 15px;
+        }
+    }
+    #time-range{
+        padding: 20px 20px 5px 20px;
+        span{
+            @media #{$small-down} {
+                font-size: 15px;
+            }
+        }
+        .input-range {
+            height: .8em;
+            height: 1rem;
+            position: relative;
+            width: 100%; 
+        }
+        .input-range__slider {
+            
+            border: 1px solid #d3d3d3;
+            background: #e6e6e6 url('/assets/img/modal/ui-bg_glass.png') 50% 50% repeat-x;
+            font-weight: normal;
+            color: #555;
+            border-radius: 4px;
+            z-index: 2;
+            width: 1.2em;
+            height: 1.2em;
+            cursor: default;
+            position: absolute;
+            left: -.6rem;
+            top: -.9em;
+            outline: none;
+            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+        }
+        .input-range__slider:active {
+            transform: scale(1.3); 
+        }
+        .input-range__slider:focus {
+            box-shadow: 0 0 0 5px rgba(63, 81, 181, 0.2); 
+        }
+        .input-range--disabled .input-range__slider {
+            background: #cccccc;
+            border: 1px solid #cccccc;
+            box-shadow: none;
+            transform: none; 
+        }
+          
+        .input-range__slider-container {
+            transition: left 0.3s ease-out; 
+        }
+          
+          
+        .input-range__label-container {
+            display: none;
+        }
+          
+        .input-range__track {
+            background: #eeeeee;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            display: block;
+            height: 0.3rem;
+            position: relative;
+            transition: left 0.3s ease-out, width 0.3s ease-out; 
+        }
+        .input-range--disabled .input-range__track {
+            background: #eeeeee; 
+        }
+          
+        .input-range__track--background {
+            left: 0;
+            margin-top: -0.15rem;
+            position: absolute;
+            right: 0;
+            top: 50%; 
+            height: 100%;
+        }
+          
+        .input-range__track--active {
+            background: #ff6701;
+            height: 100%;
+        }
+    }
+}
+
+
+

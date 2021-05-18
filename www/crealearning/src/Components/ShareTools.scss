@@ -1,0 +1,50 @@
+@import '../responsive.scss';
+
+/*Les boutons de partage*/
+.share__element{
+    width: 20%;
+
+    @media  #{$small-down} {
+        width: 40%;
+        margin: 0;
+
+        &:last-child{
+            margin: 15px auto 0 auto;
+        }
+    }
+
+    .share__btn{
+        padding: 0.5em 3em!important;
+        color: #fff!important;
+        border-radius: 10px;
+        width: 100%;
+        background-size: 2.5rem 2.5rem!important;
+    }
+
+    .fb{
+        background-color: #475993!important;
+        background: url('/assets/img/fb-icon.png') 7px center no-repeat;
+
+        &:hover{
+            background-color: darken($color: #475993, $amount: 5%)!important;
+        }
+    }
+
+    .linkedin{
+        background-color: #0e76a8!important;
+        background: url('/assets/img/linkedin-icon.png') 7px center no-repeat;
+
+        &:hover{
+            background-color: darken($color: #0e76a8, $amount: 5%)!important;
+        }
+    }
+
+    .twitter{
+        background-color: #00acee!important;
+        background: url('/assets/img/twitter-icon.png') 7px center no-repeat;
+
+        &:hover{
+            background-color: darken($color: #00acee, $amount: 5%)!important;
+        }
+    }
+}

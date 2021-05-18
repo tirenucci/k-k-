@@ -1,0 +1,89 @@
+@import '../../responsive.scss';
+
+.eo__creator, .eoTheme__form{
+    fieldset{
+        width: 95%;
+        max-width: 700px;
+        margin: 20px auto;
+        
+        li{
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+//Le formulaire de création et d'édition d'un objet intégré
+.eo__creator{
+    textarea{
+        height: 100px;
+        
+        &:focus, &:hover{
+            border-color: #ff6701;
+        }
+    }
+
+    #eoPosition{
+        max-width: 80px;
+        width: 100%;
+    }
+
+    .eo__logo__file{
+        margin: 5px 0;
+        width: 55px;
+    }
+
+    #eoTheme{
+        width: fit-content;
+        @media #{$small-down}{
+            width: 100%;
+        }
+    }
+
+    #eoLogo{
+        border: 0;
+        padding: 10px 0;
+    }
+
+    img{
+        max-width: 75px;
+        margin: 0;
+    }
+}
+
+//Le formulaire de création et d'édition d'un thème
+.eoTheme__form{
+    ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        li{
+            width: 50%;
+            margin: 10px auto;
+
+            @media #{$small-down}{
+                width: 100%;
+            }
+
+            #themePosition{
+                max-width: 80px;
+                width: 100%;
+            }
+    
+            #themeTitle{
+                max-width: 500px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media #{$medium-down}{
+    .eo__section{
+        .tab__link{
+            width: 50%;
+        }
+    }
+}

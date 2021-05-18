@@ -1,0 +1,40 @@
+@import './../responsive.scss';
+
+.secondary__title {
+    background: linear-gradient(to bottom, #efefef, #f7f7f7);
+    margin: 0;
+    height: 65px;
+    color: #8bb900;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @media #{$small-down}{
+        font-size: 1.6rem;
+    }
+}
+
+//Classe a ajouté quand Title ne doit pas prendre toute la longueur
+//Le cas peut se présenter quand il y a des icônes sur la droite
+
+@media #{$small-down}{
+    //Avec un seul bouton
+    .with__tool{
+        padding-left: 10px;
+        padding-right: 48px;
+    }
+
+    //Avec deux
+    .with__tools{
+        padding-left: 10px;
+        padding-right: 100px;
+    }
+
+    //Avec le logo et un bouton
+    .with__tool__and__logo{
+        padding-left: 140px;
+        padding-right: 55px;
+    }
+}

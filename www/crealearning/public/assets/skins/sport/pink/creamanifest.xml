@@ -1,0 +1,11 @@
+<manifest>
+	<name>Sport (rose)</name>
+	<author>Logipro</author>
+	<description>Template Sport (rose)</description>
+	<uuid>389760dd-80d9-46aa-bc0d-863911ffad7d</uuid>
+	<version>1.0</version>
+	<color_code>#e66198</color_code>
+	<color_name>Rose</color_name>
+	<order>4</order>
+	<theme>Sport</theme>
+</manifest>

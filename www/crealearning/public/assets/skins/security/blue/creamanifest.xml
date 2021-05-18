@@ -1,0 +1,11 @@
+<manifest>
+	<name>Sécurité (bleu)</name>
+	<author>Logipro</author>
+	<description>Template Sécurité (bleu)</description>
+	<uuid>7c316fff-eb6f-4647-aeb9-f6392b53a421</uuid>
+	<version>1.0</version>
+	<color_code>#2956e9</color_code>
+	<color_name>Bleu</color_name>
+	<order>2</order>
+	<theme>Sécurité</theme>
+</manifest>

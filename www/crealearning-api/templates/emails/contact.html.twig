@@ -1,0 +1,39 @@
+{% apply inline_css(source("mail.css")) %}
+
+{% block body %}
+<main>
+ <table cellspacing='0' cellpadding='10' border='0' width='100%'>
+    <tbody>
+        <tr>
+            <td>
+                <div>
+                    <img src='{{ absolute_url(asset('images/logo_cercle.png')) }}' alt='logo Créa Learning'/>
+                </div>
+                <h1 class='contact__title'>L'utilisateur <span>{{ user.firstName }}&nbsp;{{ user.lastName }}</span>
+                    {% if cancel %}
+                    souhaite résilier son offre.
+                    {% else %}
+                    souhaite changer d'offre.
+                    {% endif %}
+                </h1>
+                <h2>{{info|trans}}</h2>
+                <ul class='contact__data'>
+                    <li>Dénomination (Nom utilisateur) : {{ user.userName }}</li>
+                    <li>Dénomination (Nom entreprise) : {{ user.society.name }}</li>
+                    <li>Fonction : {{ user.function }}</li>
+                    <li>Offre en cours : {{ user.offer.name }}</li>
+                    <li>Email : {{ user.email }}</li>
+                    <li>Téléphone : {{ user.phone }}</li>
+                    <li>Adresse : {{ user.address }}</li>
+                    <li>Complément d'adresse : </li>
+                    <li>Code postal : {{ user.zip }}</li>
+                    <li>Ville : {{ user.city }}</li>
+                </ul>
+            </td>
+        <tr>
+        </tbody>
+    </table>        
+</main>
+{% endblock %}
+
+{% endapply %}

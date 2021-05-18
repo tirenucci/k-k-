@@ -1,0 +1,37 @@
+<div id="cle-dialog-warning" class="popup-warning"><p id="cle-dialog-warning-text"></p></div>
+<div class="container">
+    <div class="containerarea">
+        <div class="btnarea"></div>
+        <div class="TimerArea">
+            <div class="TimerArea-inner">
+                <div id="max_time_allowed" class="clockdiv">
+                    <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>
+                    Temps restant
+                </div>
+                <script type="text/javascript">
+                    window.addEventListener('load', () => {
+                        let totalTime = doGetTotalTime()
+                        maxTime = 600 - totalTime
+                    })
+                </script>
+                <div id="min_time_allowed" class="clockdiv"> dont <span class="hours">00</span>:<span class="minute">00</span>:<span class="seconds">00</span>
+                    Temp obligatoire
+                </div>
+                <script type="text/javascript">
+                    let totalTime = doGetTotalTime()
+                    minTime = 60 - totalTime
+                </script>
+            </div>
+        </div>
+        <script type="text/javascript">
+            if (maxTime > 0 && minTime > 0) {
+                cleWarningDialog("Ce grain a été défini avec une durée maximale.", maxTime, minTime)
+            } else if (maxTime > 0) {
+                cleWarningDialog("Ce grain a été défini avec une durée maximale.", maxTime)
+            } else if(minTime > 0) {
+                let deadline = new Date(Date.parse(new Date()) + minTime * 1000)
+                cleWarningDialog("Ce grain a été défini avec une durée minimal.", null, minTime)
+            }
+        </script>
+    </div>
+</div>

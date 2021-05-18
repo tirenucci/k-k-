@@ -1,0 +1,11 @@
+<manifest>
+	<name>Voyage nature (pique-nique)</name>
+	<author>Logipro</author>
+	<description>Voyage nature (pique-nique)</description>
+	<uuid>308a4c65-e911-4cc9-bd91-301f61652023</uuid>
+	<version>1.0</version>
+	<color_code>#BA2222</color_code>
+	<color_name>Rouge</color_name>
+	<order>1</order>
+	<theme>Voyage nature</theme>
+</manifest>

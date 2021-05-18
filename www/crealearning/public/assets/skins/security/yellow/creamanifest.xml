@@ -1,0 +1,11 @@
+<manifest>
+	<name>Sécurité</name>
+	<author>Logipro</author>
+	<description>Template Sécurité</description>
+	<uuid>f720f81a-f34d-474d-a77d-3f4843297850</uuid>
+	<version>1.0</version>
+	<color_code>#ebd01d</color_code>
+	<color_name>Jaune</color_name>
+	<order>1</order>
+	<theme>Sécurité</theme>
+</manifest>

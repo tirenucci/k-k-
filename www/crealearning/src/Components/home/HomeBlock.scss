@@ -1,0 +1,107 @@
+@import './../../responsive.scss';
+
+//La balise li pour chaque bouton
+.home__bubble {
+    background: url('/assets/img/main/set-pointed.png') 10px 0 repeat-y, url('/assets/img/main/set-pointed.png') calc(100% - 10px) 0 repeat-y;
+    width: 33.3%;
+
+    p {
+        margin: 2em 3.5em;
+        border-bottom: 1px #cecece solid;
+    }
+
+    a {
+        display: block;
+        background: url('/assets/img/main/btn-formationhome.png') 0 0 no-repeat;
+        border-radius:65px;
+        font-family: 'avantgarde_bk_btbook';
+        font-weight: bold;
+        font-size: 3.5rem;
+        height: 125px;
+        line-height: 0.9;
+        margin-bottom: 0.75em;
+        padding: 30px 0 0 160px;
+        text-transform: uppercase;
+        transition: background-color .4s ease-in-out;
+
+        span {
+            background: url('/assets/img/main/arrow-formationhome.png') 100% 5px no-repeat;
+            font-family: 'avant_guardregular';
+            font-size: 1.7rem;
+            padding: 0 15px 0 0;
+            line-height: 20px;
+            text-transform: none;
+        }    
+    }
+
+    //Bouton créer
+    .home__btn__add {
+        a {
+            color: #f58c12;
+
+            &:hover, &:focus{
+                color: #fff;
+                background-color: #f58c12;
+            }
+        }
+    }
+
+    //Bouton voir
+    .home__btn__list {
+        a {
+            background-position: 0 -375px;
+            color: #2bb9ee;
+
+            &:hover, &:focus {
+                color: #fff;
+                background-color: #2bb9ee;
+            }
+
+            span {
+                background-position: 100% -105px;
+            }
+        }
+    }
+}
+
+@media #{$large-down}{
+    .home__bubble{
+        background: none;
+        width: 80%;
+         margin: 0 auto;
+         
+        p{
+            text-align: justify;
+        }
+
+        a {
+            padding: 20px 0 0 150px;
+        }
+
+        span{
+            background-position: 99% 3px;
+        }
+    } 
+}
+
+@media #{$small-down}{
+    .home__bubble{
+        p{
+           text-align: inherit;
+           margin: 1em 0.9em;
+        }
+    }
+}
+
+@media #{$extra-small-down}{
+    .home__bubble{
+        padding: 0;
+
+        p{
+            margin: 1em 0.9em;
+        }
+    }
+}
+
+
+

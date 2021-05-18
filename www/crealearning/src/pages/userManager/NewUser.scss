@@ -1,0 +1,107 @@
+@import '../../responsive';
+
+.manager__form{
+    max-width: 900px;
+    margin: 0 auto;
+    width: 95%;
+
+    fieldset{
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+
+        ul{
+            display: flex;
+    
+            @media #{$small-down} {
+                display: block;
+
+                li{
+                    margin: 5px 0;
+                }
+            }
+        }
+
+        li{
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            width: 100%;
+    
+            select, input{
+                border: 2px #adadad solid;
+                border-radius: 5px;
+                font-family: 'avant_guardregular';
+                font-size: 1.6rem;
+                padding: 10px;
+            }
+        
+            input:hover{
+                border-color: #4b4b4b;
+            }
+        
+            input:focus{
+                border-color: #ff6701;
+            }
+        }
+
+        .society__avatar{
+            flex-direction: column;
+
+            figure{
+                margin: 5px;
+            }
+            
+            label{
+                position: absolute;
+                left: -9999px;
+            }
+
+            #avatarUpload{
+                border: 0;
+                padding: 5px 0;
+            }
+        }
+    }
+
+    legend{
+        background: #8bb900;
+        border-radius: 3px;
+        color: #fff;
+        margin: 10px 0;
+        padding: 3px 10px;
+        position: initial;
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .id__user{
+        align-items: flex-end;
+
+        input[name='username']{
+            width: 350px;
+            min-width: 315px;
+
+            @media #{$small-down} {
+                width: inherit;
+            }           
+
+        }
+
+        @media #{$small-down} {            
+            li{
+                margin: 5px auto;
+            }
+        }
+    }
+
+    //Les li contenant des inputs type checkbox
+    .checkbox__el{
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .small{
+        width: 130px;
+    }
+}

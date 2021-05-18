@@ -1,0 +1,11 @@
+<manifest>
+	<name>Finances (rouge)</name>
+	<author>Logipro</author>
+	<description>Template Finances (rouge)</description>
+	<uuid>6f2def2e-5fa4-4e11-ab01-4ac4504bad69</uuid>
+	<version>1.0</version>
+	<color_code>#e61c48</color_code>
+	<color_name>Rouge</color_name>
+	<order>2</order>
+	<theme>Finances</theme>
+</manifest>

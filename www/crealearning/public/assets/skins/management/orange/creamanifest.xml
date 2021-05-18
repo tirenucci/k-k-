@@ -1,0 +1,11 @@
+<manifest>
+	<name>Management-RH (orange)</name>
+	<author>Logipro</author>
+	<description>Template Management-RH (orange)</description>
+	<uuid>fd136c8b-e408-4ec2-98c3-8f3ff85a0298</uuid>
+	<version>1.0</version>
+	<color_code>#f08213</color_code>
+	<color_name>Orange</color_name>
+	<order>2</order>
+	<theme>Management RH</theme>
+</manifest>

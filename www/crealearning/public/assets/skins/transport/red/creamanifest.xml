@@ -1,0 +1,11 @@
+<manifest>
+	<name>Transports (rouge)</name>
+	<author>Logipro</author>
+	<description>Template Transports (rouge)</description>
+	<uuid>a839aa70-2b58-4b2d-8a68-ceda99149029</uuid>
+	<version>1.0</version>
+	<color_code>#f33021</color_code>
+	<color_name>Rouge</color_name>
+	<order>4</order>
+	<theme>Transports</theme>
+</manifest>

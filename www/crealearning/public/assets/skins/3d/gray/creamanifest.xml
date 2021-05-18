@@ -1,0 +1,11 @@
+<manifest>
+	<name>3D (gris)</name>
+	<author>Logipro</author>
+	<description>Template 3D (gris)</description>
+	<uuid>c192ddb2-f50a-4a89-872b-43c9f27e5584</uuid>
+	<version>1.0</version>
+	<color_code>#b7b7b7</color_code>
+	<color_name>Gris</color_name>
+	<order>2</order>
+	<theme>3D</theme>
+</manifest>

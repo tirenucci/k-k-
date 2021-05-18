@@ -1,0 +1,11 @@
+<manifest>
+	<name>Médias (rouge)</name>
+	<author>Logipro</author>
+	<description>Template Médias (rouge)</description>
+	<uuid>5bbdcaf8-10a1-445d-be83-02074169d42c</uuid>
+	<version>1.0</version>
+	<color_code>#e82a2c</color_code>
+	<color_name>Rouge</color_name>
+	<order>3</order>
+	<theme>Médias</theme>
+</manifest>

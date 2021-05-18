@@ -1,0 +1,374 @@
+@import '../responsive.scss';
+
+.blocks__section{
+    position: relative;
+    height: 85%;
+    .error_message__extension {
+        color: #f00;
+        font-size: 0.75em;
+        a {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    .blocks__title{
+        color: #202020;
+        font-family: 'avant_guardregular';
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+    }
+
+    .close__btn{
+        top: -15px;
+    }
+    
+    .ck-toolbar__items{
+        flex-wrap: wrap !important;
+    }
+
+    .grey__label{
+        background: #888 none repeat scroll 0 0;
+        border-radius: 5px;
+        color: #fff;
+        font-family: 'avantgarde_bk_btbook';
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin: 10px 0;
+        padding: 2px 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    select{
+        padding: 5px;
+        background: #fff;
+    }
+
+    /*Onglet CONTENU des blocks*/
+    .content__section{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+
+        @media  #{$small-down} {
+            height: 92%;
+        }
+
+        .content-list{
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            margin: 10px auto;
+        }
+
+        .ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-rounded-corners{  
+            border: 1px solid rgba(0,0,0,0.2);
+            height: 350px;
+
+            &:focus, &:hover{
+                outline: none;
+            }
+        }
+
+        .content-element{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            
+            label{
+                display: flex;
+            }
+
+            input{
+                background: #fff;
+                padding: 5px;
+                width: 100%;
+    
+                &[name='scale']{
+                    width: 25%;
+                }
+    
+                &[name='source']{
+                    width: 90%;
+                    border-color: #ff6701 !important;
+                }
+
+                &[name='answer']{
+                    width: fit-content;
+                }
+
+                &[name='height'], &[name='width']{
+                    width: auto;
+                }
+            }
+
+            .orange-textarea{
+                border-color: #ff6701 !important;
+                height: 130px!important;
+                width: 100%;
+            }
+    
+            .main-library{
+                font-family: Verdana,Arial,sans-serif;
+                font-size: 0.9em;
+                background-color: #ff6701;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                margin: 0 0 8px;
+                padding: 7px 15px;
+                transition: background-color 0.3s ease 0s;
+                width: auto;
+                text-align: center;
+    
+                &:hover, &:focus{
+                    background-color: #ff8a01;
+                }
+            }
+
+            /*Bloc Media recorder*/
+            .media-wrapper{
+                //display: flex;
+                flex-direction: column;
+                text-align: center;
+                video {
+                    width: 100%;
+                    margin-top: 35px;
+                }
+                audio {
+                    width: 100%;
+                    margin-top: 35px;
+                }
+
+                .media-btn-wrapper{
+                    display: inline-flex;
+                    justify-content: center;
+
+                    .play-btn{
+                        background: transparent url('/assets/img/audio-player.svg') no-repeat scroll 0 -39px;
+                        background-position: -240px 0;
+                        border: medium none;
+                        height: 38px;
+                        width: 38px;
+                        margin: 0 5px;
+                    }
+
+                    .record-btn{
+                        background: transparent url('/assets/img/audio-player.svg') no-repeat scroll 0 -39px;
+                        background-position: -336px 0;
+                        border: medium none;
+                        height: 38px;
+                        width: 38px;
+                        margin: 0 5px;
+                    }
+                    .record-rec-btn{
+                        background: transparent url('/assets/img/audio-player.svg') no-repeat scroll 0 -39px;
+                        background-position: -46px 0;
+                        border: medium none;
+                        height: 38px;
+                        width: 38px;
+                        margin: 0 5px;
+                    }
+                }
+            }
+
+            textarea{
+                font-family: Verdana,Arial,sans-serif;
+                height: 70px;
+                padding: 5px;
+            }
+
+            select{
+                padding: 5px;
+                background: #fff;
+
+                &[name='answer']{
+                    width: fit-content;
+                }
+            }
+
+            .checkbox-element{
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            
+            .correct{
+                color: green;
+            }
+
+            .incorrect{
+                color: red;
+            }
+        }
+
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        input[name='titleDescription']{
+            background: #fff;
+            padding: 5px;
+            font-family: Verdana,Arial,sans-serif;
+            width: 100%;
+        }
+    }
+
+    /*Onglet OTIONS des blocks*/
+    .options__section{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+
+        @media  #{$small-down} {
+            height: 92%;
+        }
+
+        .options-list{
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            margin: 10px auto;
+
+            .score{
+                color: #f00;
+                margin: 0;
+            }
+
+            .video__btn__list{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+
+            .option-element{
+                margin-top: 10px;
+                width: 100%;
+
+                label{
+                    display: flex;
+                }
+
+                input, textarea, select{
+                    padding: 5px;
+                    width: 100%;
+
+                    &[name='tolerance'], &[name='scale']{
+                        width: 80px;
+                        display: inline-flex;
+                    }
+
+                    &[name='height'], &[name='width']{
+                        width: auto;
+                    }
+
+                    &[name='questionType'], &[name='elementType']{
+                        width: fit-content;
+                    }
+
+                    &[name='precision']{
+                        width: 80px;
+                    }
+                }
+            }
+
+            //Niveau des titres
+            .title__level{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: unset;
+            }
+
+            article{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    
+    /*Bloc Objet intégré*/
+    .integrated-object-list{
+        margin: 0 auto!important;
+
+        .integrated-object-theme{
+            list-style: none;
+            color: #444;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'avantgarde_bk_btbook';
+            background: url('/assets/img/help/plus.png') no-repeat 0 3px;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+
+            span{
+                padding: 6px 25px;
+
+                &:hover {
+                    color: #539200;
+                }
+            }
+        }
+
+        .deplie{
+            background: url('/assets/img/help/moins.png') no-repeat 0 3px;
+        }
+
+        .list-integrated-objects{
+
+            a{
+                text-decoration: underline;
+            }
+
+            h5{
+                color: #539200;
+                margin: 0;
+                font-weight: bold;
+                font-family: 'avantgarde_bk_btbook';
+                font-size: 1em;
+            }
+
+            .integrated-object{
+                padding: 7px;
+                border: 1px solid #DFDFD0;
+                border-radius: 5px;
+                font-weight: normal;
+                list-style: none;
+                margin-bottom: 15px;
+                margin-right: 10px;
+                padding: 8px;
+                font-size: 13px;
+
+                figure{
+                    margin: 0;
+                    display: flex;
+
+                    img{
+                        margin: 0 10px 0 0;
+                        height: fit-content;
+                    }
+
+                    caption{
+                        text-align: left;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}

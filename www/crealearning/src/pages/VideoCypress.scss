@@ -1,0 +1,11 @@
+.video-cypress{
+    margin: 4% 0 1.5% 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    video{
+        border: 1px solid black;
+        width: 720px;
+        height: auto;
+    }
+}

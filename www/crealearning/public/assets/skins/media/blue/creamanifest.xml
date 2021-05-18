@@ -1,0 +1,11 @@
+<manifest>
+	<name>Médias (bleu)</name>
+	<author>Logipro</author>
+	<description>Template Médias (bleu)</description>
+	<uuid>19275c87-a52b-4bda-9b7f-a60f83f79650</uuid>
+	<version>1.0</version>
+	<color_code>#1bccca</color_code>
+	<color_name>Bleu</color_name>
+	<order>1</order>
+	<theme>Médias</theme>
+</manifest>

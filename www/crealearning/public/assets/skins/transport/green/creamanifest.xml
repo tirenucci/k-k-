@@ -1,0 +1,11 @@
+<manifest>
+	<name>Transports (vert)</name>
+	<author>Logipro</author>
+	<description>Template Transports (vert)</description>
+	<uuid>b22b4128-c945-4597-b737-af39efa5a6c7</uuid>
+	<version>1.0</version>
+	<color_code>#30bc2c</color_code>
+	<color_name>Vert</color_name>
+	<order>5</order>
+	<theme>Transports</theme>
+</manifest>

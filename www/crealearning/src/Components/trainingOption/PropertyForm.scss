@@ -1,0 +1,279 @@
+@import '../../responsive.scss';
+
+.property__form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+
+    @media  #{$small-down}{
+        margin: 20px auto;
+        width: 95%;
+    }
+
+    fieldset{
+        width: 50%;
+        margin: 20px 0px;
+        padding: 0 0.5em;
+
+        @media  #{$small-down}{
+            margin: inherit;
+            padding: inherit;
+            width: 100%;
+        }    
+    }
+
+    .property__one__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li{
+            width: 48%;
+
+            &:last-child{
+                margin: 0 auto;
+            }
+        }
+
+        @media  #{$medium-down} {
+            display: block;
+
+            li{
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+
+    li{
+        display: flex;
+        flex-direction: column;
+
+        .position__text{
+            margin-bottom: 0;
+        }
+
+        .logo__position{
+            display: flex;
+
+            li{
+                flex-direction: row-reverse;
+                align-items: baseline;
+                margin: 0!important;
+                width: inherit;
+            }
+
+            label{
+                margin-right: 10px;
+                margin-top: 0;
+            }
+        }
+        
+        label{
+            margin-top: 15px;
+
+            span{
+                color: #797979;
+                margin: 15px 0 0 0;
+            }
+        }
+
+        label[for='trainingName']{
+            margin-top: 0;
+        }
+
+
+
+        input[type='text'], select, textarea, .tag-list, .language-list{
+            border: 2px #adadad solid;
+            font-family: 'avant_guardregular';
+            font-size: 1em;
+            border-radius: 5px;
+            line-height: 1.3;
+            padding: 10px;
+        }
+        .error__input{
+             border: rgba(255,0,0,0.75) solid;
+         }
+
+        textarea{
+            height: 130px;
+        }
+
+        .text-help{
+            margin: 0;
+            font-size: 0.8em;
+        }
+
+
+        .tag-list, .language-list{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            padding: 5px;
+
+            .blank-element{
+                margin: 2px 5px 2px 0;
+
+                input{
+                    border: 0!important;
+                    background: transparent!important;
+                    padding: 0;
+                    margin: 0;
+                    outline: 0;
+                    box-shadow: none;
+                    color: #666;
+                    text-decoration: transparent;
+                }
+            }
+            
+            .tag-element, .language-element{
+                margin: 2px 5px 2px 0;
+                position: relative;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+
+            .language-element{
+                .selected-language{
+                    margin: 3px 0 3px 5px;
+                    padding: 3px 20px 3px 5px;
+                    border: 1px solid #aaa;
+                    border-radius: 3px;
+                    background-color: #e4e4e4;
+                    background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+                    background-clip: padding-box;
+                    box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+                    color: #333;
+                    line-height: 13px;
+                    cursor: default;
+                }
+
+                button{
+                    color: #777;
+                    position: absolute;
+                    right: 0;
+                    background-color: transparent;
+                    font-family: inherit;
+                }
+            }
+
+            .tag-element{
+                .selected-tag{
+                    border: 1px solid #8bb900;
+                    background: none;
+                    background-color: #8bb900;
+                    color: #fff;
+                    padding: 0.2em 0em 0.2em 0.5em;    
+                    border-radius: 3px;
+
+                    &:hover{
+                        background-color: #555;
+                        border-color: #555;
+                    }
+                }
+
+                button{
+                    color: #777;
+                    position: absolute;
+                    background-color: transparent;
+                    right: 0;
+                    font-family: inherit;
+                }
+            }
+        }
+    }
+
+
+    .property__logo{
+        display: inline-block;
+        width: 100%;
+
+        input{
+            font-family: 'avant_guardregular';
+        }
+
+        label{
+            display: flex;
+        }
+
+        p{
+            font-size: 0.9em;
+            margin-top: 0;
+        }
+    }
+
+    //La li contenant les skins sur mobile
+    .skins__wrapper{
+        label{
+            text-align: center;
+        }
+    }
+
+    .skins__list{
+        max-height: 1180px;
+        height: 100%;
+        width: 50%;
+        background-color: #3a3a3a;
+
+        @media  #{$large-down} {
+            overflow-x: auto;
+            max-height: 1290px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media  #{$small-down} {
+            width: 100%;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.all__language__sort{
+    display: none;
+}
+.all__language__sort_parent{
+    position: relative;
+
+}
+.all__language__sort.display{
+    display: block;
+    position: absolute;
+    z-index: 1010;
+    top: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-top: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 5px rgba($color: #fff, $alpha: 0.15);
+
+    ul{
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 240px;
+        margin: 0;
+        padding: 0;
+
+        #item{
+            display: list-item;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #3875d7;
+                background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+                color: #fff;
+            }
+        }
+
+        #item-using{
+            display: list-item;
+            color: #ccc;
+            cursor: default;   
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<manifest>
+	<name>Bien-être (gris)</name>
+	<author>Logipro</author>
+	<description>Template Bien-être (gris)</description>
+	<uuid>5c9cfdb0-ac75-4f20-8f08-64dabdb9fb30</uuid>
+	<version>1.0</version>
+	<color_code>#ca00cc</color_code>
+	<color_name>Violet</color_name>
+	<order>5</order>
+	<theme>Bien être</theme>
+</manifest>

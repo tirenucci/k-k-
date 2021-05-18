@@ -1,0 +1,170 @@
+@import '../../responsive.scss';
+
+#previewIFrame{
+  width: 100%;
+  height: 99vh;
+  border: none;
+  padding-bottom: 71px;
+}
+
+.preview__btn__nav{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  background-color: #333333;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  opacity: 1;
+  bottom: 0;
+  padding-left: 60px;
+}
+
+#nav__list{
+  min-width: 60px;
+  width: 60px;
+  background: #3a3a3a;
+  margin-right: 0;
+  position: fixed;
+  z-index: 200;
+  height: 100%;
+  box-shadow: 0px 0px 20px #00000073;
+
+  @media #{$small-down}{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  li{
+    padding-bottom: 30px;
+
+    @media #{$small-down}{
+      width: 100%;
+    }
+
+    .nav__btn{
+      height: 60px;
+      width: 100%;
+      opacity: 0.5;
+      transition: all 0.2s;
+      padding: 15px 0;
+
+      &:hover{
+        opacity: 1;
+        background-color: #323232;
+      }
+    }
+
+    .summary{
+      background: url('/assets/img/summary.png') no-repeat center;
+      background-size: 20px auto;
+
+      &:focus-within{
+        opacity: 1;
+        background-color: #323232;
+      }
+    }
+
+    .languages{
+      background: url('/assets/img/world.png') no-repeat center;
+      background-size: 25px auto;
+
+      &:focus-within{
+        opacity: 1;
+        background-color: #323232;
+      }
+    }
+
+    .share{
+      background: url('/assets/img/share.png') no-repeat center;
+      background-size: 25px auto;
+
+      &:focus-within{
+        opacity: 1;
+        background-color: #323232;
+      }
+    }
+  }
+}
+
+#sideNav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  background-color: #2d2d2d;
+  overflow: auto;
+  transition: all 0.2s ease;
+  visibility: hidden;
+  font-size: 1.6em;
+  margin-left: -60px;
+  width: 0;
+
+  @media #{$small-down}{
+    padding-top: 60px;
+    margin-left: 0!important;
+  }
+
+  &.visible{
+    visibility: visible;
+    margin-left: 60px;
+    width: 250px;
+  }
+
+  ul{
+    padding: 0 20px;
+
+    .sideNav__title{
+      font-size: 2rem;
+      padding: 15px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    a {
+      padding: 10px 20px 10px 30px;
+      display: block;
+      transition: all .2s;
+      color: #fff;
+      font-size: 0.9em;
+    }
+
+    //Lorsqu'un grain est cliqué
+    .selected a{
+      background: url('/assets/img/play.png') no-repeat 5px 10px;
+      background-size: 20px auto;
+      filter: opacity(1);
+    }
+
+    //Lorsque un grain n'est pas sélectionné
+    .not__selected a{
+      background: url('/assets/img/stop.png') no-repeat 5px 10px;
+      background-size: 20px auto;
+      filter: opacity(0.5);
+
+      &:hover{
+        filter: opacity(1);
+      }
+    }
+
+    //On annule la width de 20% sur les li de ShareTools car l'élément nav ne fait que 250px
+    .share__element{
+      width: unset;
+      margin: 15px 0;
+    }
+  }
+}
+
+.training__container{
+  li{
+    list-style: none;
+  }
+  #main{
+    position: unset!important;
+  }
+
+  @media #{$small-down}{
+    padding-top: 60px;
+  }
+}

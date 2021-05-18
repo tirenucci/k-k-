@@ -1,0 +1,11 @@
+<manifest>
+	<name>Marketing (rose)</name>
+	<author>Logipro</author>
+	<description>Template Marketing (rose)</description>
+	<uuid>3b90e81b-68fc-4288-8a3a-6f1c1c585559</uuid>
+	<version>1.0</version>
+	<color_code>#e8568e</color_code>
+	<color_name>Rose</color_name>
+	<order>3</order>
+	<theme>Marketing</theme>
+</manifest>

@@ -1,0 +1,93 @@
+@import '../../responsive.scss';
+
+.eo__table{
+    margin: 20px auto;
+    font-family: 'avantgarde_bk_btbook';
+    text-align: center;
+    width: 95%;
+    max-width: 900px;
+
+    @media #{$small-down}{
+        padding: 10px;
+        width: 100%;
+    }
+
+    .eo__width{
+        width: fit-content;
+    }
+
+    th {
+        background: linear-gradient(to bottom, #2bb9ee,#38cef3);
+        padding: 6px 2px;
+        border-radius: 5px;
+        color: #fff;
+        text-align: center;
+    }
+
+    td{
+        background: #e1e1e1;
+        border-radius: 5px;
+        color: #000;
+        font-family: 'avant_guardregular';
+        padding: 6px 10px;
+
+        @media #{$small-down}{
+            padding: 0;
+        }
+    }
+
+    tr:nth-child(odd) td {
+        background: #f7f7f7;
+    }
+
+    .eo__strong{
+        font-size: 1.2em;
+
+        @media #{$small-down}{
+            font-size: inherit;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+
+        @media #{$small-down}{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .eo__secondTable{
+        @media #{$small-down}{
+            width: 100%;
+        }
+
+        th{
+            background: #858585;
+        }
+
+        td{
+            padding: 6px 10px;
+            font-size: 0.95em;
+            background: #fff!important;
+            color: #555;
+            width: 100%;
+        }
+
+        tbody > tr:hover{
+            cursor: pointer;
+        }
+    }
+
+    .btn__delete {
+        &:hover,&:focus {
+            background-color: #f00;
+            }
+    }
+}

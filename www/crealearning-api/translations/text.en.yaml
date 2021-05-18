@@ -1,0 +1,62 @@
+language.choice.title: Please select a language
+nospace: You have reached the quota of disk space usage. Delete resources or change offer.
+
+_EN: English
+_FR: French
+_JP: Japanese
+_IT: Italian
+_ES: Spanish
+_DE: German
+_CNS: Simplified chinese
+_CNT: Traditional chinese
+_RU: Russian
+_KR: Korean
+_PT: Portuguese
+_AR: Arabic
+
+grain.new: New Grain
+
+ROLE_ADMINISTRATOR: Administrator
+ROLE_AUTHOR: Author
+ROLE_USER: Consultant
+
+
+move.up: Move up
+move.down: Move down
+#Pour tout les mails
+terms: Terms and conditions
+terms.link: https://open.crea-learning.com/conditions-of-use.php
+legal: Legal Notice
+legal.link: https://open.crea-learning.com/legal-notices.php
+contact: Contact
+contact.link: https://open.crea-learning.com/contact.php
+
+#Mail pour récupération du mot de passe
+recovery.title: Crea Learning - Password reset
+recovery.hello: Hello
+recovery.message: You wish to reset your password for the account
+recovery.clic: Click on the link below
+recovery.btn: Redefine my password
+recovery.copyableLink: Copyable link
+recovery.expiration: If you did not initiate this request, do nothing. This link will automatically expire in
+
+#Mail pour première connection
+connection.title1: Crea Learning - Registration as a
+connection.title2: Crea Learning - Registration as an
+connection.registration: You have just been registered as
+connection.a: a
+connection.an: an
+connection.hello: Hello,
+connection.id: Your username is
+connection.message: Click on the link below to set your password and finalize your registration
+connection.btn: Finish my registration
+connection.expiration: If you did not initiate this request, do nothing. This link will automatically expire in
+
+#Pour le mail de partage des modules
+share.title: Crea Learning - Consultation link
+
+_TEXT_INSERT: Insert text here.
+_QUIZ_DESC: Statement of the question.
+
+
+_GAPS_STATEMENT: Question statement.

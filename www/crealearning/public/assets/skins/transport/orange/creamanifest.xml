@@ -1,0 +1,11 @@
+<manifest>
+	<name>Transports (orange)</name>
+	<author>Logipro</author>
+	<description>Template Transports (orange)</description>
+	<uuid>91781852-5f40-4174-96c3-f4f650d8249a</uuid>
+	<version>1.0</version>
+	<color_code>#f98911</color_code>
+	<color_name>Orange</color_name>
+	<order>2</order>
+	<theme>Transports</theme>
+</manifest>

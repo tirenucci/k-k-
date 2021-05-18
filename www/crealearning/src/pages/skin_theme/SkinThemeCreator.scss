@@ -1,0 +1,48 @@
+@import '../../responsive.scss';
+
+.skinTheme__form{ 
+    fieldset{
+        ul {
+            padding: 10px 0;
+            margin: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            @media #{$small-down}{
+                width: 95%;
+            }
+    
+            li{
+                width: 20%;
+                margin: 15px auto;
+                display: flex;
+                flex-direction: column;
+    
+                @media #{$small-down}{
+                    width: 100%;
+                }
+            }
+    
+            input {
+                border: 2px #adadad solid !important;
+                border-radius: 5px;
+                font-family: 'avant_guardregular';
+                font-size: 1em;
+                line-height: 1.4;
+                padding: 10px;
+                width: 100%;
+            }
+    
+            #order{
+                max-width: 80px;
+                width: 100%;
+            }
+    
+            #title{
+                max-width: 500px;
+                width: 100%;
+            }
+        }   
+    }   
+}

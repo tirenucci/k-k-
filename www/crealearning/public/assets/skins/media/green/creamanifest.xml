@@ -1,0 +1,11 @@
+<manifest>
+	<name>Médias (vert)</name>
+	<author>Logipro</author>
+	<description>Template Médias (vert)</description>
+	<uuid>7a0f6407-618e-43a1-ba9c-24f537fa7a8e</uuid>
+	<version>1.0</version>
+	<color_code>#47d239</color_code>
+	<color_name>Vert</color_name>
+	<order>4</order>
+	<theme>Médias</theme>
+</manifest>

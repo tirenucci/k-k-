@@ -1,0 +1,11 @@
+<manifest>
+	<name>Marketing (vert)</name>
+	<author>Logipro</author>
+	<description>Template Marketing (vert)</description>
+	<uuid>49447cea-c541-4d47-accd-b37481de7cbc</uuid>
+	<version>1.0</version>
+	<color_code>#67b346</color_code>
+	<color_name>Vert</color_name>
+	<order>4</order>
+	<theme>Marketing</theme>
+</manifest>

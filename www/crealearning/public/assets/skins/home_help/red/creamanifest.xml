@@ -1,0 +1,11 @@
+<manifest>
+	<name>Aide à domicile (enfant)</name>
+	<author>Logipro</author>
+	<description>Aide à domicile (enfant)</description>
+	<uuid>bbaeb2cc-c51a-4426-89d9-ace8d6535af8</uuid>
+	<version>1.0</version>
+	<color_code>#E74232</color_code>
+	<color_name>Rouge</color_name>
+	<order>1</order>
+	<theme>Aide à domicile</theme>
+</manifest>

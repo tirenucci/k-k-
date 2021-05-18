@@ -1,0 +1,752 @@
+@import '../../responsive.scss';
+
+/*GLOBAL*/
+
+button{
+    border: none;
+    color: #fff;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    transition: all .4s ease-in-out;
+    font-family: 'avant_guardregular';
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.6rem;
+    position: relative;
+    overflow: hidden;
+
+    &:hover, &:focus{
+        cursor: pointer;
+    }
+
+    &:disabled{
+        background: #d7d7d7;
+        color: #939393!important;
+        cursor: auto;
+    }
+}
+
+.btn__list {
+    display: flex;
+    background: linear-gradient(to bottom, #efefef, #fff);
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    li{
+        margin: 5px;
+    }
+
+    @media #{$small-down}{
+        flex-direction: row;
+    }
+}
+
+//Le bouton de connexion sur la page d'identification
+.connect__btn {
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    background-color: #0964b2;
+    width: 100%;
+    
+    &:hover, &:focus{
+        background-color: #0592d8;
+    }
+}
+
+//Le bouton mot de passe oublié
+.forget__btn {
+    background: none;
+    color: #898989;
+    text-decoration: underline;
+    display: flex;
+    align-self: flex-end;
+    padding: 0;
+
+    &:hover, &:focus {
+        color: #363636;
+    }
+}
+
+.btn-quizz-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 8px;
+
+    button{
+        background: #adadad url('/assets/img/ico-quizz-editor.png') no-repeat 0 0;
+        height: 19px;
+        width: 19px;
+        margin: 0 0 0 3px;
+
+        &:hover, &:focus{
+            background-color: darken($color: #adadad, $amount: 30%);
+        }
+    }
+
+    .btn-up{
+        background-position: -46px 0;
+    }
+
+    .btn-down{
+        background-position: -23px 0;
+    }
+
+    .btn-edit{
+        background-position: -69px 0;
+    }
+
+    .btn-add{
+        background-position: -115px 0;
+    }
+
+    .btn-remove{
+        background-position: -92px 0;
+    }
+}
+
+//Les boutons dans des ronds gris
+.btn-crealist {
+	display: flex;
+	background: url('/assets/img/trainingsList/btn-tool-col.png') #7d7d7d no-repeat;
+	background-size: auto 30px;
+	border-radius: 30px;
+	height: 30px;
+	margin: 1px 5px 1px 0;
+	padding: 0;
+	font-size: 0em;
+	transition: background-color .3s;
+	vertical-align: middle;
+	width: 30px;
+
+	&:hover,&:focus {
+		background-color: #3a3a3a;
+	}
+}
+
+.btn__export {
+	background-position: 0 0;
+}
+
+.btn__settings {
+	background-position: -60px 0;
+}
+
+.btn__duplicate {
+	background-position: -240px 0px;
+}
+
+.btn__share {
+	background-position: -301px 0px;
+}
+
+.btn__preview {
+	background-position: -269px 0px;
+}
+
+.btn__delete {
+    background-position: -150px 0;
+    
+    &:hover,&:focus {
+		background-color: #f00;
+	}
+}
+
+.btn__edit{
+    background: url(/assets/img/edit.png) #7d7d7d center no-repeat;
+    background-size: auto 20px
+}
+
+//Bouton enregistrer
+.orange__btn{
+    background-color: #4b4b4b;
+    padding: 15px 25px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+
+    &:hover{
+        background: darken($color: #4b4b4b, $amount: 10%);
+    }
+
+    &:disabled{
+        background: #d7d7d7;
+        color: #939393;
+        cursor: auto;
+    }
+}
+
+//Bouton secondaire
+.grey__btn{
+    background: #fff;
+    color: #7d7d7d;
+    padding: 15px 25px;
+    border: 1px solid #7d7d7d;
+    text-transform: uppercase;
+
+    &:hover{
+        background-color: darken($color: #ff0101, $amount: 5%);
+        color: #fff;
+        opacity: 0.8;
+    }
+}
+
+.delete__btn__section {
+    margin: 15px auto;
+    text-align: center;
+}
+
+.delete__btn {
+    background: url('/assets/img/ico-delete.png') #f00 10px 5px no-repeat;
+    max-width: 320px;
+    padding: 10px 10px 10px 35px;
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+        background-color: darken($color: #f00, $amount: 5%);
+    }
+}
+
+//Bouton rechercher pour les trainings
+.search__btn {
+    background: #4b4b4b;
+    align-self: center;
+	font-family: 'avantgarde_bk_btbook', sans-serif;
+    padding: 6px 15px;
+
+    &:hover{
+        background-color: darken($color: #4b4b4b, $amount: 10%);
+    }    
+}
+
+//Le bouton en forme de croix fermant
+.close__btn{
+    background-color:#4b4b4b;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    &:hover{
+        background-color: darken($color: #4b4b4b, $amount: 10%);
+    }
+
+    &:before, &:after{
+        position: absolute;
+        left: 14px;
+        content: ' ';
+        height: 20px;
+        width: 2px;
+        top: 5px;
+        background-color: #fff;
+    }
+
+    &:before{
+        transform: rotate(45deg);
+    }
+
+    &:after{
+        transform: rotate(-45deg);
+    }
+}
+
+//Bouton bloc formule
+.formula__btn {
+    background-color: #4b4b4b;
+    font-family: 'avantgarde_bk_btbook';
+    padding: 10px;
+
+    &:hover{
+        background: #000;
+    }
+}
+
+//Bouton bloc appariement
+.pairing-btn-wrapper{
+    display: flex;
+    margin-top: 8px;
+
+    .pairing-btn{
+        background-color: #888;
+        font-family: 'avantgarde_bk_btbook';
+        margin-right: 5px;
+        padding: 4px 10px;
+        color: #fff!important;
+
+        &:hover{
+            background-color: darken($color: #888, $amount: 10%);
+        }
+    }
+}
+
+//SECTION GRAINS
+
+//Bouton pour ajouter un grain
+.green__btn{
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #8bb900, #a0d501) repeat scroll 0 0;
+    border: 2px solid #a0d501;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+    margin: 5px 0;
+    min-height: 25px;
+    padding-left: 40px;
+    position: relative;
+    overflow: initial;
+
+    @media  #{$large-down} {
+        padding-left: 30px;
+    }
+
+    &::before{
+        border-radius: 50%;
+        content: '';
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        left: -5px;
+        bottom: -8px;
+        background: linear-gradient(#8fbe00,#8fbe00), linear-gradient(#8fbe00,#8fbe00), #fff;
+        background-position: center;
+        background-size: 60% 3px,3px 60%;
+        background-repeat: no-repeat;
+        border: 2px solid #a0d501;
+        transition: all 0.4s ease-in-out;
+
+        @media  #{$large-down} {
+            left: -10px;
+        }
+    }
+
+    &:hover, &:focus {
+        border: 2px solid #fff;
+
+        &::before{
+            border: 2px solid #fff;
+        }
+    }
+
+    @media  #{$small-down} {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        background: none;
+        text-indent: -999em;
+        font-size: 0;
+
+        &:hover, &:focus {
+            border: none;
+        }
+
+        &::before{
+            top: -5px;
+            left: 15px;
+        }
+    }
+
+    @media  #{$extra-small-down}{
+        &::before{
+            left: 4px;
+        }
+    }
+}
+
+@media  #{$small-down} {
+    .with__lang{
+        .green__btn::before{
+            top: -2px;
+            left: 45px;
+        }
+    }
+}
+
+/*Boutons afficher / masquer les blocs*/
+.btn-show{
+    background: url('/assets/img/arrow-bar-down.png') center no-repeat;
+    background-size: contain;
+    text-indent: -999em;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border: 1px solid #888888;
+    background-color: #888888;
+    transform: rotate(90deg);
+    bottom: 50%;
+    right: -30px;
+    padding: 0 30px;
+    z-index: 999;
+
+    &:hover{
+        right: -20px;
+    }
+}
+
+/*Bouton des grains*/
+.btn__grain {
+    background: rgba(0, 0, 0, 0) url('/assets/img/ico-grainlist2.png') no-repeat;
+    display: inline-flex;
+    height: 26px;
+    text-align: left;
+    text-indent: -999em;
+    vertical-align: top;
+    width: 26px;
+}
+
+/*Ajouter une note*/
+.btn__notes, .btn__notes__selected {
+    background: rgba(0, 0, 0, 0) url('/assets/img/ico-notes.png') no-repeat scroll;
+    background-position: 0 0;
+    color: #717171;
+    font-style: italic;
+    margin: 4px;
+    min-height: 18px;
+    padding: 0 0 0 20px;
+    text-align: left;
+    vertical-align: top;
+    border-radius: 5px;
+    font-size: 1.2rem;
+
+    &:hover {
+        color: #000000;
+        transform: scale(1.1);
+    }
+}
+
+/*Note présente*/
+.btn__notes__selected{
+    background: #8bb900 url(/assets/img/ico-notes.png) no-repeat scroll;
+    background-position: 3px -18px;
+    color: #fff;
+    box-shadow: 0px 0px 20px 0px #00000014;
+    padding: 4px 25px;
+}
+
+/*CONFIGURER : Exporter*/
+/*Créer l'archive + Télécharger au format SCORM + Envoyer à Agora*/
+.archive-btn, .agora-btn, .dl-btn, .update-btn{
+    padding: 13px 10px 13px 40px;
+
+    @media  #{$small-down} {
+        width: 100%;
+    }
+}
+
+.archive-btn{
+    background: url('/assets/img/ico-archive-create.png') #f58c12 8px 8px no-repeat;
+
+    &:hover, &:focus{
+        background-color: #ff6701;
+    }
+}
+
+.update-btn{
+    background: url('/assets/img/ico-archive-update.png') #f58c12 8px no-repeat;
+
+    &:hover, &:focus{
+        background-color: #ff6701;
+    }
+}
+
+.dl-btn{
+    background: url('/assets/img/dl-icon.png') #9ACE00 8px 13px no-repeat;
+    background-size: 24px 16px;
+
+    &:hover, &:focus{
+        background-color: #549201;
+    }
+}
+
+.agora-btn{
+    background: url('/assets/img/icon-agora.png') #2C5AA2 8px 12px no-repeat;
+
+    &:hover, &:focus{
+        background-color: #22467B;
+    }
+}
+
+/*CONFIGURER : Partager*/
+/*Envoyer un mail*/
+.mail__btn{
+    background: url('/assets/img/email-icon.png') #f58c12 10px center no-repeat;
+    margin: 15px auto 0 auto;
+    padding: 8px 15px 8px 40px;
+
+    &:hover, &:focus{
+        background-color: darken($color: #f58c12, $amount: 5%);
+    }
+}
+
+/*Bouton d'abonnement*/
+.subscribe__btn{
+    background: url('/assets/img/cart.png') 4px 4px no-repeat #FFC926;
+    background-size: 35px auto;
+    text-align: right;
+    width: 155px;
+    height: 50px;
+    display: block;
+    border: 1px solid #FF8000;
+
+    &:hover{
+        background-color: #FF8000;
+    }
+}
+
+/*Bouton pour télécharger une archive ou un habillage*/
+.upload__btn {
+    background: url('/assets/img/skinImport/ico-archive-download.png') #f58c12 8px 5px no-repeat;
+    height: 40px;
+    width: 220px;
+    padding: 0px 15px 0px 40px;
+
+    &:hover, &:focus{
+        background-color: #ff6702;
+    }
+
+    @media #{$small-down}{
+        width: 60%;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/*Boutons dans la partie espace client*/
+.contact__btn{
+    padding: 5px 15px;
+    background-color: #FF6609;
+    font-family: 'avantgarde_bk_btbook';
+
+    &:hover{
+        background-color: darken($color: #FF6609, $amount: 5%);
+    }
+}
+
+.suspend__btn{
+    padding: 10px 40px;
+    background: url('/assets/img/ico-delete.png') #f00 10px 5px no-repeat;
+    font-family: 'avantgarde_bk_btbook';
+
+    &:hover{
+        background-color: darken($color: #f00, $amount: 5%);
+    }
+}
+
+//Pour le tri dans les tableaux
+.sortable {
+    background: url('/assets/img/trainingsList/no-tri.png') center no-repeat;
+    height: 20px;
+    width: 20px;
+    vertical-align: text-bottom;
+}
+
+.ascent { 
+    background-image: url('/assets/img/trainingsList/tri-ascent.png'); 
+}
+
+.descent { 
+    background-image: url('/assets/img/trainingsList/tri-descent.png'); 
+}
+
+//Génération de mot de passe dans la gestion des utilisateurs
+.generator__btn{
+    background-color: #FF6609;
+    height: 40px;
+
+    @media #{$small-down}{
+       margin: 0 auto;
+       width: 100%;
+    }
+
+    &:hover{
+        background-color: darken($color: #FF6609, $amount: 5%);
+    }
+}
+
+//Bouton de prévisualisation d'un habillage
+.skin__preview__btn {
+    background: url('/assets/img/createTraining/ico-preview-eyes.svg') #8bb900 11px 20px no-repeat;
+    border-radius: 50%;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    right: -10px;
+    text-indent: 100%;
+    top: -10px;
+    transition: all .4s;
+    white-space: nowrap;
+    width: 50px;
+
+    &:hover{
+        background-color: #539200;
+    }
+}
+
+//Bouton pour le choix de l'avatar
+.avatar__btn__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .choice__btn {
+        margin-top: 20px;
+        line-height: 30px;
+        width: 75px;
+        background-color: #37d1b3;
+        color: #fdfdfd;
+        transition: all .2s ease;
+
+        &:hover, &:focus{
+            filter: brightness(0.9);
+        }
+    }
+}
+
+//Bouton pour ajouter un fichier dans certain blocs
+.folder__btn{
+    background: rgba(0, 0, 0, 0) url('/assets/img/ico-editor-highlighted.png') no-repeat scroll 0 0;
+    height: 25px;
+    width: 25px;
+}
+
+//Boutons pour l'activation des couleurs
+.switch__color{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    button{
+        border: 1px solid;
+        border-radius: 20px;
+        font-family: 'OpenSans';
+        font-size: 12px;
+        height: 24px;
+        position: relative;
+        text-align: left;
+        width: 95px;
+        
+        &:before{
+            background-color: #fff;
+            border-radius: 50%;
+            content: '';
+            height: 22px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 22px;
+        }
+    }
+
+    .activ__btn{
+        background-color: #14d500;
+        padding: 0 10px 0 30px;
+
+        &:hover{
+            background-color: darken($color: #14d500, $amount: 5%);
+        }
+    }
+
+    .desactiv__btn{
+        background-color: #ff0101;
+        padding: 0 30px 0 10px;
+
+        &:hover{
+            background-color: darken($color: #ff0101, $amount: 5%);
+        }
+
+        &:before{
+            left: auto!important;
+            right: 0;
+        }
+    }
+}
+
+//Boutons pour activer ou désactiver toute les couleurs d'un habillage
+.global__color__btn__list{
+    display: flex;
+    justify-content: center;
+
+    @media #{$small-down}{
+        flex-direction: column;
+
+        li{
+            margin: 5px auto;
+        }
+     }
+
+    button{
+        font-family: 'OpenSans';
+        height: 35px;
+        margin: 0 10px 0px 10px;
+        width: 200px;
+
+        @media #{$small-down}{
+            height: 50px;
+        }
+    }
+
+    .activated{
+        background-color: #14d500;
+
+        &:hover{
+            background-color: darken($color: #14d500, $amount: 5%);
+        }
+    }
+
+    .desactivated{
+        background-color: #ff0101;
+
+        &:hover{
+            background-color: darken($color: #ff0101, $amount: 5%);
+        }
+    }
+}
+
+//Les boutons suivant et précédent lors de la prévisualisation
+.btn__previous{
+    border: 1px solid #666666;
+    background-color: #FFF;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 rgba($color: #FFF, $alpha: 0.15);
+
+    &:hover{
+      color: #f0f0f4;
+      border: 1px solid #f0f0f4;
+      background: rgba(0, 0, 0, 0) linear-gradient(to right, #ff6600, #ff7f2a) repeat scroll 0 0;
+    }
+
+    a{
+      color: #666666;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .btn__next{
+    color: #666666;
+    border: 1px solid #666666;
+    background-color: #f0f0f4;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 rgba($color: #FFF, $alpha: 0.15);
+
+    &:hover{
+      color: #f0f0f4;
+      border: 1px solid #f0f0f4;
+      background: rgba(0, 0, 0, 0) linear-gradient(to right, #ff6600, #ff7f2a) repeat scroll 0 0;
+    }
+  }

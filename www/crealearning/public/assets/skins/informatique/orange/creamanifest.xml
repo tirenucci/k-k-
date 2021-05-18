@@ -1,0 +1,11 @@
+<manifest>
+	<name>Informatique (orange)</name>
+	<author>Logipro</author>
+	<description>Template informatique (orange)</description>
+	<uuid>f133434a-bf76-4ecc-954b-3b9056d7d397</uuid>
+	<version>1.0</version>
+	<color_code>#ffaf00</color_code>
+	<color_name>Orange</color_name>
+	<order>1</order>
+	<theme>Informatique</theme>
+</manifest>

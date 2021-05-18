@@ -1,0 +1,11 @@
+<manifest>
+	<name>3D (bleu)</name>
+	<author>Logipro</author>
+	<description>Template 3D (bleu)</description>
+	<uuid>a0f84240-a1c6-47f8-baff-5f47a3279870</uuid>
+	<version>1.0</version>
+	<color_code>#275bc0</color_code>
+	<color_name>Bleu</color_name>
+	<order>1</order>
+	<theme>3D</theme>
+</manifest>

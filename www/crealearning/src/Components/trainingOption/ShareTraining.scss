@@ -1,0 +1,107 @@
+@import '../../responsive.scss';
+
+.share__section{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 900px;
+
+    fieldset{
+        margin: 15px auto;
+
+        legend{
+            background: #8bb900;
+            border-radius: 3px;
+            color: #fff;
+            padding: 3px 10px;
+            position: inherit;
+            width: 100%;
+        }
+
+        ul{
+            display:flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+
+            li{
+                margin-top: 15px;
+            }
+
+            .training__url{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            input{
+                background: #ddd;
+            }
+        }
+    }
+
+    input, .texteArea{
+        border: 2px #adadad solid !important;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1em;
+        font-family: 'avant_guardregular';
+    }
+
+    /*La partie "Intégrer" et "Envoyer"*/
+    .integrate-part, .send-part{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .code-link, .destination, .message{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .iframeWidth, .iframeHeight{
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                width: 15%;
+
+                @media  #{$small-down} {
+                    width: 40%;
+                    margin: 0;
+                }
+
+                label{
+                    margin-top: 15px;
+                    text-align: center;
+                }
+
+                input{
+                    width: 100%;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+
+            .texteArea{
+                height: auto;
+                font-family: 'avantgarde_bk_btbook';
+
+                &:hover{
+                    border-color: #4b4b4b!important;
+                }
+
+                &:focus{
+                    border-color: #ff6701!important;
+                    outline: none;
+                }
+
+                a{
+                    color: black;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

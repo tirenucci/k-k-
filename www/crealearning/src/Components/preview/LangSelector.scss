@@ -1,0 +1,99 @@
+@import '../../responsive.scss';
+
+.preview__lang{
+    font-size: 1.6em;
+
+    h2{
+        margin: 50px auto!important;
+        font-weight: bold;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        li{
+            text-align: center;
+            padding: 10px;
+            transition: ease-in-out 0.4s;
+            opacity: 0.45;
+
+            &:hover{
+                opacity: 1;
+            }
+
+            a{
+                color: #000;
+                font-weight: bold;
+
+                &:hover{
+                    color: #000!important;
+                }
+            }
+
+            figure{
+                width: 80%;
+
+                img{
+                    border-radius: 6px;
+                    box-shadow: 0px 6px 20px #00000073;
+                }
+    
+                figcaption{
+                    margin-top: -12px;
+                    padding: 15px;
+                    position: relative;
+                    z-index: 60;
+                    border-top: 1px solid #9a9a9a;
+                    text-transform: uppercase;
+                    background-color: #fff;
+                }
+            }
+
+            button{
+                background: none;
+                color: inherit;
+                overflow: inherit;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media #{$small-down}{
+    .preview__lang{
+        ul{
+            li{
+                background: url('/assets/img/arrow_right.svg') no-repeat 95% 50%;
+                background-size: 25px;
+                opacity: 1;
+                z-index: 0;
+                width: 100%;
+                padding: 20px;
+                border-bottom: 2px solid gray;
+
+                figure{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0;
+
+                    img{
+                        width: 25%;
+                        margin: 0;
+                    }
+
+                    figcaption{
+                        margin-top: 0px;
+                        padding: 18px;
+                        border-top: none;
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+}

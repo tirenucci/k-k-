@@ -1,0 +1,11 @@
+<manifest>
+	<name>Médias (orange)</name>
+	<author>Logipro</author>
+	<description>Template Médias (orange)</description>
+	<uuid>0ec0ff63-7ad8-4d98-8b17-470bd4640e75</uuid>
+	<version>1.0</version>
+	<color_code>#ff8502</color_code>
+	<color_name>Orange</color_name>
+	<order>2</order>
+	<theme>Médias</theme>
+</manifest>

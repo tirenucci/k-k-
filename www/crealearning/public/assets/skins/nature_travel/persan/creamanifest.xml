@@ -1,0 +1,11 @@
+<manifest>
+	<name>Voyage nature (neige)</name>
+	<author>Logipro</author>
+	<description>Voyage nature (neige)</description>
+	<uuid>f5d93f5c-d868-45f0-b409-b84e09da4bd4</uuid>
+	<version>1.0</version>
+	<color_code>#649BA9</color_code>
+	<color_name>Persan</color_name>
+	<order>1</order>
+	<theme>Voyage nature</theme>
+</manifest>

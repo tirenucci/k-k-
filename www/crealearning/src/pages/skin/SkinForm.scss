@@ -1,0 +1,69 @@
+@import './../../responsive.scss';
+
+.skin__info__section{
+   width: 100%;
+
+    //Les infos sur le skin avec l'habillage en img
+    .skin__info__list{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 95%;
+        max-width: 600px;
+        margin: 20px auto;
+
+        @media #{$small-down}{
+            flex-direction: column-reverse;
+        }
+        
+        li {
+            margin: 15px 0;
+            display: flex;
+
+            @media #{$small-down}{
+                display: block;
+            }
+    
+            &:last-child{
+                position: absolute;
+                right: 0;
+
+                @media #{$small-down}{
+                    position: inherit;
+                }
+            }
+    
+            input {
+                color: #797979;
+                background: none;
+                vertical-align: middle;
+                border: none;
+                padding: 0;
+            }
+    
+            figure {
+                display: flex;
+                border: 2px #adadad solid;
+                border-radius: 5px;
+                max-width: 160px;
+                width: 100%;
+                margin: 0;
+            
+                @media #{$small-down}{
+                    margin: 0 auto;
+                }
+            
+                img{
+                    border: 1px #fff solid;
+                    border-radius: 5px;
+                    width: 100%;
+                }
+            
+                figcaption {
+                    position: absolute;
+                    left: -10000px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<manifest>
+	<name>Sport (orange)</name>
+	<author>Logipro</author>
+	<description>Template Sport (orange)</description>
+	<uuid>fb444bea-ee50-4dd7-b886-5a8b95e17d93</uuid>
+	<version>1.0</version>
+	<color_code>#f1872e</color_code>
+	<color_name>Orange</color_name>
+	<order>3</order>
+	<theme>Sport</theme>
+</manifest>

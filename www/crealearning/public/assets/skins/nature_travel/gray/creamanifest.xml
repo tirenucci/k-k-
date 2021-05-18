@@ -1,0 +1,11 @@
+<manifest>
+	<name>Voyage nature (montagne)</name>
+	<author>Logipro</author>
+	<description>Voyage nature (montagne)</description>
+	<uuid>11cf9c88-79c3-4c12-9058-ccd8ff4d39fd</uuid>
+	<version>1.0</version>
+	<color_code>#808186</color_code>
+	<color_name>Gris</color_name>
+	<order>1</order>
+	<theme>Voyage nature</theme>
+</manifest>

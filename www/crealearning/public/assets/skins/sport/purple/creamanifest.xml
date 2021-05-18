@@ -1,0 +1,11 @@
+<manifest>
+	<name>Sport (violet)</name>
+	<author>Logipro</author>
+	<description>Template Sport (violet)</description>
+	<uuid>1b4b9791-1add-4656-be02-f76069f1b4c8</uuid>
+	<version>1.0</version>
+	<color_code>#774495</color_code>
+	<color_name>Violet</color_name>
+	<order>5</order>
+	<theme>Sport</theme>
+</manifest>

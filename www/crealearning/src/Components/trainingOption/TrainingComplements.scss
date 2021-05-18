@@ -1,0 +1,41 @@
+@import '../../responsive.scss';
+
+.complements__section{    
+    fieldset{
+        max-width: 900px;
+        margin-bottom: 20px;
+        width: 95%;
+    }
+    
+    ul{
+        width: 100%;
+    }
+
+    li{
+        display: flex;
+        flex-direction: column;
+
+        label{
+            margin-top: 20px;
+        }
+
+        textarea{
+            border: 2px #adadad solid;
+            height: 130px;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'avant_guardregular';
+            font-size: 1em;
+
+            &:hover{
+                border-color: #4b4b4b;
+            }
+
+            &:focus{
+                border-color: #ff6701;
+                outline: none;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<manifest>
+	<name>Musique (bleu)</name>
+	<author>Logipro</author>
+	<description>Template Musique - Bleu</description>
+	<uuid>b53350c8-7ad1-4077-a49b-d42f1af9a6fc</uuid>
+	<version>1.0</version>
+	<color_code>#1f2fc5</color_code>
+	<color_name>Bleu</color_name>
+	<order>2</order>
+	<theme>Musique</theme>
+</manifest>

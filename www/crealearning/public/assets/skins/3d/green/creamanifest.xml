@@ -1,0 +1,11 @@
+<manifest>
+	<name>3D (vert)</name>
+	<author>Logipro</author>
+	<description>Template 3D (vert)</description>
+	<uuid>bd31182b-8259-44ac-8a40-9b2b2d061e6c</uuid>
+	<version>1.0</version>
+	<color_code>#41bb42</color_code>
+	<color_name>Vert</color_name>
+	<order>4</order>
+	<theme>3D</theme>
+</manifest>

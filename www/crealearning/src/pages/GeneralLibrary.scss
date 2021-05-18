@@ -1,0 +1,13 @@
+@import './../responsive.scss';
+
+#library{
+    width: 100%;
+    border: none;
+    height: 775px;
+    min-height: 300px;
+
+    @media #{$small-down}{
+        padding: 0 0 45px 0;
+        height: 85%;
+    }
+}

@@ -1,0 +1,281 @@
+@import './../../responsive.scss';
+
+#user__nav {
+  border-left: 2px #8bb900 solid;
+  background: linear-gradient(to right, #8bb900 0%,#75bf01 13%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+
+  @media #{$large-down}{
+    width: 40%;
+  }
+
+  @media #{$medium-down}{
+    width: 50%;
+  }
+
+  @media #{$small-down}{
+    width: 40%;
+  }
+
+  .user__info{
+    width: fit-content;//Pour éviter que le hover ne soit sur toute la longeur de la barre de navigation
+
+    /*L'avatar avec le nom*/
+    h6 {
+      color: #fff;
+      font-size: 1.6em;
+      transition: all .3s;
+      margin: 0;
+      padding: 0;
+
+      &:hover {
+          opacity: .7;
+          cursor: pointer;
+      }
+
+      img{
+        border-left: 2px #fff solid;
+        border-right: 2px #fff solid;
+        margin-right: 14px;
+        height: 70px;
+        width: 70px;
+        vertical-align: middle;
+      }
+
+      figcaption{
+        display: inline-flex!important;
+
+        @media #{$small-down}{
+          display: none!important;
+        }
+      }
+    }
+
+    /*Au hover fait apparaître la box contenant les infos*/
+    &:hover > .user__list__info{
+      border: 1px #C4C4C4 solid;
+      height: auto;
+      opacity: 1;
+      width: 250px;
+      overflow: visible;
+      text-align: center;
+
+      @media #{$small-down}{
+        right: 30%;
+        width: 180px;
+      }
+    }
+ 
+    /*Animation de la barre de progression*/
+    &:hover .progress__ring{
+      .circle__fill{
+          animation: circle-chart-fill 1s reverse; 
+          transform: rotate(-90deg); 
+          transform-origin: center; 
+          transition: stroke 1s linear;
+        }
+  
+        @keyframes circle-chart-fill {
+          to { stroke-dasharray: 0 100; }
+        }
+    }
+  } 
+
+  /*La liste des infos masquées de base*/
+  .user__list__info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+    background: #fff;
+    box-shadow: 0 0 3px 0 rgba(55, 55, 55, 0.3);
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.3s ease-out;
+    width: 0;
+    z-index: 9999;
+    
+    li{
+      margin: 5px auto;
+    }
+
+    //Le nom du user
+    .user__name{
+      color: #88B611;
+      padding: 8px 5px 3px 5px;
+      font-family: 'avantgarde_bk_btbook';
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+
+    //La barre de progression ciruclaire
+    .user__space{
+      display: flex;
+      flex-direction: column;
+      text-align: -webkit-center;
+    }
+
+    //Les boutons
+    .user__list__btn{
+      display: flex;
+
+      @media #{$small-down}{
+        flex-direction: column;
+      }
+
+      li{
+        margin: 5px;
+      }
+
+      a {
+        cursor: pointer;
+        border-radius: 3px;
+        color: #333;
+        display: block;
+        line-height: 1.1;
+        background: #F5F5F5;
+        border:1px solid #666;
+        padding:5px 8px;
+        transition: background-color .3s;
+        width: 110px;
+      
+        &:hover, &:focus {
+          background: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+  
+  //Nom de l'offre
+  strong {
+    display: inline-block;
+    color: #fff;
+    background: #FFC926;
+    padding: 2px 8px;
+    border-radius: 5px;
+    text-transform: capitalize;
+  }
+
+  //Si pro
+  .pro{
+    display: inline-block;
+    background: #7dcf1c;
+  }
+
+}
+
+/*La flêche*/
+.user__arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff !important;
+}
+.user__arrow__right {
+  margin: -15px 3px 0 auto !important;
+}
+.user__arrow__center {
+  margin: -5px auto 0 auto!important;
+}
+
+/*Le bouton "je m'abonne"*/
+.user__subscriber{
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+
+  .subscribe__btn{
+    border: none;
+  }
+}
+  
+/*Le menu de config*/
+.user__config__menu {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  font-size: 1.3em;
+  z-index: 1;
+
+  &:hover > ul {
+    border: 1px #C4C4C4 solid;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+    width: 250px;
+    top: 55px;
+  }
+
+  &:hover > .config__cog{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .user__arrow {
+    margin-right: 2px;
+  }
+
+  //L'icône rouage
+  .config__cog {
+    display: flex;
+    background: url('/assets/img/header/ico-menu.png') 0 -74px no-repeat;
+    transition: all 0.3s ease;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+    right: 5%;
+    font-size: 1.3em;
+  }
+
+  ul {
+    box-shadow: 0 0 3px 0 rgba(55, 55, 55, 0.3);
+    background-color:#fff;
+    height: 0;
+    margin: -3px 0 0 -220px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    position: absolute;
+    transition: opacity 0.3s ease-out;
+    width: 0;
+
+    li {
+      border-bottom: 1px #909090 solid;
+      padding: 5px 0;
+
+      &:last-child {
+        border:none;
+      }
+    }
+
+    a {
+      border-radius: 11px;
+      display: block;
+      line-height: 1.3;
+      min-height: 23px;
+      padding: 3px 5px 0 8px;
+
+      &:hover, &:focus {
+        background: rgba(255, 255, 255, 0.5);
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+@media #{$small-down}{
+  /*Uniquement pour mobile on définit la classe*/
+    .small__version{
+      width: 45px;
+      height: 45px;
+      background-position: center;
+      font-size: 0;
+    }
+}

@@ -1,0 +1,54 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #ff6701;
+    border-radius: 4px;
+    position: relative;
+
+    .btn-block-list{
+        display: flex;
+        align-self: flex-end;
+        position: absolute;
+        z-index: 1;
+    
+        .btn-block{
+            background: #ff6701 url('/assets/img/ico-cle-block.png') no-repeat scroll -25px 4px;
+            border-radius: 2px;
+            height: 30px;
+            text-indent: -999em;
+            transition: background-color 0.3s ease 0s;
+            margin: 1px;
+            width: 30px;
+    
+            &:hover, &:focus{
+                background-color:#ff8a01;
+            }
+        }
+    
+        .send-to{
+            background: #ff6701 url('/assets/img/ico-cle-block-send.png') no-repeat center;
+            background-size: 18px !important;
+        }
+    
+        .duplicate{
+            background-position: 6px 4px;
+        }
+    }
+}
+
+.unselected{
+    border: 3px solid transparent;
+    
+    &:hover{
+        border: 3px solid #494949;
+
+        .btn-block{
+            display: block;
+        }
+    }
+
+    .btn-block{
+        background-color: #494949!important;
+        display: none;
+    }
+}

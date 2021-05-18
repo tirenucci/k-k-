@@ -1,0 +1,11 @@
+<manifest>
+	<name>Médias (violet)</name>
+	<author>Logipro</author>
+	<description>Template Médias (violet)</description>
+	<uuid>af0ed54c-09cc-4ee0-8408-d13ef00f12f1</uuid>
+	<version>1.0</version>
+	<color_code>#cc02ff</color_code>
+	<color_name>Violet</color_name>
+	<order>5</order>
+	<theme>Médias</theme>
+</manifest>

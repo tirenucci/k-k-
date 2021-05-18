@@ -1,0 +1,832 @@
+#cle-container{
+  background: #1d1d1d;
+  height: 100%;
+  margin: 0;
+  min-width: 320px; 
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; 
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'digitalsansef-mediumregular';
+  src: url('./fonts/digitalsansef-medium-webfont.eot');
+  src: url('./fonts/digitalsansef-medium-webfont.eot?#iefix') format('embedded-opentype'),
+      /* url('./fonts/digitalsansef-medium-webfont.woff2') format('woff2'),*/
+        url('./fonts/digitalsansef-medium-webfont.woff') format('woff'),
+        url('./fonts/digitalsansef-medium-webfont.ttf') format('truetype'),
+        url('./fonts/digitalsansef-medium-webfont.svg#digitalsansef-mediumregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'digitalsansef-mediumitaRg';
+  src: url('./fonts/digitalsansef-mediumita-webfont.eot');
+  src: url('./fonts/digitalsansef-mediumita-webfont.eot?#iefix') format('embedded-opentype'),
+      /* url('./fonts/digitalsansef-mediumita-webfont.woff2') format('woff2'),*/
+        url('./fonts/digitalsansef-mediumita-webfont.woff') format('woff'),
+        url('./fonts/digitalsansef-mediumita-webfont.ttf') format('truetype'),
+        url('./fonts/digitalsansef-mediumita-webfont.svg#digitalsansef-mediumitaRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =CONTENEUR
+-------------------------------------------------------------- */
+#cle-inner-container {
+  background: #fff repeat;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+  color: #000000;
+  padding: 0;
+  font-family: 'digitalsansef-mediumregular';
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0 auto;   
+  max-width: 1282px;  
+  position: relative;
+}
+
+/* =MAIN
+-------------------------------------------------------------- */
+#cle-container #main {
+  position: relative;
+  z-index: 200;
+  margin: -1em 0 0 0;
+  min-height: 500px;
+}
+
+.cle-block-box,
+.cle-quiz-box,
+.cle-quiz-validation-box {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  margin: 1.5em 0 0 0;
+  padding: 0 1%;
+  width: 100%;
+}
+
+.cle-block-box::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.cle-block-box p {
+  color: #232323;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: .5em 0;
+}
+
+.cle-block-box img,
+.cle-quiz-box img {
+  max-width: 100%;
+}
+
+.cle-block-box a {
+  color: #ff7505;
+  transition: color .2s;
+}
+
+.cle-block-box a:hover, .cle-block-box a:focus {
+  color: #f72198;
+  text-decoration: none;
+}
+
+/* =HEADER & =FOOTER
+-------------------------------------------------------------- */
+#cle-container #header, #footer {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  padding: 0 1%;
+  width: 100%;
+}
+
+#cle-container #header {
+  background: url('./images/bg-header.png') center top no-repeat;
+  height:174px;  
+}
+
+#cle-container #footer {
+  background: url('./images/bg-footer.png') right top no-repeat;
+  color: #1f1f1f;
+  height:104px;  
+  text-align: right;
+}
+
+#cle-container .header-logo {
+  height: 75px;
+  line-height: 1;
+  text-align: left;
+}
+
+#cle-container .header-logo img {
+  background: #fff;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 5px 5px;
+  max-height: 70px;
+  padding: 5px;
+  max-width: 250px
+}
+
+#cle-container .header-logo.logo-center {
+  text-align: center;
+}
+
+#cle-container .header-logo.logo-right {
+  text-align: right;
+}
+
+/* =TABLEAU
+-------------------------------------------------------------- */
+.cle-block-box table {
+  border: none;
+}
+
+.cle-block-box table caption {
+  text-align: center;
+}
+
+.cle-block-box td {
+  background: #dcdcdc;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
+.cle-block-box th {
+  background: #37a8db;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  font-family:'digitalsansef-mediumregular';
+  font-weight: normal;
+  padding: 2px 5px;
+}
+
+/* =TITRE
+-------------------------------------------------------------- */
+.cle-block-title { 
+  margin: 1.5em 0 1.8em 0;
+  text-align: center;
+}
+
+.cle-block-title h1 { 
+  color: #f72198;
+  display: inline-block;
+  font-family: 'digitalsansef-mediumregular';
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0;
+  max-width: 1050px;
+}
+
+.cle-block-title h1::after {
+  border-bottom: 1px #f72198 solid;
+  content: '';
+  display: block;
+  width: 100%;
+}
+
+.cle-block-title h2 {
+  color: #ff7505;
+  font-family: 'digitalsansef-mediumregular';
+  font-size: 1.8em;
+  font-weight: normal;
+  line-height: 1.1em;
+  margin: 0;
+}
+
+.cle-block-title h3 {
+  color: #9ddc00;
+  font-family: 'digitalsansef-mediumitaRg';
+  font-size: 1.6em;
+  font-weight: normal;
+  line-height: 1.1em;
+  margin: 0;
+  text-align: left;
+}
+
+.cle-block-title h4 {
+  color: #37a8db;
+  font-family: 'digitalsansef-mediumregular';
+  font-size: 1.4em;
+  font-weight: normal;
+  line-height: 1.1em;
+  margin: 0;
+  text-align: left;
+}
+
+.cle-block-title h5 {
+  color: #92117e;
+  font-family: 'digitalsansef-mediumregular';
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0 40px;
+  text-align: left;
+}
+
+.cle-block-title h6 {
+  color: #d40050;
+  font-family: 'digitalsansef-mediumitaRg';
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0 40px;
+  text-align: left;
+}
+
+/* =VIDEOS
+-------------------------------------------------------------- */
+.cle-block-video {
+  background: url('./images/bg-video.png') left center no-repeat;
+}
+
+.cle-block-video video {
+  background: #000;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5); 
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  max-height: 399px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.cle-quiz-box .cle-block-video {
+  background: #000;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5); 
+  height: auto;
+  margin: 0 0 5px 0;
+  max-width: 550px;
+  padding: 0;
+  width: 100%;
+}
+
+/* =AUDIO
+-------------------------------------------------------------- */
+.cle-block-box.cle-block-audio {
+  background: url('./images/bg-audio.png') left center no-repeat;
+  height: 145px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.cle-block-audio audio {
+  background: #000;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5); 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 620px;
+  padding: 10px;
+  width: 100%;  
+}
+
+.cle-quiz-box .cle-block-audio {
+  background: #000;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5); 
+  margin: 0 0 5px 0;
+  max-width: 550px;
+  padding: 0;
+  width: 100%;
+}
+
+/* =IMG
+-------------------------------------------------------------- */
+.cle-block-img img,
+.cle-block-formula img {
+  background: #fff;
+  border: 2px solid #f72198;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.cle-block-img-right,
+.cle-block-img-left {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.cle-block-img-right p,
+.cle-block-img-left p {
+  text-align: justify;
+}
+
+.cle-block-img-right img,
+.cle-block-img-left img {
+  background: #fff;
+  border: 2px solid #f72198;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: none;
+  margin: 0 auto 20px auto;
+  max-width: 100%;
+  padding: 5px;
+}
+
+/* =OBJET INTEGRE
+-------------------------------------------------------------- */
+.cle-block-embed {
+  text-align: center;
+}
+
+.cle-block-embed iframe,
+.cle-block-embed object,
+.cle-block-embed embed {
+  background: #fff;
+  border: 2px solid #92117e;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding: 5px; 
+}
+
+/* =TEXTE
+-------------------------------------------------------------- */
+.cle-block-paragraph {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.cle-block-paragraph p {
+  text-align: justify;
+}
+
+/* =LISTE
+-------------------------------------------------------------- */
+#cle-inner-container .cle-block-box ul {
+  list-style: url('./images/bg-li.png');
+}
+
+
+/* =FORMULE
+-------------------------------------------------------------- */
+.cle-block-formula span {
+  display: block;
+  text-align: center;
+}
+
+.cle-block-formula img {
+  margin: 0 auto 10px auto;
+}
+
+/* =SEPARATEUR
+-------------------------------------------------------------- */
+.cle-block-hr hr {
+  background: url('./images/bg-separator.png') center no-repeat;
+  height: 26px;
+  border: 0;
+}
+
+/* =DOCUMENT
+-------------------------------------------------------------- */
+.cle-block-doc {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+.cle-block-doc::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.cle-block-doc a {
+  background: #fff top left no-repeat;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  height: 75px;
+  padding: 5px; 
+  transition: opacity .2s;
+  width: 89px;
+}
+
+.cle-block-doc a {
+  background-image: url('./images/ico-docgen.png');
+  text-decoration: none;
+}
+
+.cle-block-doc a[href$='.pdf'] {
+  background-image: url('./images/ico-pdf.png');
+}
+.cle-block-doc a[href$='.xls'], .cle-block-doc a[href$='.xlsx'] {
+  background-image: url('./images/ico-xls.png');
+}
+.cle-block-doc a[href$='.doc'], .cle-block-doc a[href$='.docx'] {
+  background-image: url('./images/ico-doc.png');
+}
+.cle-block-doc a[href$='.ppt'], .cle-block-doc a[href$='.pptx'] {
+  background-image: url('./images/ico-ppt.png');
+}
+
+.cle-block-doc a:hover, .cle-block-doc a:focus {
+  opacity: .7;
+}
+
+.cle-block-doc span {
+  display: block;
+  float: right;
+  font-size: 1.1em;
+  margin: 20px 0 0 15px;
+  width: calc(100% - 104px);
+}
+
+/* =FORMULAIRE DEFAUT
+-------------------------------------------------------------- */
+#cle-container input[type=text],
+.cle-quiz-numeric input {
+  background: #e9e9e9;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  font-family: 'digitalsansef-mediumitaRg';
+  font-size: .9em;
+}
+
+/* =ENONCE
+-------------------------------------------------------------- */
+.cle-quiz-box {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 728px;
+}
+
+.cle-quiz-title { 
+  color: #f72198;
+  font-family: 'digitalsansef-mediumregular';
+  font-size: 1.4em;
+  margin: 2em auto 1em auto;
+  min-height: 37px;
+  padding: 6px 20px 2px 95px;
+  position: relative;
+  width: 98%;
+}
+
+.cle-quiz-title::before {
+  background: url('./images/ico-quiz.png') no-repeat;
+  content: '';
+  display: block;
+  height: 68px;
+  left: 0px;
+  position: absolute;
+  top: -10px;
+  width: 82px;
+}
+
+/* =NUMERIQUE
+-------------------------------------------------------------- */
+.cle-quiz-numeric {
+  padding: 0 20px;
+}
+
+.cle-quiz-numeric input {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  max-width: 250px;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+/* =VRAI / FAUX
+-------------------------------------------------------------- */
+.cle-quiz-true-false,
+.cle-quiz-qcm {
+  padding: 0 20px;
+}
+
+.cle-quiz-true-false label,
+.cle-quiz-qcm label  {
+  margin-right: 20px;
+}
+
+.cle-quiz-true-false label,
+.cle-quiz-true-false input,
+.cle-quiz-qcm label,
+.cle-quiz-qcm input {
+  cursor: pointer;
+  font-family: 'digitalsansef-mediumregular';
+  font-size: 1.05em;
+  line-height: 1em;
+}
+
+.cle-quiz-true-false label,
+.cle-quiz-true-false input {
+  display: inline-block;
+}
+
+.cle-quiz-true-false br {
+  display: none;
+}
+
+.cle-quiz-qcm input {
+  margin: 15px 0 0 0;
+}
+
+.cle-quiz-title + .cle-quiz-qcm {
+  margin-top: -15px;
+}
+
+/* =TEXTE A TROUS
+-------------------------------------------------------------- */
+.cle-quiz-cloze {
+  padding: 0 20px;
+}
+
+.cle-quiz-cloze input {
+  margin: 0 0 5px 0;
+  padding: 5px;
+  text-align: left;
+}
+
+/* =APPARIEMENT
+-------------------------------------------------------------- */
+.cle-quiz-match p {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #f72198;
+  font-family: 'digitalsansef-mediumregular';
+  font-size: 1em;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 10px;
+  width: 100%;
+}
+
+.cle-quiz-match img {
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #f72198;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.cle-quiz-match select {
+  background: #dcdcdc;
+  border: none;
+  border-radius: 3px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1em;
+  margin: 10px 0 30px 0;
+  max-width: 400px;
+  padding: 5px 10px;  
+  width: 100%;
+}
+
+/* =SEQUENCE
+-------------------------------------------------------------- */
+#cle-inner-container .cle-quiz-sequence ul {
+  list-style: none;
+  padding: 0 20px;
+}
+#cle-inner-container .cle-quiz-sequence li {
+	line-height: 1em;
+	margin: 20px 2px;
+	min-height: 18px;
+}
+
+.cle-quiz-sequence p {
+  margin: .7em 0;
+}
+
+.cle-quiz-sequence img {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.cle-quiz-sequence-arrow + .cle-quiz-sequence-arrow {
+  margin-right: 5px;
+}
+
+.cle-quiz-sequence-arrow .ui-icon {
+  height: 20px;
+  width: 15px;
+}
+
+.cle-quiz-sequence-arrow .ui-icon-arrowthick-1-n {
+  background: url('images/ico-sequence-arrow.png') 0 0 no-repeat;
+}
+
+.cle-quiz-sequence-arrow .ui-icon-arrowthick-1-s {
+  background: url('images/ico-sequence-arrow.png') -18px 0 no-repeat;
+}
+
+/* =LIKERT
+-------------------------------------------------------------- */
+.cle-quiz-likert {
+  padding: 0 20px;
+}
+
+.cle-quiz-likert .cle-quiz-likert {
+  padding: 0;
+}
+
+.rating {
+  display: inline-block;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+}
+.rating-input {
+  cursor: pointer;
+  float: right;  
+  height: 16px; 
+  margin: 0 0 0 -16px;
+  opacity: 0;
+  padding: 0;
+  width: 16px;
+}
+
+.rating-star {
+  background: url('images/ico-star.png') 0 -44px;
+  cursor: pointer;  
+  display: block;
+  float: right;
+  height: 44px;
+  padding: 0px;
+  position: relative;
+  width: 44px;  
+}
+
+.rating-star:hover,
+.rating-star:hover ~ .rating-star,
+.rating-input:checked ~ .rating-star {
+  background-position: 0 0;
+}  
+  
+.cle_quiz_disabled .rating-star {
+  cursor: auto;
+}
+
+/*--- bien respecter l'ordre --*/
+.cle_quiz_disabled .rating-input:disabled ~ .rating-star {
+  background-position: 0 -44px;
+}
+
+.cle_quiz_disabled .rating-input:checked ~ .rating-star {
+  background-position: 0 0;
+}
+
+/* =VALIDATION
+-------------------------------------------------------------- */
+#cle-container #btn_validate {
+  background: #f72198;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'digitalsansef-mediumregular';
+  font-size: 1.4em;
+  height: 54px;
+  margin: 0 auto;
+  padding: 6px 20px;
+  text-transform: uppercase;
+  transition: background .5s;
+  vertical-align: middle;
+  width: 264px;
+}
+
+#cle-container #btn_validate:hover, #cle-container #btn_validate:focus {
+  background: #9ddc00;
+  outline: none;
+}
+
+#cle-container #btn_validate[disabled=disabled] {
+  background: #c0c0c0;
+  cursor: auto;
+}
+
+#cle-container #btn_validate[disabled=disabled]:hover, #cle-container #btn_validate[disabled=disabled]:focus {
+  background: #c0c0c0;
+}
+
+#cle-container .btn_previous,
+#cle-container .btn_next { 
+  background: #1f1f1f;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); 
+  display: inline-block;
+  margin: 5px 20px;
+  padding: 3px 10px;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+  width: 100px;
+}
+
+#cle-container .btn_previous:hover, #cle-container .btn_previous:focus,
+#cle-container .btn_next:hover, #cle-container .btn_next:focus {
+  background: #fff;
+  color: #1f1f1f;
+}
+
+/* =FEEDBACK
+-------------------------------------------------------------- */
+.cle-feedback-win,
+.cle-feedback-fail {
+  background: url('./images/ico-feedback-win.png') #21ae00 12px 13px no-repeat;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'digitalsansef-mediumregular';
+  margin: 5px 0 0 0;
+  padding: 5px 10px 5px 50px;
+  word-break: break-all;
+}
+
+.cle-feedback-fail {
+  background: url('./images/ico-feedback-fail.png') #da0202 12px 13px no-repeat;
+}
+
+.cle-feedback-win p,
+.cle-feedback-fail p,
+.cle-quiz-match .cle-feedback-win p,
+.cle-quiz-match .cle-feedback-fail p {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  margin: .5em;
+  padding: 0;
+}
+
+/* =RESPONSIVE > 320px
+-------------------------------------------------------------- */
+@media screen and (min-width: 320px) {
+  
+  .cle-block-img-right img {
+    float: left;
+    margin-right: 4%;
+  }
+
+  .cle-block-img-left img {
+    float: right;
+    margin-left: 4%;
+  }
+}
+
+/* =RESPONSIVE > 768px
+-------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .cle-block-title h1 {
+    font-size: 2.6em;
+  }
+
+  .cle-block-title h2 {
+    font-size: 2.2em;
+  }
+
+  .cle-block-title h3 {
+    font-size: 2em;
+  }
+
+  .cle-block-title h2, h3, h4 {
+    padding: 0 40px;
+  }
+  
+  .cle-quiz-numeric,
+  .cle-quiz-true-false,
+  .cle-quiz-qcm,
+  .cle-quiz-cloze,
+  .cle-quiz-sequence ul,
+  .cle-quiz-likert {
+    padding-left: 58px;
+  }
+}

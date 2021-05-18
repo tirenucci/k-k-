@@ -1,0 +1,11 @@
+<manifest>
+	<name>Management-RH (bleu)</name>
+	<author>Logipro</author>
+	<description>Template Management-RH (bleu)</description>
+	<uuid>5833bf08-dbe6-464c-8ef8-15797e13d61c</uuid>
+	<version>1.0</version>
+	<color_code>#30b2f5</color_code>
+	<color_name>Bleu</color_name>
+	<order>1</order>
+	<theme>Management RH</theme>
+</manifest>

@@ -1,0 +1,92 @@
+@import '../../responsive.scss';
+
+.export__section{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 900px;
+
+
+    fieldset{
+        flex-direction: column;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    li{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+
+        select, #archiveLink{
+            border: 2px #adadad solid;
+            padding: 10px;
+            border-radius: 5px;
+            width: fit-content;
+            font-size: 0.95em;
+            font-family: 'avant_guardregular';
+
+            &:hover, &:focus{
+                outline: none;
+            }
+        }
+
+        #archiveLink{
+            width: 100%;
+            background: #ddd;
+            color: #000;
+        }
+
+        span{
+            color: #797979;
+        }
+    }
+
+    .pdf-grains-list{   
+        display: flex;  
+           
+        li{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            background-color: #8bb900;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            margin: 5px;
+            width: fit-content;
+
+            input{
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .pdf-options{
+        li{
+            flex-direction: row;
+            margin-top: 10px;
+            border-bottom: 1px solid #8bb900;
+            font-size: 0.8em;
+        }
+    }
+
+    .export-btn__list{
+        display: flex;
+
+        @media  #{$medium-down} {
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+
+        li{
+            margin: 20px 10px 0 0;
+
+            @media  #{$small-down} {
+                margin: 10px 0;
+                width: 100%;
+            }
+        }
+    }
+}

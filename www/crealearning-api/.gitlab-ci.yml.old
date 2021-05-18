@@ -1,0 +1,57 @@
+# This file is a template, and might need editing before it works on your project.
+# Select image from https://hub.docker.com/_/php/
+image: php:7.2
+
+# Select what we should cache between builds
+cache:
+  paths:
+    - vendor/
+
+before_script:
+  - apt-get update -yqq
+  - apt-get install -yqq git libmcrypt-dev libpq-dev libcurl4-gnutls-dev libicu-dev libvpx-dev libjpeg-dev libpng-dev libxpm-dev zlib1g-dev libfreetype6-dev libxml2-dev libexpat1-dev libbz2-dev libgmp3-dev libldap2-dev unixodbc-dev libsqlite3-dev libaspell-dev libsnmp-dev libpcre3-dev libtidy-dev
+  # Install PHP extensions
+  - docker-php-ext-install mbstring curl json intl gd xml zip bz2 opcache pdo pdo_mysql
+  # Install & enable Xdebug for code coverage reports
+  - pecl install xdebug
+  - docker-php-ext-enable xdebug
+  # Install and run Composer
+  - chmod 777 -R *
+  - curl -sS https://getcomposer.org/installer | php
+  - php composer.phar install
+  - git config --global user.email "gitlab@logipro.com"
+  - git config --global user.name "Test GitLab"
+  - git stash
+  - mv .env.test .env.test.j
+  - mv .env.test.git .env.test
+  - php composer.phar dump-env test
+  - php bin/console doctrine:schema:update --force
+  - php bin/console doctrine:fixtures:load --append
+
+# Bring in any services we need http://docs.gitlab.com/ee/ci/docker/using_docker_images.html#what-is-a-service
+# See http://docs.gitlab.com/ce/ci/services/README.html for examples.
+services:
+  - mysql:5.7
+
+# Set any variables we need
+variables:
+  # Configure mysql environment variables (https://hub.docker.com/r/_/mysql/)
+  MYSQL_DATABASE: crea
+  MYSQL_USER: creauser
+  MYSQL_PASSWORD: crea
+  MYSQL_ROOT_PASSWORD: crea
+
+# Run our tests
+# If Xdebug was installed you can generate a coverage report and see code coverage metrics.
+test:
+  script:
+    - php bin/phpunit --testdox
+
+
+
+production:
+  stage: deploy
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop"'
+  script:
+    - curl http://vm-mutu-dev.logi.pro:9999/job/mis-en-test-api/build?token=jenkinstestapi

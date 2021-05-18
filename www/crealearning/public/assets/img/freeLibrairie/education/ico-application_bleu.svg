@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="270px" height="300px" viewBox="0 0 270 300" enable-background="new 0 0 270 300" xml:space="preserve">
+<g>
+	<g>
+		<polygon fill="#6DCFF6" points="149.734,27.786 196.506,27.786 257.863,89.143 257.863,177.53 149.734,177.53 		"/>
+		<polygon fill="#FFFFFF" points="196.506,27.786 257.863,89.143 196.506,89.143 		"/>
+		<polygon fill="#6DCFF6" points="211.357,42.636 211.357,74.293 243.014,74.293 		"/>
+	</g>
+	<text transform="matrix(1 0 0 1 161.9053 110.3843)" fill="#FFFFFF" font-family="'MyriadPro-Semibold'" font-size="17.5621">Application</text>
+	<g>
+		<circle fill="#0A4E9B" cx="115.006" cy="61.067" r="52.799"/>
+		<path fill="#0A4E9B" d="M137.766,124.79H92.248c-44.246,0-80.111,35.866-80.111,80.111v46.677
+			c10.314,9.495,21.952,17.573,34.594,23.954V215.98c0-2.851,2.305-5.164,5.16-5.164c2.857,0,5.162,2.313,5.162,5.164v64.261
+			c17.862,7.381,37.422,11.491,57.953,11.491c20.184,0,39.428-3.954,57.043-11.102v-64.65c0-2.851,2.307-5.164,5.158-5.164
+			c2.857,0,5.164,2.313,5.164,5.164v59.984c12.992-6.445,24.947-14.665,35.504-24.387v-46.677
+			C217.875,160.656,182.01,124.79,137.766,124.79z"/>
+	</g>
+	<g>
+		<path fill="#0A4E9B" d="M234.362,137.929l-12.619,67.244c-0.476,2.508,1.175,4.92,3.681,5.39l7.283,1.374
+			c2.504,0.475,4.914-1.174,5.391-3.682l12.621-67.246L234.362,137.929z"/>
+		<polygon fill="#0A4E9B" points="234.531,135.06 245.875,120.376 251.102,138.117 		"/>
+		<polygon fill="#FFFFFF" points="241.04,126.637 245.875,120.376 248.088,127.888 		"/>
+	</g>
+</g>
+</svg>

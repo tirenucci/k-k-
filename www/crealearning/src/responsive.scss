@@ -1,0 +1,17 @@
+/*
+Ce mixin permet d'appliquer la responsive dans tout les fichiers ou il est appelé
+*/
+
+$large: 1200!default; //Desktop
+$medium: 768!default; //Tablettes
+$small: 600!default; //Iphone, Huawei, ...
+$extra-small: 320!default; //Galaxy S5, Iphone5/SE ...
+
+$large-up: 'only screen and (min-width: #{$large}px)'; //Minimum 1200px
+$large-down: 'only screen and (max-width: #{$large}px)'; //Maximun 1200px
+
+$medium-up: 'only screen and (min-width: #{$medium}px)'; //Minimum 768px
+$medium-down: 'only screen and (max-width: #{$medium}px)'; //Maximum 768px
+
+$small-down: 'only screen and (max-width: #{$small}px)'; //Maximum 568px
+$extra-small-down: 'only screen and (max-width: #{$extra-small}px)'; //Maximum 320px

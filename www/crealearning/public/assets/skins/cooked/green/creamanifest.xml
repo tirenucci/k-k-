@@ -1,0 +1,11 @@
+<manifest>
+	<name>Cuisine (vert)</name>
+	<author>Logipro</author>
+	<description>Template cuisine (vert)</description>
+	<uuid>08b40608-ba50-4528-858c-a443158e7d5d</uuid>
+	<version>1.0</version>
+	<color_code>#099f30</color_code>
+	<color_name>Vert</color_name>
+	<order>5</order>
+	<theme>Cuisine</theme>
+</manifest>

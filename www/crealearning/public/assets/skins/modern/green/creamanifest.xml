@@ -1,0 +1,11 @@
+<manifest>
+	<name>Moderne (vert)</name>
+	<author>Logipro</author>
+	<description>Template moderne (vert)</description>
+	<uuid>30b82446-5ab5-4cd0-aef2-78d7f9500e04</uuid>
+	<version>1.0</version>
+	<color_code>#7b9c8c</color_code>
+	<color_name>Vert</color_name>
+	<order>4</order>
+	<theme>Moderne</theme>
+</manifest>

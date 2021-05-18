@@ -1,0 +1,11 @@
+<manifest>
+	<name>Arts graphiques (violet)</name>
+	<author>Logipro</author>
+	<description>Template Arts Graphiques (violet)</description>
+	<uuid>2c346fc2-2129-4207-9369-e024490c8db8</uuid>
+	<version>1.0</version>
+	<color_code>#960594</color_code>
+	<color_name>Violet</color_name>
+	<order>5</order>
+	<theme>Arts graphiques</theme>
+</manifest>

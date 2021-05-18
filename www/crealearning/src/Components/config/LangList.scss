@@ -1,0 +1,35 @@
+@import './../../responsive.scss';
+
+.lang__list{
+    margin: 0 auto;
+    width: fit-content;
+    font-family: 'avantgarde_bk_btbook';
+    padding: 20px;
+    text-align: center;
+
+    th {
+        background: linear-gradient(to bottom, #2bb9ee,#38cef3);
+        padding: 6px 10px;
+        border-radius: 5px;
+        color: #fff;
+        text-align: center;
+    }
+
+    td{
+        background: #e1e1e1;
+        width: fit-content;
+        border-radius: 5px;
+        color: #000;
+        font-family: 'avant_guardregular';
+        padding: 6px 10px;
+    }
+
+    tr:nth-child(odd) td {
+        background: #f7f7f7;
+    }
+
+    tr:hover td {
+        background: #858585;
+        color: #fff;
+    }
+}

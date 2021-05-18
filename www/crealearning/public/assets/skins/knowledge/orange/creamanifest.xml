@@ -1,0 +1,11 @@
+<manifest>
+	<name>Connaissances (orange)</name>
+	<author>Logipro</author>
+	<description>Template Connaissances (orange)</description>
+	<uuid>4obb23fe-ac2f-4061-910f-3cd2cf05ec1c</uuid>
+	<version>1.0</version>
+	<color_code>#f05b01</color_code>
+	<color_name>Orange</color_name>
+	<order>2</order>
+	<theme>Connaissances</theme>
+</manifest>

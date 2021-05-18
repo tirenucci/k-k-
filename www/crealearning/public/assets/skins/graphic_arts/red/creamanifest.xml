@@ -1,0 +1,11 @@
+<manifest>
+	<name>Arts graphiques (rouge)</name>
+	<author>Logipro</author>
+	<description>Template Arts graphiques (rouge)</description>
+	<uuid>71f665ba-8d66-4f66-8801-c36597903c84</uuid>
+	<version>1.0</version>
+	<color_code>#e61c48</color_code>
+	<color_name>Rouge</color_name>
+	<order>3</order>
+	<theme>Arts graphiques</theme>
+</manifest>

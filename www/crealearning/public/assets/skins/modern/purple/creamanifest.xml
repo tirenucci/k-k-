@@ -1,0 +1,11 @@
+<manifest>
+	<name>Moderne (Violet)</name>
+	<author>Logipro</author>
+	<description>Template moderne (Violet)</description>
+	<uuid>176d3ebc-e721-419e-909e-5f40d315c61c</uuid>
+	<version>1.0</version>
+	<color_code>#a22be0</color_code>
+	<color_name>Violet</color_name>
+	<order>5</order>
+	<theme>Moderne</theme>
+</manifest>

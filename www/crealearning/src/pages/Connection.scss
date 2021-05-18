@@ -1,0 +1,127 @@
+@import './../responsive.scss';
+
+.body__connection{
+    background-image: url('/assets/img/bg-html.jpg');
+    position: relative;
+    min-height: 100%;
+    line-height: 1.4;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    font-family: 'AV', 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .connection__section{
+        padding-bottom: 120px;
+    }
+
+    .connection__title{
+        text-align: center;
+        font-size: 5.5em;
+        color: #363636;
+        line-height: 1.2;
+        margin: 0;
+        padding: 80px 0 13px 0;
+        text-shadow: 0px 1px 0px #ffff;
+        font-weight: normal;
+        background: none;
+        height: unset;
+    }
+
+    .connection__form{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        padding: 1.5em 5%;
+        max-width: 760px;
+        font-size: 1.6em;
+        border-radius: 5px;
+        width: 95%;
+
+        input:focus{
+            border: 1px #363636 solid;
+            box-shadow: 0px 0px 10px 0px rgba(7, 7, 7, 0.3);
+            outline: none;
+        }
+
+        ul {
+            li{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .connection__group__btn{
+                display: flex;
+                flex-wrap: nowrap;
+
+                @media #{$small-down} {
+                    flex-direction: column;
+                    align-self: flex-start;
+                }
+
+                li{
+                    width: 100%;
+                    flex-direction: column;
+                    margin: 5px 0;
+
+                    &:first-of-type{
+                        flex-direction: row-reverse;
+                        place-content: flex-end;
+                        align-items: baseline;
+
+                        input{
+                            margin: 0 10px 0 0;
+                            display: flex;
+                            transform: scale(1.4);
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    //Message d'erreur si champs non renseignés ou user ou pswd incorrects
+    .connection__error{
+        font-size: 0.8em;
+        line-height: 1.2;
+        margin: 1em 0;
+        background-color: #fc3;
+        color: #000;
+        padding: 7px 10px;
+    }
+
+    //Message pour la récupération du mot de passe
+    .pswd__explain{
+        font-size: 1.1em;
+        line-height: 1.2;
+        text-align: center;
+
+        a{
+            color:#0964b2;
+        }
+    }
+
+    footer {
+        width: 100%;
+        bottom: 0;
+        position: absolute;  
+        height: 90px;
+        overflow: hidden; 
+    }
+
+    .logo__logipro {
+        background: url('/assets/img/logo-logipro.svg') #fff 50% 10px no-repeat;
+        border-radius: 50%;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+        display: flex;
+        margin: 0 auto;
+        text-indent: -999em;
+        transition: opacity 0.2s;
+        background-size: 90px auto;
+        height: 170px;
+        width: 170px;
+    }
+}

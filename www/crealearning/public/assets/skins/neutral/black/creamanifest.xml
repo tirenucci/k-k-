@@ -1,0 +1,11 @@
+<manifest>
+	<name>Neutre</name>
+	<author>Logipro</author>
+	<description>Template Neutre</description>
+	<uuid>7d0bbe45-dff1-48ad-9d1f-8bb6186dd743</uuid>
+	<version>1.0</version>
+    <color_code>#000000</color_code>
+	<color_name>Noir</color_name>
+	<order>1</order>
+	<theme>Neutre</theme>
+</manifest>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+    <h1>Content</h1>
+        {% block body %}
+        {% endblock %}
+        {% block javascripts %}
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+        <script src='http://localhost/crea/bundles/fmelfinder/js/elfinder.min.js'></script>
+        <script src='http://localhost/crea/bundles/fosckeditor/ckeditor.js'></script>
+        {% endblock %}
+    </body>
+</html>

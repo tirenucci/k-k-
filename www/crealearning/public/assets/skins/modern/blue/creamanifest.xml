@@ -1,0 +1,11 @@
+<manifest>
+	<name>Moderne (bleu)</name>
+	<author>Logipro</author>
+	<description>Template moderne (bleu)</description>
+	<uuid>2016509a-1323-41d5-bc36-ea73d0f13771</uuid>
+	<version>1.0</version>
+	<color_code>#5973a9</color_code>
+	<color_name>Bleu</color_name>
+	<order>1</order>
+	<theme>Moderne</theme>
+</manifest>

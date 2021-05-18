@@ -1,0 +1,11 @@
+<manifest>
+	<name>Finances (turquoise)</name>
+	<author>Logipro</author>
+	<description>Template Finances (turquoise)</description>
+	<uuid>17b7cd77-077d-4840-b6b7-c98a48ea249b</uuid>
+	<version>1.0</version>
+	<color_code>#2cebc5</color_code>
+	<color_name>Turquoise</color_name>
+	<order>3</order>
+	<theme>Finances</theme>
+</manifest>

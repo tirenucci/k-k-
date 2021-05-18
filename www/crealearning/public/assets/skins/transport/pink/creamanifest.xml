@@ -1,0 +1,11 @@
+<manifest>
+	<name>Transports (rose)</name>
+	<author>Logipro</author>
+	<description>Template Transports (rose)</description>
+	<uuid>82ebcd3c-8c80-4eee-8237-fdbdca52b8f6</uuid>
+	<version>1.0</version>
+	<color_code>#e721f3</color_code>
+	<color_name>Rose</color_name>
+	<order>3</order>
+	<theme>Transports</theme>
+</manifest>

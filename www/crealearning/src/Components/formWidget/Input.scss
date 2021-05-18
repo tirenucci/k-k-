@@ -1,0 +1,84 @@
+
+.input-div{
+    margin: 0 0 10px 0;
+
+    .label{
+        font-size: 1.6em;
+        color: #898989;
+        display: flex;
+        align-self: flex-start;
+        align-items: center;
+    }
+    
+    .input__mail, .input__pswd{
+        font-size: 1.6em;
+        min-height: 54px;
+        border: 1px #898989 solid;
+        border-radius: 5px;
+        box-sizing: border-box;
+        color: #363636;
+        display: block;
+        padding: 4px 20px 4px 25px;
+        width: 100%;
+    }
+
+    .input__password{
+        display: flex;
+        align-items: center;
+    }
+
+    .img-input {
+        display: block;
+        position: relative;
+    }
+
+
+    .img-input::after{
+        background-color: #0964b2;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 12px auto;
+        border-radius: 50%;
+        bottom: 7px;
+        box-sizing: border-box;
+        color: #fff;
+        content: '';
+        display: block;
+        font-size: 1em;
+        height: 30px;
+        left: -15px;
+        line-height: 30px;
+        position: absolute;
+        text-align: center;
+        width: 30px;
+    }
+
+    img{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-self: center;
+    }
+
+    .input-password::after {
+        background-image: url('/assets/img/connection-form/ico-password.svg');
+    }
+    .input-text::after {
+        background-image: url('/assets/img/connection-form/ico-login.svg');
+    }
+    .input-email::after {
+        content: '@';
+        font-size: 1.6em!important;
+    }
+
+    @media screen and (min-width: 1030px){
+        .img-input::after{
+            background-size: auto auto;
+            font-size: 1.3em;
+            height: 40px;
+            left: -20px;
+            line-height: 38px;
+            width: 40px;
+        }
+    }
+}

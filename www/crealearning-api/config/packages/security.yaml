@@ -1,0 +1,64 @@
+security:
+    encoders:
+        App\Entity\User:
+            algorithm: 'sodium'
+
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+        # used to reload user from session & other features (e.g. switch_user)
+        app_user_provider:
+            entity:
+                class: App\Entity\User
+                property: connection_token
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            anonymous: ~
+            logout: ~
+            guard:
+                authenticators:
+                    - App\Security\TokenAuthenticator
+            stateless: true
+
+            # activate different ways to authenticate
+            # https://symfony.com/doc/current/security.html#firewalls-authentication
+
+            # https://symfony.com/doc/current/security/impersonating_user.html
+            # switch_user: true
+
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+
+    access_control:
+        # Accessible au personne non connecter
+        - {path: ^/user/connection, roles: IS_AUTHENTICATED_ANONYMOUSLY}
+        - {path: ^/user/resendmail, roles: IS_AUTHENTICATED_ANONYMOUSLY}
+        - {path: ^/block/froala/upload, roles: IS_AUTHENTICATED_ANONYMOUSLY}
+        - {path: ^/mail/recovery, roles: IS_AUTHENTICATED_ANONYMOUSLY}
+        - {path: ^/elfinder, roles: IS_AUTHENTICATED_ANONYMOUSLY}
+        - {path: ^/efconnect, roles: IS_AUTHENTICATED_ANONYMOUSLY}
+        - {path: ^/preview, roles: IS_AUTHENTICATED_ANONYMOUSLY}
+
+        # Accessible Logipro et Admin
+        - {path: ^/society/edit, roles: [ROLE_LOGIPRO, ROLE_ADMINISTRATOR]}
+        - {path: ^/society/get_data, roles: [ROLE_LOGIPRO, ROLE_ADMINISTRATOR]}
+        - {path: ^/author/create, roles: [ROLE_LOGIPRO, ROLE_ADMINISTRATOR]}
+        - {path: ^/user/delete, roles: [ROLE_LOGIPRO, ROLE_ADMINISTRATOR]}
+        - {path: ^/user/edit, roles: [ROLE_LOGIPRO, ROLE_ADMINISTRATOR]}
+        - {path: ^/user/edit_user, roles: [ROLE_LOGIPRO, ROLE_ADMINISTRATOR]}
+
+
+        # Accessible Logipro
+        - {path: ^/user/all_user, roles: ROLE_LOGIPRO}
+        - {path: ^/society/upload, roles: ROLE_LOGIPRO}
+        - {path: ^/society/delete, roles: ROLE_LOGIPRO}
+        - {path: ^/society/update, roles: ROLE_LOGIPRO}
+        - {path: ^/society/get_all, roles: ROLE_LOGIPRO}
+        - {path: ^/society/create, roles: ROLE_LOGIPRO}
+        - {path: ^/user/get_data, roles: ROLE_LOGIPRO}
+        - {path: ^/user/is_logipro, roles: ROLE_LOGIPRO}
+
+        # Autre
+        - {path: ^/, roles: [ROLE_LOGIPRO, ROLE_ADMINISTRATOR, ROLE_AUTHOR, ROLE_USER]}

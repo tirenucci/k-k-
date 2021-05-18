@@ -1,0 +1,55 @@
+html{
+    font-size: 62.5%;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    font-size: 62.5%;
+}
+
+tbody{
+    font-size: 1.6em;
+    text-align: center;
+    color: #000;
+}
+
+div{
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #f7f7f7;
+}
+
+img{
+    width: 150px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.link__list{
+    text-align: center;
+    background: #f7f7f7;
+    padding: 15px 8px;
+    list-style: none;
+    margin: 15px auto;
+}
+
+.password__btn{
+    background-color: #8bb900;
+    border-radius: 5px;
+    color: #fff;
+    padding: 6px 10px;
+}
+
+/*La liste des infos pour l'équipe commerciale*/
+.contact__data{
+    display: flex;
+    flex-direction: column;
+}

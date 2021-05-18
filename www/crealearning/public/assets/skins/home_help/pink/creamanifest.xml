@@ -1,0 +1,11 @@
+<manifest>
+	<name>Aide à domicile (ménage)</name>
+	<author>Logipro</author>
+	<description>Aide à domicile (ménage)</description>
+	<uuid>daa5ff4c-06bb-4fdb-b9de-f4549401b9e4</uuid>
+	<version>1.0</version>
+	<color_code>#D64564</color_code>
+	<color_name>Rose</color_name>
+	<order>1</order>
+	<theme>Aide à domicile</theme>
+</manifest>

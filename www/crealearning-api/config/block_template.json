@@ -1,0 +1,58 @@
+{
+    "_TEXT" : {
+        "div": "-paragraph",
+        "balise": "%text%"
+    },
+    "_TITLE" : {
+        "div": "-title",
+        "balise": "<%level%>%text%</%level%>"
+    },
+    "_HR" : {
+        "div": "-hr",
+        "balise": "<hr />"
+    },
+    "_IMG" : {
+        "div": "-img",
+        "balise": "<img src=\"%url%\" title=\"%alt%\" alt=\"%alt%\" style=\"width: %style_width%\"/>",
+        "balisehref": "<a href=\"%href%\" target=\"_blank\"><img src=\"%url%\" title=\"%alt%\" alt=\"%alt%\" style=\"width: %style_width%\"/></a>"
+    },
+    "_IMGL" : {
+        "div": "-img cle-block-img-left",
+        "balise": "<img src=\"%url%\" title=\"%alt%\" alt=\"%alt%\" style=\"width: %style_width%\"/>%text%",
+        "balisehref": "<a href=\"%href%\" target=\"_blank\"><img src=\"%url%\" title=\"%alt%\" alt=\"%alt%\" style=\"width: %style_width%\"/></a>%text%"
+    },
+    "_IMGR" : {
+        "div": "-img cle-block-img-right",
+        "balise": "<img src=\"%url%\" title=\"%alt%\" alt=\"%alt%\" style=\"width: %style_width%\"/>%text%",
+        "balisehref": "<a href=\"%href%\" target=\"_blank\"><img src=\"%url%\" title=\"%alt%\" alt=\"%alt%\" style=\"width: %style_width%\"/></a>%text%"
+    },
+    "_VIDEO": {
+        "div": "-video",
+        "balise": "<video controls src=\"%url%\" height=\"%height%\" title=\"%alt%\" width=\"%width%\" constolslist=\"%chrome_download%\" %autoplay% controls preload=\"metadata\"></video>"
+    },
+    "_SCREEN": {
+        "div": "-video",
+        "balise": "<video controls src=\"%url%\" height=\"%height%\" title=\"%alt%\" width=\"%width%\" constolslist=\"%chrome_download%\" %autoplay% controls preload=\"metadata\"></video>"
+    },
+    "_AUDIO": {
+        "div": "-audio",
+        "balise": "<audio controls src=\"%url%\" title=\"%alt%\" alt=\"%alt%\" %autoplay% controls preload=\"data\"></audio>"
+    },
+    "_DOC": {
+        "div": "-doc",
+        "balise": "<a controls href=\"%url%\" title=\"%alt%\" target=\"_blank\"></a><span>%alt%</span>"
+    },
+    "_FORMULA": {
+        "div": "-formula",
+        "balise": "<img controls src=\"%img%\" title=\"%legend%\" alt=\"%legend%\">"
+    },
+    "_EO_BLOCK": {
+        "div": "-embed",
+        "balise": "%url%"
+    },
+    "_PDF_READER": {
+        "div": "-pdfreader",
+        "style": "text-align:center;",
+        "balise": "<iframe width=\"%width%\" height=\"%height%\" src=\"%url%\"></iframe>"
+    }
+}

@@ -1,0 +1,11 @@
+<manifest>
+	<name>Connaissances (Rose)</name>
+	<author>Logipro</author>
+	<description>Template Connaissances (rose)</description>
+	<uuid>a7a9be66-fc32-43e6-84d3-406a2bf1ceea</uuid>
+	<version>1.0</version>
+	<color_code>#e90096</color_code>
+	<color_name>Rose</color_name>
+	<order>4</order>
+	<theme>Connaissances</theme>
+</manifest>

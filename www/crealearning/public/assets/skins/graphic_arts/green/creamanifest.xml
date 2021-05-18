@@ -1,0 +1,11 @@
+<manifest>
+	<name>Arts graphiques (vert)</name>
+	<author>Logipro</author>
+	<description>Template Arts graphiques (vert)</description>
+	<uuid>3c0c12b2-2bcb-4cb5-9493-c54e624fc949</uuid>
+	<version>1.0</version>
+	<color_code>#67b346</color_code>
+	<color_name>Vert</color_name>
+	<order>4</order>
+	<theme>Arts graphiques</theme>
+</manifest>

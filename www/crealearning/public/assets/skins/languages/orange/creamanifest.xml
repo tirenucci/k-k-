@@ -1,0 +1,11 @@
+<manifest>
+	<name>Langues (orange)</name>
+	<author>Logipro</author>
+	<description>Template langues (orange)</description>
+	<uuid>d0c667da-3e94-4391-b1bb-9048c06276d2</uuid>
+	<version>1.0</version>
+	<color_code>#ff6f07</color_code>
+	<color_name>Orange</color_name>
+	<order>2</order>
+	<theme>Langues</theme>
+</manifest>

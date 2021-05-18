@@ -1,0 +1,199 @@
+@import './../responsive.scss';
+
+.margin__actif {
+    width: 95%;
+}
+
+.search__form {
+    display:flex;
+    margin: 20px auto;
+    max-width: 900px;
+
+    ul{
+        display: flex;
+        align-items: center;
+
+        li{
+            display: flex;
+            margin: 0 10px;
+        }
+
+        .fields__el{
+            width: inherit;
+        }
+
+        @media  #{$medium-down}{
+            justify-content: space-between;
+
+            li{
+                display: flex;
+                margin: 5px;
+            }
+        }
+        @media  #{$small-down}{
+            flex-wrap: wrap;
+        }
+    }
+
+    label{
+        width: auto;
+        color: #32c5f1;
+        padding: 5px;
+        margin: auto 0;
+        display: inline-flex;
+    }
+
+    .search__bar {
+        border-radius: 20px;
+        background: #f7f7f7;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+
+        @media  #{$small-down}{
+            width: 100%;
+        }
+
+        img{
+            margin-left: 10px;
+        }
+        
+        input{
+            border-radius: 20px;
+            border: none;
+            padding: 10px;
+            background: #f7f7f7;
+            vertical-align: middle;
+            outline: none;
+            width: 100%;
+            font-size: 1.6rem;
+        }
+    }
+
+    .search__filter{
+        span{
+            display: flex;
+            border-radius: 20px;
+            border: none;
+            overflow: hidden;
+            outline: none;
+            align-self: center;
+        }
+
+        //Liste déroulante du filtre des modules
+        select{
+            border: none;
+            padding: 6px 15px;
+            background: url('/assets/img/trainingsList/arrow_down.png') 90% 50% no-repeat #f7f7f7;
+            outline: none;
+            width: fit-content;
+            border-radius: 20px;
+            font-family: 'avant_guardregular';
+            -webkit-appearance: none;
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+    }
+}
+
+//Uniquement pour la liste des trainings
+.search__training{
+    margin: 20px 0;
+
+    @media  #{$medium-down}{
+        width: 100%;
+    }
+}
+
+//Uniquement pour la gestion des utilisateurs et auteurs
+.search__user{
+
+    li{
+        margin: 0 4px!important;
+    }
+    @media  #{$small-down}{
+        flex-wrap: wrap;
+
+        ul{
+            flex-wrap:inherit;
+        }
+    }
+}
+
+//Uniquement pour la gestion des sociétés
+.search__society{
+    ul{
+        flex-wrap:inherit;
+    }
+}
+
+//Uniquement pour les habillages
+.search__skin{
+    margin: 0 15px;
+
+    @media  #{$large-down}{
+        justify-content: center;
+        width: 75%;
+        margin: 0;
+    }
+
+    @media  #{$medium-down}{
+        width: 95%;
+    }
+
+    @media  #{$small-down}{
+        margin:20px 0px 0px 25px;
+        width: 80%;
+
+        ul{
+            flex-wrap: inherit;
+
+            li{
+                margin: 0;
+            }
+        }
+    }
+
+    img{
+        display: none;
+    }
+
+    label{
+        color: #fff;
+    }
+
+    input, select{
+        background: #717171!important;
+        border: 1px #272727 solid!important;
+        color: #fff;
+    }
+
+    select{
+        background: url('/assets/img/trainingsList/arrow_down.png') 90% 50% no-repeat #717171!important;
+    }
+
+    select::-ms-expand {
+        display: block!important;
+    }
+
+    input::placeholder{
+        color: #fff;
+    }
+
+    .search__bar{
+        background: transparent;
+
+        @media  #{$small-down}{
+            padding: 0;
+            width: 100%;
+        }
+    }
+
+    .search__filter{
+        @media  #{$small-down}{
+            display: none;
+        }
+    }
+}

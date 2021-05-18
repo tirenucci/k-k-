@@ -1,0 +1,11 @@
+<manifest>
+	<name>Sciences</name>
+	<author>Logipro</author>
+	<description>Template sciences</description>
+	<uuid>3s582446-5ab5-4so0-aef2-78d7f9500e04</uuid>
+	<version>1.0</version>
+	<color_code>#d496e3</color_code>
+	<color_name>Violet</color_name>
+	<order>1</order>
+	<theme>Sciences</theme>
+</manifest>

@@ -1,0 +1,11 @@
+<manifest>
+	<name>Bien-être (acier)</name>
+	<author>Logipro</author>
+	<description>Template Bien-être (acier)</description>
+	<uuid>33f701af-ccd5-41ff-a5a2-5ec74b0abc54</uuid>
+	<version>1.0</version>
+	<color_code>#ff7200</color_code>
+	<color_name>Orange</color_name>
+	<order>3</order>
+	<theme>Bien être</theme>
+</manifest>

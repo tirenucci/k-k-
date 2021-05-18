@@ -1,0 +1,11 @@
+<manifest>
+	<name>Sécurité (vert)</name>
+	<author>Logipro</author>
+	<description>Template Sécurité (vert)</description>
+	<uuid>d1c60cca-5e60-49a2-b33d-8518256f7169</uuid>
+	<version>1.0</version>
+	<color_code>#55b11d</color_code>
+	<color_name>Vert</color_name>
+	<order>5</order>
+	<theme>Sécurité</theme>
+</manifest>

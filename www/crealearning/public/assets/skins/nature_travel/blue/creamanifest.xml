@@ -1,0 +1,11 @@
+<manifest>
+	<name>Voyage nature (plage)</name>
+	<author>Logipro</author>
+	<description>Voyage nature (plage)</description>
+	<uuid>3b0a4536-25d2-474a-bd18-2d313ca05b42</uuid>
+	<version>1.0</version>
+	<color_code>#02B6F9</color_code>
+	<color_name>Bleu</color_name>
+	<order>1</order>
+	<theme>Voyage nature</theme>
+</manifest>

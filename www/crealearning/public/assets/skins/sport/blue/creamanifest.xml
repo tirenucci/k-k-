@@ -1,0 +1,11 @@
+<manifest>
+	<name>Sport</name>
+	<author>Logipro</author>
+	<description>Template Sport</description>
+	<uuid>0d9f2913-383e-4edc-99ea-b518d42671ee</uuid>
+	<version>1.0</version>
+	<color_code>#61d5ee</color_code>
+	<color_name>Bleu</color_name>
+	<order>1</order>
+	<theme>Sport</theme>
+</manifest>

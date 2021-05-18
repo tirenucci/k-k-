@@ -1,0 +1,71 @@
+version: "3"
+
+services:
+  nginx:
+    build: 
+       context: ./docker/nginx
+    container_name: 'crea-nginx'
+    restart: 'always'
+    ports:
+      - "80:8080"
+      - "443:443"
+    links: 
+      - mysql
+      - php
+    volumes: 
+      - ./www:/var/www/html:delegated
+      - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/php.ini:delegated
+      - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf:delegated
+      - ${LOG_DIR-./logs/apache2}:/var/log/apache2:delegated
+  php:
+    build:
+      context: ./docker/php
+    container_name: 'crea-php'
+    restart: 'always'
+    links:
+      - mysql
+    volumes:
+      - ./www:/var/www/html
+      - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/php.ini:delegated
+  react:
+    build:
+      context: ./docker/react
+    container_name: 'crea-react'
+    restart: 'always'
+    deploy:
+      resources:
+        limits:
+          memory: 2096M
+    ports: 
+      - "3000:3000"
+    links:
+      - nginx
+      - php
+    volumes:
+      - ./www/crealearning:/var/www/html
+  mysql:
+    build: ./docker/mysql
+    container_name: 'crea-mysql'
+    restart: 'always'
+    ports:
+      - "3306:3306"
+    volumes: 
+      - ${MYSQL_DATA_DIR-./data/mysql}:/var/lib/mysql
+      - ${MYSQL_LOG_DIR-./logs/mysql}:/var/log/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: logipro
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: 'phpmyadmin'
+    volumes: 
+      - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/
+    restart: 'always'
+    links:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - '8080:80'
+    volumes: 
+      - /sessions

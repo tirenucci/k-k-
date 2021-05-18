@@ -1,0 +1,11 @@
+<manifest>
+	<name>Oblique (Fuchsia)</name>
+	<author>Logipro</author>
+	<description>Template oblique (Fuchsia)</description>
+	<uuid>fcs66042-ca50-44ab-929c-299dfae0e1so</uuid>
+	<version>1.0</version>
+	<color_code>#cd2e59</color_code>
+	<color_name>Fuchsia</color_name>
+	<order>1</order>
+	<theme>Oblique</theme>
+</manifest>

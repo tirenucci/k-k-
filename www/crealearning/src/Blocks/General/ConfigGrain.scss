@@ -1,0 +1,48 @@
+@import '../../responsive.scss';
+
+.config__grain__form{
+    border: 1px solid #aaa;
+    overflow: auto;
+    scroll-behavior: smooth;
+    height: 92%;
+
+    .config__list{
+        width: 85%;
+        margin: 10px auto;
+
+        li{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+    
+            @media  #{$small-down}{
+                width: 100%;
+            }
+    
+            input, select{
+                border: 2px solid #adadad;
+                border-radius: 5px;
+                margin-bottom: 8px;
+                padding: 5px;
+            }
+    
+            p{
+                margin: 0;
+            }
+        }
+
+        //Permet de grouper deux champs sur une ligne
+        ul{
+            display: flex;
+            justify-content: space-between;
+
+            input, select{
+                width: 180px;
+
+                @media  #{$small-down}{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<manifest>
+	<name>Cuisine (orange)</name>
+	<author>Logipro</author>
+	<description>Template cuisine (orange)</description>
+	<uuid>58b0b8b7-24cc-4d0b-9667-733611753cb3</uuid>
+	<version>1.0</version>
+	<color_code>#fe7506</color_code>
+	<color_name>Orange</color_name>
+	<order>3</order>
+	<theme>Cuisine</theme>
+</manifest>

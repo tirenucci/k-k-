@@ -1,0 +1,11 @@
+<manifest>
+	<name>Marketing (bleu)</name>
+	<author>Logipro</author>
+	<description>Template Marketing (bleu)</description>
+	<uuid>e19a319b-fe17-4b12-8cd9-97a2e14ba17f</uuid>
+	<version>1.0</version>
+	<color_code>#73b7f7</color_code>
+	<color_name>Bleu</color_name>
+	<order>1</order>
+	<theme>Marketing</theme>
+</manifest>

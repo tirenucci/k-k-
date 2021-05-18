@@ -1,0 +1,70 @@
+@import './../../../responsive.scss';
+
+.formulaire{
+    width: 100%;
+
+    fieldset{
+        background: none;
+        border: none;
+        max-width: 600px;
+        width: 95%;
+
+        @media #{$small-down}{
+            padding-bottom: 20px;
+
+            .one__row{
+				display: block;
+			}
+        }
+    }
+
+    @media #{$small-down}{
+        li{
+            margin: 0 auto;
+        }
+    }
+
+    .fields__el{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 250px;
+
+        @media #{$small-down}{
+            width: 100%;
+        }
+	
+        span{
+            width: 35px;
+            height: 35px;
+            border-radius: 70px;
+            float: right;
+            border: 1px solid #000;
+        }
+
+        label{
+            color: black;
+            font-family: 'avant_guardregular';
+            margin: 15px 0 0 0;
+            width: auto;
+        }
+
+        input, select {
+            border: 2px #adadad solid !important;
+            border-radius: 5px;
+            font-family: 'avant_guardregular';
+            line-height: 1.4 !important;
+            padding: 10px;
+            font-size: 1em;
+        }
+    }
+
+    .circle-color{
+        width: 35px;
+        height: 35px;
+        border-radius: 70px;
+        border:1px solid #000;
+        display: flex;
+        align-self: flex-end;
+    }
+}

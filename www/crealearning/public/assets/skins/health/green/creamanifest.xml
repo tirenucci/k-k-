@@ -1,0 +1,11 @@
+<manifest>
+	<name>Santé (vert)</name>
+	<author>Logipro</author>
+	<description>Template Santé (vert)</description>
+	<uuid>5a60142f-5527-440b-b62d-9d8bc9564ecf</uuid>
+	<version>1.0</version>
+	<color_code>#16d576</color_code>
+	<color_name>Vert</color_name>
+	<order>4</order>
+	<theme>Santé</theme>
+</manifest>

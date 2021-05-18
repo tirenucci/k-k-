@@ -1,0 +1,51 @@
+.filemanager {
+    display: flex;
+    .filemanager-diff {
+        height: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        overflow: auto;
+        min-width: 25%;
+        max-width: 100%;
+        .diff {
+            height: 38px;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            cursor: pointer;
+            &:hover{
+                background-color: #f5f5f5;
+            }
+            &:before {
+                content: url("/assets/img/fileManager/folder-solid.svg");
+                padding-right: 5px;
+                width: 1em;
+            }
+        }
+        .actif {
+            background-color: #2196F3;
+            color: white;
+            &:hover {
+                background-color: #2196F3;
+            }
+            &:before {
+                content: url("/assets/img/fileManager/folder-open-solid.svg");
+                padding-right: 5px;
+                width: 1em;
+            }
+        }
+        @for $i from 1 through 100 {
+            .diff-tree-#{$i} {
+                margin-left: #{(10 * $i)}px;
+            }
+        }
+    }
+    .oc-fm--location-bar {
+        display: none;
+    }
+    .oc-fm--file-manager {
+        width: 85%;
+    }
+}

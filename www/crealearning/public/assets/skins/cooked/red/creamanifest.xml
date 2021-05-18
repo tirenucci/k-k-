@@ -1,0 +1,11 @@
+<manifest>
+	<name>Cuisine (rouge)</name>
+	<author>Logipro</author>
+	<description>Template Cuisine (rouge)</description>
+	<uuid>fcafe994-c199-4c42-85a4-b220a5d6bda0</uuid>
+	<version>1.0</version>
+	<color_code>#e90c1c</color_code>
+	<color_name>Rouge</color_name>
+	<order>4</order>
+	<theme>Cuisine</theme>
+</manifest>

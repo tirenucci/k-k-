@@ -1,0 +1,149 @@
+@import '../../responsive.scss';
+
+.skin__section{
+    background-color: #3a3a3a;
+    padding: 20px 0 10px 0;
+    font-family: 'OpenSans';
+    min-height: 81vh;
+    
+    @media #{$small-down}{
+        padding: 0 5px;
+    }
+
+    .skin__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        @media #{$small-down}{
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+    
+            .skin__el {
+                scroll-snap-align: center;
+            }
+        }
+    
+        .skin__el__theme{
+            background-color: #fff;
+            border: 1px #fff solid;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            width: 240px;
+            cursor: pointer;
+    
+            @media #{$medium-down}{
+                margin: 30px;
+            }
+        
+            h3{
+                border-top: 1px #000 solid;
+                color: #4b4b4b;
+                font-family: 'OpenSans_Bold';
+                font-size: 16px;
+                margin: 0;
+                padding: 7px 10px 0 10px;
+        
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        
+            .bottom{
+                background-color: #fff;
+                height: 100%;
+            }
+        }
+    }
+    
+    .img__wrapper{
+        height: 200px;
+        margin: 0;
+        display: flex;
+        transition: all .2s;
+        width: 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        @media #{$medium-down}{
+            height: 250px;
+        }
+    
+        &:hover{
+            opacity: 0.8;
+        }
+    
+        img{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+    }
+    
+    .color{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px;
+    
+        .activ__color, .inactiv__color{
+            height: 15px;
+            margin: 2px;
+            position: relative;
+            width: 15px;
+    
+            span{
+                border: none;
+                border-radius: 50%;
+                display: block;
+                height: 15px;
+                overflow: hidden;
+                padding: 0;
+                position: relative;
+                text-align: left;
+                text-indent: 100%;
+                white-space: nowrap;
+                width: 15px;
+                transition: all 0.4s;
+            }
+        }
+    
+        .inactiv__color{
+            span{
+                opacity: .3;
+            }
+        }
+    }
+}
+
+.one__skin{
+    min-height: 0vh!important;
+}
+
+.top__skin__all{
+    display: flex;
+    justify-content: start;
+    margin: 0;
+    select {
+        margin: 0;
+        color : white;
+        border: none;
+        padding: 6px 30px;
+        background: url('/assets/img/trainingsList/arrow_down.png') 90% 50% no-repeat #717171!important;
+        outline: none;
+        width: fit-content;
+        border-radius: 20px;
+        font-family: 'avant_guardregular';
+        -webkit-appearance: none;
+    }
+}

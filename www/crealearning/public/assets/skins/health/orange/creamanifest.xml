@@ -1,0 +1,11 @@
+<manifest>
+	<name>Santé (orange)</name>
+	<author>Logipro</author>
+	<description>Template Santé (orange)</description>
+	<uuid>fa5f85cc-95c2-4e12-803c-eea514d6f6a3</uuid>
+	<version>1.0</version>
+	<color_code>#fc8f07</color_code>
+	<color_name>Orange</color_name>
+	<order>2</order>
+	<theme>Santé</theme>
+</manifest>

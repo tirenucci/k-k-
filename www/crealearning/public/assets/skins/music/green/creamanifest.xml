@@ -1,0 +1,11 @@
+<manifest>
+	<name>Musique (vert)</name>
+	<author>Logipro</author>
+	<description>Template Musique</description>
+	<uuid>9197b608-e708-4e34-82f0-4b8d8126a3b5</uuid>
+	<version>1.0</version>
+	<color_code>#12a300</color_code>
+	<color_name>Vert</color_name>
+	<order>3</order>
+	<theme>Musique</theme>
+</manifest>

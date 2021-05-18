@@ -1,0 +1,11 @@
+<manifest>
+	<name>Moderne (Bordeaux)</name>
+	<author>Logipro</author>
+	<description>Template moderne (Bordeaux)</description>
+	<uuid>6c766042-ca50-44ab-929c-299dfae0e10e</uuid>
+	<version>1.0</version>
+	<color_code>#4d202c</color_code>
+	<color_name>Bordeaux</color_name>
+	<order>2</order>
+	<theme>Moderne</theme>
+</manifest>

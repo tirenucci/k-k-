@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+<ellipse transform="matrix(0.8464 0.5326 -0.5326 0.8464 96.3225 -17.9114)" cx="79.208" cy="158.005" rx="43.333" ry="52.319"/>
+<ellipse transform="matrix(-0.8464 0.5326 -0.5326 -0.8464 491.8164 174.1403)" cx="220.792" cy="158.005" rx="43.333" ry="52.319"/>
+<circle fill="#FFFFFF" cx="95.814" cy="147.336" r="10.67"/>
+<circle fill="#FFFFFF" cx="204.186" cy="147.336" r="10.67"/>
+<path d="M149.741,276.953c-7.948,0-26.64-26.18-20.534-33.465s37.316-6.965,41.586,0S158.563,276.953,149.741,276.953z"/>
+<path fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M152.038,267.68
+	c0,11.342-9.194,20.537-20.536,20.537c-7.426,0-13.932-3.943-17.538-9.848"/>
+<path fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M147.45,267.68
+	c0,11.342,9.194,20.537,20.536,20.537c7.426,0,13.932-3.943,17.538-9.848"/>
+<path d="M68.065,0H0v56.601c6.633,7.478,15.752,12.702,26.067,14.359c13.849-17.542,31.344-32.069,51.34-42.447
+	c0.012-0.426,0.032-0.85,0.032-1.279C77.439,16.961,73.934,7.514,68.065,0z"/>
+<path d="M300,0h-68.443c-5.867,7.514-9.374,16.961-9.374,27.234c0,0.361,0.019,0.718,0.027,1.077
+	c20.134,10.379,37.745,24.962,51.675,42.59c10.375-1.748,19.523-7.103,26.115-14.728V0z"/>
+</svg>

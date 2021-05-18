@@ -1,0 +1,45 @@
+@import '../../responsive';
+
+.society__table, .user__table{
+    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 95%;
+    max-width: 900px;
+
+    th{
+        border-radius: 5px;
+        color: #fff;
+        font-family: 'avantgarde_bk_btbook';
+        padding: 5px;
+        background: linear-gradient(to bottom, #6f3d17,#8d4d1c);
+        cursor: default;
+    }
+
+    tr:nth-child(odd) td {
+        background: #f7f7f7;
+    }
+
+    tr:hover td{
+        background: #d8894c;
+      color: #fff;
+    }
+
+    td{
+        background: #e1e1e1;
+        border-radius: 5px;
+        color: #000;
+        font-family: 'avant_guardregular';
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    ul{
+      display: flex;
+      justify-content: center;
+
+      @media  #{$small-down} {
+        flex-direction: column;
+        align-items: center;
+     }
+    }
+}

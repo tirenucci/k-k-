@@ -1,0 +1,57 @@
+@import './../../responsive.scss';
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+
+    @media #{$medium-down}{
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin: 0 3px;
+        }
+    }
+    
+    p {
+        color: #aba;
+        margin: 0px;
+    }
+
+    strong {
+        background: #8bb900;
+        border-radius: 50px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.7rem;
+        height: 50px;
+        min-width: 50px;
+    }
+
+    button,a {
+        font-size: 1.6rem;
+        background: #d0d0d0;
+        border-radius: 30px;
+        color: #fff;
+        display: flex;
+        height: 35px;
+        min-width: 35px;
+        align-items: center;
+        justify-content: center;
+        transition: background-color .4s ease-in-out;
+
+        &:active, &:hover, &:focus {
+            background-color: darken($color: #d0d0d0, $amount: 10%);
+        }
+    }
+}

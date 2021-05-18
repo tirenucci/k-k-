@@ -1,0 +1,67 @@
+@import './../../responsive.scss';
+
+.help__section{
+    position: relative;
+    height: 92%;
+}
+
+.help__article{
+    font-family: 'avantgarde_bk_btbook';
+    padding: 1em 1.4em;
+    background: 0;
+    overflow: auto;
+    height: 100%;
+    position: absolute;
+
+    @media #{$small-down}{
+        padding-bottom: 2em;
+    }
+
+    h3{
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 0;
+        padding: 5px;
+        color:#000;
+    }
+
+    ul, ol{
+        margin: 1em 0em 1em 2em;
+
+        @media #{$medium-down}{
+            margin-left: 1em;
+        }
+    }
+
+    li{
+        list-style: initial;
+
+        .img-inline{
+            margin: 0 5px;
+        }
+    }
+    
+    .img-inline{
+        vertical-align: middle;
+    }
+
+    h4{
+        color: #069;
+        margin: 1em 0;
+        padding: 0;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .circle-list{
+        li{
+            list-style: circle;
+        }
+    }
+
+    .highlight{
+        background: #F9EECF;
+        padding: 5px 20px;
+        border-radius: 7px;
+    }
+}

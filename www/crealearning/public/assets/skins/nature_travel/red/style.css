@@ -1,0 +1,817 @@
+@font-face {
+  font-family: 'gabriela';
+  src: url('fonts/gabriela-regular.eot'); 
+  src: local('Gabriela Regular'), local('Gabriela-Regular'),
+       url('fonts/gabriela-regular.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/gabriela-regular.woff2') format('woff2'),
+       url('fonts/gabriela-regular.woff') format('woff'), 
+       url('fonts/gabriela-regular.ttf') format('truetype'), 
+       url('fonts/gabriela-regular.svg#Gabriela') format('svg');
+}
+
+@font-face {
+  font-family: 'gafata';
+  src: url('fonts/gafata-regular.eot');
+  src: url('fonts/gafata-regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/gafata-regular.woff2') format('woff2'),
+       url('fonts/gafata-regular.woff') format('woff'),
+       url('fonts/gafata-regular.ttf') format('truetype'),
+       url('fonts/gafata-regular.svg#stentigaregular') format('svg');
+}
+
+#cle-container html {
+  background: #1f1f1f;
+  height: 100%;
+}
+
+#cle-container body {
+  margin: 0;
+  min-height: 100%;
+  min-width: 320px;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  width: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* =CONTENEUR
+-------------------------------------------------------------- */
+#cle-inner-container {
+  background: #fff;
+  color: #000;
+  font-family: gafata;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1282px;
+  position: relative;
+}
+
+/* =MAIN
+-------------------------------------------------------------- */
+#cle-container #main {
+  position: relative;
+  z-index: 200;
+  min-height: 500px;
+}
+
+.cle-block-box,
+.cle-quiz-box,
+.cle-quiz-validation-box {
+  box-sizing: border-box;
+  clear: both;
+  margin: 1.5em 0;
+  padding: 0 1%;
+  width: 100%;
+}
+
+.cle-block-box::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.cle-block-box p {
+  color: #000;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: .5em 0;
+}
+
+.cle-block-box img,
+.cle-quiz-box img {
+  max-width: 100%;
+}
+
+.cle-block-box a {
+  color: #BA2222;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.cle-block-box a:focus,
+.cle-block-box a:hover {
+  color: #8996a0;
+  text-decoration: none;
+}
+
+/* =HEADER & =FOOTER
+-------------------------------------------------------------- */
+#cle-container #header {
+  background: url('./images/bg-header.jpeg') no-repeat;
+  background-size: 100%;
+  display: block;
+  height: 5vw;
+  width: 100%;
+  background-size: cover!important;
+}
+
+#cle-container #footer {
+  background: url('./images/bg-footer.jpeg') no-repeat 0 0;
+  display: block;
+  height: 30px;
+  margin-top: 20px;
+  position: relative;
+  width: auto;
+  background-size: cover!important;
+}
+
+/* =TABLEAU
+-------------------------------------------------------------- */
+.cle-block-box table,
+.cle-quiz-box table {
+  border: none;
+  max-width: 100%;
+}
+
+.cle-block-box table caption,
+.cle-quiz-box table caption {
+  text-align: center;
+}
+
+.cle-block-box td,
+.cle-quiz-box td {
+  background: #f1f1f1;
+  border: none;
+  border-radius: 0;
+  padding: 2px 5px;
+}
+
+.cle-block-box th,
+.cle-quiz-box th {
+  background: #BA2222;
+  border-radius: 0;
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 5px;
+}
+
+/* =TITRE
+-------------------------------------------------------------- */
+.cle-block-title {
+  font-weight: normal;
+  line-height: 1.5;
+  font-family: 'gabriela';
+}
+
+.cle-block-title h1 {
+  color: #231f20;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.cle-block-title h2 {
+  box-sizing: border-box;
+  color: #BA2222;
+  display: inline-block;
+  font-size: 1.6em;
+  font-weight: normal;
+  margin-left: 0;
+  padding: 0 50px 0 15px;
+  text-align: left;
+  width: 100%;
+}
+
+.cle-block-title h3 {
+  color: #584A55;
+  font-size: 1.4em;
+  margin: 1em 0 1em 25px;
+  text-align: left;
+}
+
+.cle-block-title h4 {
+  color: #223944;
+  font-size: 1.2em;
+  margin: 2em 0 2em 35px;
+  text-align: left;
+}
+
+.cle-block-title h5 {
+  color: #325A2A;
+  font-size: 1em;
+  margin: 2em 0 2em 40px;
+  text-align: left;
+}
+
+.cle-block-title h6 {
+  color: #000;
+  font-size: .8em;
+  margin: 2em 0 2em 45px;
+  text-align: left;
+}
+
+/* =LISTE
+-------------------------------------------------------------- */
+#cle-inner-container .cle-block-box ul {
+  list-style: url('./images/puce-li.png');
+}
+
+/* =VIDEOS
+-------------------------------------------------------------- */
+.cle-block-video {
+  background: url('./images/bg-video.jpeg') 0 0 no-repeat;
+  background-size: cover;
+  max-height: 500px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cle-block-video video {
+  background: #000;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  max-height: 399px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.cle-quiz-box .cle-block-video {
+  background: #000;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  height: auto;
+  margin: 0 0 5px;
+  max-width: 550px;
+  padding: 0;
+  width: 100%;
+}
+
+/* =AUDIO
+-------------------------------------------------------------- */
+.cle-block-box.cle-block-audio {
+  background: url('./images/bg-audio.jpeg') 0 0 no-repeat;
+  background-size: cover;
+  max-height: 120px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.cle-block-audio audio {
+  background: #000;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 0 auto;
+  max-width: calc(100% - 20px);
+  padding: 10px;
+}
+
+.cle-quiz-box .cle-block-audio {
+  background: #000;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  margin: 0 0 5px;
+  max-width: 550px;
+  padding: 0;
+  width: 100%;
+}
+
+/* =IMG
+-------------------------------------------------------------- */
+.cle-block-formula img,
+.cle-block-img img {
+  background: #fff;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.cle-block-img-left,
+.cle-block-img-right {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.cle-block-img-left p,
+.cle-block-img-right p {
+  text-align: justify;
+}
+
+.cle-block-img-left img,
+.cle-block-img-right img {
+  background: #fff;
+  box-sizing: border-box;
+  float: none;
+  margin: 0 auto 20px;
+  max-width: 100%;
+}
+
+/* =OBJET INTEGRE
+-------------------------------------------------------------- */
+.cle-block-embed {
+  text-align: center;
+}
+
+.cle-block-embed embed,
+.cle-block-embed iframe,
+.cle-block-embed object {
+  background: #fff;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* =TEXTE
+-------------------------------------------------------------- */
+.cle-block-paragraph {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.cle-block-paragraph p {
+  text-align: justify;
+}
+
+/* =FORMULE
+-------------------------------------------------------------- */
+
+.cle-block-formula span {
+  display: block;
+  text-align: center;
+}
+
+/* =SEPARATEUR
+-------------------------------------------------------------- */
+.cle-block-hr hr {
+  background: #BA2222;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  height: 8px;
+  width: 80%;
+}
+
+/* =DOCUMENT
+-------------------------------------------------------------- */
+.cle-block-doc {
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  max-width: 600px;
+}
+
+.cle-block-doc::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.cle-block-doc a {
+  box-sizing: border-box;
+  display: block;
+
+  margin: 0 auto;
+  height: 102.1px;
+  padding: 5px;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  width: 150px;
+}
+
+.cle-block-doc a {
+  background-image: url('./images/ico-generique.png');
+  text-decoration: none;
+  background-size: 150px 102.1px;
+}
+
+.cle-block-doc a[href$='.pdf'] {
+  background-image: url('./images/ico-pdf.png');
+}
+
+.cle-block-doc a[href$='.ods'],
+.cle-block-doc a[href$='.xls'],
+.cle-block-doc a[href$='.xlsx'] {
+  background-image: url('./images/ico-xls.png');
+}
+
+.cle-block-doc a[href$='.doc'],
+.cle-block-doc a[href$='.docx'],
+.cle-block-doc a[href$='.odt'] {
+  background-image: url('./images/ico-doc.png');
+}
+
+.cle-block-doc a[href$='.ppt'],
+.cle-block-doc a[href$='.pptx'] {
+  background-image: url('./images/ico-ppt.png');
+}
+
+.cle-block-doc a[href$='.gif'],
+.cle-block-doc a[href$='.jpg'],
+.cle-block-doc a[href$='.png'] {
+  background-image: url('./images/ico-img.png');
+}
+
+.cle-block-doc a:hover + span {
+  color: #1a2732;
+}
+
+.cle-block-doc span {
+  font-family: gabriela;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.1em;
+
+}
+
+/* =FORMULAIRE DEFAUT
+-------------------------------------------------------------- */
+#cle-container input[type=text],
+.cle-quiz-numeric input {
+  background: #fff;
+  border: 1px solid #8996a0;
+  border-radius: 5px;
+  font-size: .8em;
+}
+
+/* =ENONCE
+-------------------------------------------------------------- */
+.cle-quiz-box {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.cle-quiz-title {
+  border: none;
+  font-family: gabriela;
+  color: #BA2222;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin: 15px auto 10px;
+  padding: 0 0 0 60px;
+  position: relative;
+  text-align: left;
+}
+
+.cle-quiz-title::before {
+  background: url('./images/ico-quiz.png') no-repeat;
+  content: '';
+  display: block;
+  height: 35px;
+  position: absolute;
+  left: 1px;
+  width: 50px;
+  top: -5px;
+}
+
+/* =NUMERIQUE
+-------------------------------------------------------------- */
+.cle-quiz-numeric {
+  padding: 0 40px;
+}
+
+.cle-quiz-numeric input {
+  box-sizing: border-box;
+  display: block;
+  margin-left: 25px;
+  max-width: 250px;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+/* =VRAI / FAUX
+-------------------------------------------------------------- */
+.cle-quiz-qcm,
+.cle-quiz-true-false {
+  padding: 0 50px;
+}
+
+.cle-quiz-qcm label,
+.cle-quiz-true-false label {
+  margin-right: 20px;
+}
+
+.cle-quiz-qcm input,
+.cle-quiz-qcm label,
+.cle-quiz-true-false input,
+.cle-quiz-true-false label {
+  cursor: pointer;
+  font-size: 1.0em;
+  line-height: 1.5em;
+
+}
+
+.cle-quiz-true-false input,
+.cle-quiz-true-false label {
+  display: inline-block;
+}
+
+.cle-quiz-true-false br {
+  display: none;
+}
+
+.cle-quiz-qcm input {
+  margin: 15px 0 0;
+}
+
+.cle-quiz-title + .cle-quiz-qcm {
+  margin-top: -5px;
+}
+
+/* =TEXTE A TROUS
+-------------------------------------------------------------- */
+.cle-quiz-cloze {
+  overflow: auto;
+  padding: 0 1%;
+}
+
+.cle-quiz-cloze input {
+  margin: 0 0 5px;
+  padding: 5px;
+  text-align: left;
+}
+
+/* =APPARIEMENT
+-------------------------------------------------------------- */
+.cle-quiz-match p {
+  background: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #1a2732;
+  font-size: 1.1em;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 10px;
+  width: 100%;
+}
+
+.cle-quiz-match img {
+  background: #fff;
+  border: none;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 5px;
+}
+
+.cle-quiz-match select {
+  background: #f1f1f1;
+  border: 1px solid #8996a0;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 1em;
+  margin: 10px 0;
+  max-width: 400px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+/* =SEQUENCE
+-------------------------------------------------------------- */
+.cle-quiz-sequence ul {
+  list-style: none;
+  padding: 0 25px;
+}
+
+.cle-quiz-sequence p {
+  margin: .7em 0;
+}
+
+.cle-quiz-sequence img {
+  background: #fff;
+  border: none;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 5px;
+}
+
+.cle-quiz-sequence-arrow + .cle-quiz-sequence-arrow {
+  margin-right: 5px;
+}
+
+.cle-quiz-sequence-arrow .ui-icon {
+  height: 20px;
+  margin-top: 5px;
+  width: 15px;
+}
+
+.cle-quiz-sequence-arrow .ui-icon-arrowthick-1-n {
+  background: url('images/ico-sequence-arrow.png') 0 0 no-repeat;
+}
+
+.cle-quiz-sequence-arrow .ui-icon-arrowthick-1-s {
+  background: url('images/ico-sequence-arrow.png') -18px 0 no-repeat;
+}
+
+/* =LIKERT
+-------------------------------------------------------------- */
+.cle-quiz-likert {
+  padding: 0 20px;
+}
+
+.cle-quiz-likert .cle-quiz-likert {
+  padding: 0;
+}
+
+.rating {
+  display: inline-block;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.rating-input {
+  cursor: pointer;
+  float: right;
+  height: 16px;
+  margin: 0 0 0 -16px;
+  opacity: 0;
+  padding: 0;
+  width: 16px;
+}
+
+.rating-star {
+  background: url('images/ico-star.png') 0 -44px;
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 44px;
+  padding: 0;
+  position: relative;
+  width: 44px;
+}
+
+.rating-input:checked ~ .rating-star,
+.rating-star:hover,
+.rating-star:hover ~ .rating-star {
+  background-position: 0 0;
+}
+
+.cle_quiz_disabled .rating-star {
+  cursor: auto;
+}
+
+/*--- bien respecter l'ordre --*/
+.cle_quiz_disabled .rating-input:disabled ~ .rating-star {
+  background-position: 0 -44px;
+}
+
+.cle_quiz_disabled .rating-input:checked ~ .rating-star {
+  background-position: 0 0;
+}
+/* =VALIDATION
+-------------------------------------------------------------- */
+#cle-container #btn_validate {
+  background: #BA2222;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.4em;
+  height: 40px;
+  margin: 0 auto;
+  padding: 6px 20px;
+  text-transform: uppercase;
+  transition: color .2;
+  vertical-align: middle;
+  width: 243px;
+}
+
+#cle-container #btn_validate:focus,
+#cle-container #btn_validate:hover {
+  color: #000;
+  outline: none;
+}
+
+#cle-container #btn_validate[disabled=disabled] {
+  background: #8996a0;
+  cursor: auto;
+}
+
+#cle-container #btn_validate[disabled=disabled]:focus,
+#cle-container #btn_validate[disabled=disabled]:hover {
+  background: #8996a0;
+}
+
+#cle-container .btn_next,
+#cle-container .btn_previous {
+  background: #F78F0B;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 5px 20px;
+  padding: 3px 10px;
+  vertical-align: middle;
+  text-decoration: none;
+  -webkit-transition: background .2s, color .2s;
+  transition: background .2s, color .2s;
+  width: 100px;
+}
+
+#cle-container .btn_next:focus,
+#cle-container .btn_next:hover,
+#cle-container .btn_previous:focus,
+#cle-container .btn_previous:hover {
+  background: #BA2222;
+  color: #fff;
+}
+
+/* =FEEDBACK
+-------------------------------------------------------------- */
+.cle-feedback-fail,
+.cle-feedback-win {
+  background: url('./images/ico-feedback-win.png') #21ae00 12px 13px no-repeat;
+  border-radius: 3px;
+  color: #fff;
+  margin: 5px 0 0;
+  padding: 5px 10px 5px 50px;
+}
+
+.cle-feedback-fail {
+  background: url('./images/ico-feedback-fail.png') #da0202 12px 13px no-repeat;
+}
+
+.cle-feedback-fail p,
+.cle-feedback-win p,
+.cle-quiz-match .cle-feedback-fail p,
+.cle-quiz-match .cle-feedback-win p {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  margin: .5em;
+  padding: 0;
+}
+
+.cle-feedback-fail table,
+.cle-feedback-fail table p,
+.cle-feedback-win table,
+.cle-feedback-win table p {
+  color: #000;
+}
+
+/* =RESPONSIVE > 320px
+-------------------------------------------------------------- */
+@media screen and (min-width: 320px) {
+  .cle-block-img-right img {
+    float: left;
+    margin-right: 4%;
+  }
+
+  .cle-block-img-left img {
+    float: right;
+    margin-left: 4%;
+  }
+
+  .cle-block-doc span {
+    font-size: 1.3em;
+    float: right;
+    margin: 35px 0 0 17px;
+    width: calc(100% - 200px);
+  }
+
+  .cle-block-doc a {
+    font-size: 1.3em;
+    float: left;
+  }
+
+  .cle-block-box p{
+    font-size: 1.1em;
+  }
+}
+
+  /* =RESPONSIVE > 768px
+-------------------------------------------------------------- */
+  @media screen and (min-width: 768px) {
+    .cle-block-title h1 {
+      font-size: 2.4em;
+    }
+
+    .cle-block-title h2 {
+      font-size: 2.2em;
+    }
+
+    .cle-block-title h3 {
+      font-size: 2em;
+      padding-left: 80px;
+    }
+
+    .cle-block-title h4,
+    .cle-block-title h5 {
+      padding-left: 90px;
+    }
+
+    .cle-block-title h6 {
+      padding-left: 95px;
+    }
+
+    .cle-quiz-title {
+      font-size: 1.2em;
+    }
+  }

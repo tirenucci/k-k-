@@ -1,0 +1,11 @@
+<manifest>
+	<name>Voyage nature (voyage)</name>
+	<author>Logipro</author>
+	<description>Voyage nature (voyage)</description>
+	<uuid>74af044b-f93c-4e55-aa52-7d3f385038fc</uuid>
+	<version>1.0</version>
+	<color_code>#8E7455</color_code>
+	<color_name>Marron</color_name>
+	<order>1</order>
+	<theme>Voyage nature</theme>
+</manifest>

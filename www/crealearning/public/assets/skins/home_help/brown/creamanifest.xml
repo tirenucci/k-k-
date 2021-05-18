@@ -1,0 +1,11 @@
+<manifest>
+	<name>Aide à domicile (travaux)</name>
+	<author>Logipro</author>
+	<description>Aide à domicile (travaux)</description>
+	<uuid>5384e913-d861-4ccc-a9e4-e3d5525201f5</uuid>
+	<version>1.0</version>
+	<color_code>#9F623B</color_code>
+	<color_name>Marron</color_name>
+	<order>1</order>
+	<theme>Aide à domicile</theme>
+</manifest>

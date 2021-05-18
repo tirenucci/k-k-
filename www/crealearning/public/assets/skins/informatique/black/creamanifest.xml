@@ -1,0 +1,11 @@
+<manifest>
+	<name>Informatique (noir)</name>
+	<author>Logipro</author>
+	<description>Template informatique (noir)</description>
+	<uuid>db7d4884-2727-4a7c-bfaf-79cd69e1d105</uuid>
+	<version>1.0</version>
+	<color_code>#37251b</color_code>
+	<color_name>Noir</color_name>
+	<order>2</order>
+	<theme>Informatique</theme>
+</manifest>

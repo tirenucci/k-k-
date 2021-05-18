@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="notice" lang="fr">
+    <head>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google" value="notranslate">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>__TRAINING_TITLE__</title>
+
+        <script src="lib/jquery.js"></script>
+        <script src="lib/jquery.cookie.js"></script>
+        <script>
+            $(document).ready(function() {
+                let lang = $.cookie("__COOKIE__")
+
+                if (lang !== undefined && lang !== "" && $("#" +lang).length > 0) {
+                    $("#" + lang).addClass("active");
+                }
+
+                $("li").click(function() {
+                    // Supprimer la langue précedement sélectionner
+                    $("li").each(function(i){
+                        $(this).removeClass("active");
+                    });
+
+                    // Séléctionner la langue précedement séléctionnée
+                    $(this).addClass("active");
+
+                    $.cookie("__COOKIE__", $(this).attr("id"));
+                })
+            })
+        </script>
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="skin/style.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="multi-lang.css">
+    </head>
+    <body>
+        <div id="cle-container">
+            <div id="cle-inner-container">
+                <header id="header"></header>
+                <div id="main">
+                    <div class="cle-block-box cle-block-title">
+                        <h1>__TRAINING_TITLE__</h1>
+                    </div>
+
+                    <section>
+                        <article id="lang_text_choose" class="cle-block-box cle-block-title">
+                            <h1>__LANGUAGE_CHOICE__TITLE__</h1>
+                        </article>
+                        <article id="lang_languages_choose">
+                            <ul>
+                                __LANGUAGE_FLAG_GENERATION__
+                            </ul>
+                        </article>
+                    </section>
+                </div>
+                <footer id="footer"></footer>
+            </div>
+        </div>
+    </body>
+</html>

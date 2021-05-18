@@ -1,0 +1,11 @@
+<manifest>
+	<name>Sécurité (rouge)</name>
+	<author>Logipro</author>
+	<description>Template Sécurité (rouge)</description>
+	<uuid>075e5dfb-1df8-4876-8c9e-fa283025ed4d</uuid>
+	<version>1.0</version>
+	<color_code>#c00d2a</color_code>
+	<color_name>Rouge</color_name>
+	<order>4</order>
+	<theme>Sécurité</theme>
+</manifest>

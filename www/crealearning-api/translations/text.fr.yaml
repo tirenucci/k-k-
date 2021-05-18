@@ -1,0 +1,66 @@
+language.choice.title: Veuillez choisir une langue pour continuer
+nospace: Vous avez atteint le quota d'utilisation d'espace disque alloué. Veuillez supprimer des ressources ou changer d'offre en nous contactant. 
+
+_EN: Anglais
+_FR: Français
+_JP: Japonais
+_IT: Italien
+_ES: Espagnol
+_DE: Allemand
+_CNS: Chinois simplifié
+_CNT: Chinois traditionnel
+_RU: Russe
+_KR: Coréen
+_PT: Portugais
+_AR: Arabe
+
+grain.new: Nouveau grain
+
+ROLE_ADMINISTRATOR: Administrateur
+ROLE_AUTHOR: Auteur
+ROLE_USER: Consultant
+
+
+move.up: Déplacer vers le haut
+move.down: Déplacer vers le bas
+#Pour tout les mails
+terms: Conditions générales
+terms.link: https://open.crea-learning.com/fr/conditions-utilisation.php
+legal: Mentions légales
+legal.link: https://open.crea-learning.com/fr/mentions-legales.php
+contact: Contact
+contact.link: https://open.crea-learning.com/fr/contact.php
+
+#Mail pour récupération du mot de passe
+recovery.title: Créa Learning - Redéfinition mot de passe
+recovery.hello: Bonjour
+recovery.message: Vous souhaitez redéfinir votre mot de passe pour le compte
+recovery.clic: Cliquez sur le bouton ci-dessous
+recovery.btn: Redéfinir mon mot de passe
+recovery.copyableLink: Lien copiable
+recovery.expiration: Si vous n'êtes pas à l'origine de cette demande, ne faites rien. Ce lien expirera automatiquement dans
+
+#Mail pour première connection
+connection.title1: Créa Learning - Inscription en tant que 
+connection.title2: Créa Learning - Inscription en tant qu'
+connection.hello: Bonjour,
+connection.registration: Vous venez d'être inscrit en tant
+connection.a: que
+connection.an: qu'
+connection.id: Votre identifiant est
+connection.message: Cliquez sur le lien ci-dessous pour définir votre mot de passe et finaliser votre inscription
+connection.btn: Terminer mon inscription
+connection.expiration: Si vous n'êtes pas à l'origine de cette demande, ne faites rien. Ce lien expirera automatiquement dans
+
+#Mail de partage d'un module
+share.title: Créa Learning - Lien de consultation
+
+
+_TEXT_INSERT: Insérez votre texte ici.
+_QUIZ_DESC: Énoncé de la question.
+
+_MCQ_ANSWER_1: Réponse 1
+_MCQ_ANSWER_2: Réponse 2
+
+_GAPS_STATEMENT: Enoncé de la question.
+_GAPS_EXAMPLE: Exemple de texte [à|a] trous.

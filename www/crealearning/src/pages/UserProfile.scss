@@ -1,0 +1,111 @@
+@import './../responsive.scss';
+
+.user__section{
+
+    fieldset{
+        width: 95%;
+        margin: 20px auto;
+        max-width: 900px;
+
+        @media #{$small-down}{
+            margin: 0 auto;
+        }
+    }
+    
+    .data__list, .data__list__form{
+        margin: 20px auto;
+
+        @media #{$medium-down}{
+            margin: auto;
+        }
+
+        li {
+            margin: 20px auto;
+
+            @media #{$large-down}{
+                width: 100%;
+            }
+    
+            @media #{$small-down}{
+                margin: 20px auto;
+                width: 100%;
+            }
+        }
+
+        span {
+            color: #797979;
+        }
+    
+        //L'avatar
+        .avatar__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+    
+            figure{
+                position: relative;
+    
+                img{
+                    border: 2px solid #5D9900;
+                    width: 99px;
+                    height: 102px;
+                }
+    
+                figcaption{
+                    position: absolute;
+                    bottom: 8px;
+                    width: 100%;
+                }
+    
+                a{
+                    display: inline-block;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    color: #fff;
+                    font-size:1em;
+                    text-align: center;
+                }
+            }
+        }
+
+        //Les champs
+        .profile__fields{
+            display: flex;
+            flex-direction: column;
+
+            @media #{$small-down} {
+                width: 100%;
+            }
+        }
+
+        .login{
+            flex-direction: row;
+        }
+
+        input[type='password']{
+            font: small-caption;
+        }
+    }
+
+    .data__list__form{
+        width: 50%;
+    }
+}
+
+.customer-area{
+    display: flex;
+    padding: 20px 0 45px 0;
+    font-size: 1.6em;
+    width: 85%;
+    margin: 0 auto;
+
+    @media #{$large-down}{
+        width: 95%;
+        flex-wrap: wrap;
+    }
+
+    @media #{$medium-down}{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

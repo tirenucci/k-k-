@@ -1,0 +1,103 @@
+@import './../../responsive.scss';
+
+.home__aside {
+  background: url('/assets/img/main/set-pointed.png') 10px 0 repeat-y, url('/assets/img/main/set-pointed.png') calc(100% - 10px) 0 repeat-y;
+  width: 33.3%;
+  margin: 0 auto;
+  padding: 0px 20px;
+
+  @media #{$large-down}{
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    background: none;
+    padding: 0;
+  }
+
+  @media #{$medium-down}{
+    width: 100%;
+  }
+
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+
+    @media #{$large-down}{
+      justify-content: center;
+    }
+  }
+
+  li {
+    display: flex;
+    height: 150px;
+    margin-bottom: 1em;
+    padding-left: 1.2em;
+    width: 50%;
+
+    &:nth-child(odd){
+      background-image: linear-gradient(to right, #f5f5f5, #f1f1f1);
+    }
+  
+    &:nth-child(even){
+      background-image: linear-gradient(to right, #f1f1f1, #ececec);
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    @media #{$large-down}{
+      margin-bottom: 15px;
+      padding-left: 0px;
+    }
+
+    @media #{$small-down}{
+      width: 50%;
+    }
+
+    a, button {
+      color: #6f3d17;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight:bold;
+      vertical-align: middle;
+      transition: opacity .3s;
+      background: none;
+  
+      &:hover, &:focus {
+        opacity: .6;
+      }
+
+      @media #{$large-down}{
+        flex-direction: column;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  img {
+    margin-right: 1em;
+
+    @media #{$large-down}{
+      margin: 0 auto;
+    }
+  }
+
+  p {
+    margin: 0 auto;
+  }
+
+  /*Class en fonction de l'offre*/
+  .disabled{
+    p{
+      color:#707070;
+    }
+
+    img{
+      opacity: 0.7;
+      filter: grayscale(1);
+    }
+  }
+  
+}

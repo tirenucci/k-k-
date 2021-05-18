@@ -1,0 +1,11 @@
+<manifest>
+	<name>Marketing (orange)</name>
+	<author>Logipro</author>
+	<description>Template Marketing (orange)</description>
+	<uuid>8c13a5d6-7196-433d-8f17-9b75991ab37d</uuid>
+	<version>1.0</version>
+	<color_code>#f08213</color_code>
+	<color_name>Orange</color_name>
+	<order>2</order>
+	<theme>Marketing</theme>
+</manifest>

@@ -1,0 +1,78 @@
+@import '../../responsive.scss';
+
+.step {
+  padding: 0 3%;
+  width: 100%;
+  background: url('/assets/img/main/set-pointed.png') 10px 0 repeat-y, url('/assets/img/main/set-pointed.png') calc(100% - 10px) 0 repeat-y;
+
+  @media #{$small-down} {
+      background: none;
+  }
+
+  h3{
+    border-bottom: 1px #cecece solid;
+    box-sizing: content-box;
+    color: #f58c12;
+    font-size: 3.4rem;
+    text-align: left;
+    height: 100px;
+    line-height: 1.3;
+    margin: 0 0 .75em;
+    padding: 25px 60px .75em 150px;
+    position: relative;
+    text-transform: uppercase;
+
+    @media #{$large-down} {
+      margin: 1.75em 0;
+      font-size: 3rem;
+    }
+
+    span{
+      background: url('/assets/img/createTraining/bg-stepnum.png') no-repeat;
+      color: #fff;
+      font-family: 'avantgarde_md_btmedium';
+      text-align: center;
+      font-size: 2.2em;
+      height: 125px;
+      width: 125px;
+      line-height: 125px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    p {
+      font-size: .55em;
+      text-transform: none;
+      margin: 0;
+    }
+  }
+
+  button {
+    background-color: #fff;
+
+    &:hover, &:focus{
+      background-color: #fff;
+    }
+
+    h3{
+      border-radius: 63px;
+      background: url('/assets/img/createTraining/arrow-validate.png') 99% 17px no-repeat;
+      cursor: pointer;
+      height: 75px;
+      border: transparent;
+      transition: background-color .4s ease-in-out;
+
+      &:hover, &:focus {
+        background:url('/assets/img/createTraining/arrow-validate.png') #f58c12 99% -200px no-repeat;
+        color: #fff;
+      }
+
+      @media #{$small-down} {
+        &:hover{
+          height: 79px;
+        }
+      }
+    }
+  }
+}

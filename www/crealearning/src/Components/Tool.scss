@@ -1,0 +1,111 @@
+@import './../responsive.scss';
+
+.tools {
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    height: 65px;
+    right: 3%;
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        padding-left:  8px;
+        align-self: center;
+    }
+
+    a, span {
+        background: url('/assets/img/trainingsList/btn-tool-col.png') 200px 200px #b8b8b8 no-repeat;
+        border-radius: 40px;
+        display: flex;
+        height: 40px;
+        transition: background-color .8s;
+        text-decoration: none;
+        text-indent: -999em;
+        width: 40px;
+
+        &:hover, &:focus {
+            background-color: #777!important;
+            cursor: pointer;
+        }
+      }
+
+    .mobile > a{
+        display: flex;
+        background: url('/assets/img/trainingsList/dots-vertical.png') #b8b8b8 no-repeat;
+        background-size: contain;
+        transition: opacity 0.3s ease 0s;
+    }
+
+    .mobile{
+
+        &:hover > ul {
+            border: 1px #C4C4C4 solid;
+            display: flex;
+            height: auto;
+            opacity: 1;
+            overflow: visible;
+            width: 250px;
+        }
+
+        li {
+            padding: 3px;
+          }
+
+        ul{
+            box-shadow: 0 0 3px 0 rgba(55, 55, 55, 0.3);
+            background-color: #fff;
+            height: 0;
+            margin: -3px 0 0 -220px;
+            opacity: 0;
+            overflow: hidden;
+            padding: 0 10px;
+            position: absolute;
+            transition: opacity 0.3s ease-out;
+            width: 0;
+            z-index: 200;
+
+              a {
+                display: block;
+            }
+        }
+    }
+
+    .btn__export a {
+        background-position: 0 0;
+    }
+
+    .btn__listing a {
+        background-position: -40px 0;
+    }
+    
+    .btn__settings a {
+        background-position: -80px 0;
+    }
+    
+    .btn__import a {
+        background-position: -120px 0;
+    }
+    
+    .btn__new a, span {
+        background-position: -160px 0;
+    }
+    
+    .btn__view a {
+        background-position: -240px 0;
+    }
+    
+    .btn__share a {
+        background-position: -401px 0;
+    }
+    
+    .btn__preview a {
+        background-position: -359px 0;
+    }
+
+    .btn-agora a {
+        background: url('/assets/img/logo-agora.svg') #b8b8b8 no-repeat center;
+    }
+}

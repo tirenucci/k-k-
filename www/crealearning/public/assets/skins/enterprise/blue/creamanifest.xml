@@ -1,0 +1,11 @@
+<manifest>
+	<name>Entreprise</name>
+	<author>Logipro</author>
+	<description>Template entreprise</description>
+	<uuid>1b85baa4-76d4-408c-b8cb-c4e71c7e5fd0</uuid>
+	<version>1.0</version>
+	<color_code>#699a9a</color_code>
+	<color_name>Bleu</color_name>
+	<order>1</order>
+	<theme>Entreprise</theme>
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px"
+	 height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<g id="fond_test" display="none">
+	<rect x="-150" y="-154" display="inline" fill="#43B1E6" width="500" height="504"/>
+</g>
+<g id="Calque_6" display="none">
+	<path display="inline" fill="#FFFFFF" stroke="#872484" stroke-width="2" stroke-miterlimit="10" d="M46.125,13.344
+		c-2.831,0-5.125,2.229-5.125,4.98v164.351c0,2.75,2.294,4.98,5.125,4.98H160.59c2.831,0,5.126-2.23,5.126-4.98V62.939
+		c-19.247-19.247-53.386-49.595-53.386-49.595H46.125z"/>
+	<path display="inline" fill="#89BF54" d="M115.365,62.939h50.351L112.33,13.344v46.782
+		C112.33,60.126,112.371,62.939,115.365,62.939z"/>
+	
+		<line display="inline" fill="none" stroke="#872484" stroke-width="2" stroke-miterlimit="10" x1="54.488" y1="97.179" x2="87.275" y2="97.179"/>
+	
+		<line display="inline" fill="none" stroke="#872484" stroke-width="2" stroke-miterlimit="10" x1="54.488" y1="106.172" x2="112.801" y2="106.172"/>
+	
+		<line display="inline" fill="none" stroke="#872484" stroke-width="2" stroke-miterlimit="10" x1="54.488" y1="114.75" x2="152.02" y2="114.75"/>
+	
+		<line display="inline" fill="none" stroke="#872484" stroke-width="2" stroke-miterlimit="10" x1="54.488" y1="124.117" x2="152.02" y2="124.117"/>
+	
+		<line display="inline" fill="none" stroke="#872484" stroke-width="2" stroke-miterlimit="10" x1="54.488" y1="133.188" x2="112.801" y2="133.188"/>
+	
+		<line display="inline" fill="none" stroke="#872484" stroke-width="2" stroke-miterlimit="10" x1="54.488" y1="142.18" x2="98.274" y2="142.18"/>
+	
+		<line display="inline" fill="none" stroke="#872484" stroke-width="2" stroke-miterlimit="10" x1="54.488" y1="150.756" x2="87.275" y2="150.756"/>
+	
+		<line display="inline" fill="none" stroke="#872484" stroke-width="2" stroke-miterlimit="10" x1="54.488" y1="160.125" x2="87.275" y2="160.125"/>
+</g>
+<g id="Calque_4">
+	<g id="Creation">
+		<circle fill="#FFFFFF" stroke="#010202" stroke-width="2" stroke-miterlimit="10" cx="157.516" cy="64.838" r="33.985"/>
+		<path fill="#FFFFFF" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M123.529,64.838
+			c0-0.231,0.035-0.456,0.035-0.688H87.788c-14.27,0-11.438-16.773-21.895-16.773c-10.456,0-13.104,0-13.104,0H39.644h-7.406
+			c-9.625,0-17.429,7.809-17.429,17.428v17.707v2.846v61.428c0,10.136,6.528,18.361,14.581,18.361h113.543
+			c8.054,0,14.583-8.22,14.583-18.361V98.823C138.745,98.823,123.529,83.607,123.529,64.838z"/>
+		
+			<line fill="#FFFFFF" stroke="#B7B7B7" stroke-width="2" stroke-miterlimit="10" x1="135.147" y1="64.838" x2="179.882" y2="64.838"/>
+		
+			<line fill="#FFFFFF" stroke="#B7B7B7" stroke-width="2" stroke-miterlimit="10" x1="157.516" y1="42.471" x2="157.516" y2="87.205"/>
+	</g>
+</g>
+<g id="repère">
+</g>
+</svg>

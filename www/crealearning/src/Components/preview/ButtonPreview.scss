@@ -1,0 +1,30 @@
+.preview__itemNav_previous,
+.preview__itemNav_next{
+    color: black;
+    margin-left: 60px;
+    margin-right: auto;
+    border: 1px solid #666666;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all 0.2s;
+    box-shadow: 0 2px 5px 0 rgba($color: #FFF, $alpha: 0.15);
+    &:hover{
+      color: #f0f0f4;
+      border: 1px solid #f0f0f4;
+      background: rgba(0, 0, 0, 0) linear-gradient(to right, #ff6600, #ff7f2a) repeat scroll 0 0;
+    }
+}
+
+.btn__next {
+    margin-left: auto;
+}
+.btn__previous {
+     margin-right: auto;
+ }

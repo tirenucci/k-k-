@@ -1,0 +1,104 @@
+@import './../../responsive.scss';
+
+//Le fond noir
+.avatar__bkgd{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    z-index: 9999;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+
+    //Regroupe l'avatar sélectionné et la liste des avatars
+    .avatar__section{
+        display: flex;
+        max-width: 800px;
+        margin: auto;
+        border-radius: 4px;
+        background-color: #fdfdfd;
+
+            figure{
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                text-align: center;
+                width: 30%;
+
+                @media #{$small-down}{
+                    margin: 0;
+                }
+            }
+        }
+
+    //La liste des avatars disponibles
+    .avatar__list__wrapper{
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        background: #f9f9f9;
+        border-radius: 4px;
+
+        @media #{$small-down}{
+            width: 70%;
+        }
+
+        h4{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .avatar__list{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: auto;
+            background-color: #f9f9f9;
+            width: 100%;
+            height: 260px;
+        
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #ebebeb;
+                margin-bottom: 5px;
+                height: 60px;
+        
+                img{
+                    width: 60px;
+                    padding: 5px;
+                    margin: 0 !important;
+                }
+        
+                span{
+                    color:#666;
+                    flex: auto;
+                    padding: 0 2em;
+
+                    @media #{$small-down}{
+                        font-size: 1em;
+                        padding: 1em;
+                    }
+                }
+            
+                button{
+                    color: #fdfdfd;
+                    background-color: #999;
+                    width: 25%;
+                    height: 100%;
+                    transition: all .4s ease;
+                    
+                    &:hover{
+                        background-color: darken($color: #999, $amount: 5%);
+                    }
+                }
+            }
+        }
+    }
+}

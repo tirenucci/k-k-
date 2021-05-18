@@ -1,0 +1,11 @@
+<manifest>
+	<name>Cuisine (jaune)</name>
+	<author>Logipro</author>
+	<description>Template Cuisine (jaune)</description>
+	<uuid>c1f1d195-cd1d-4594-aec8-22ba3f66a337</uuid>
+	<version>1.0</version>
+	<color_code>#f6d209</color_code>
+	<color_name>Jaune</color_name>
+	<order>2</order>
+	<theme>Cuisine</theme>
+</manifest>

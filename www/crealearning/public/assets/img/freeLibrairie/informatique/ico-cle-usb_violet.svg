@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="142.905px" height="300px" viewBox="0 0 142.905 300" enable-background="new 0 0 142.905 300" xml:space="preserve">
+<g>
+	<g>
+		<rect x="27.088" y="8.268" fill-rule="evenodd" clip-rule="evenodd" fill="#8DC63F" width="91.204" height="93.787"/>
+		<rect x="43.729" y="25.83" fill-rule="evenodd" clip-rule="evenodd" fill="#92278F" width="17.008" height="21.008"/>
+		<rect x="83.598" y="25.83" fill-rule="evenodd" clip-rule="evenodd" fill="#92278F" width="17.008" height="21.008"/>
+	</g>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#92278F" d="M133.816,95.993c0-2.209-1.79-4-4-4H13.089c-2.209,0-4,1.791-4,4
+		v191.74c0,2.209,1.791,4,4,4h116.728c2.21,0,4-1.791,4-4V95.993z"/>
+	<g>
+		<circle fill-rule="evenodd" clip-rule="evenodd" fill="#8DC63F" cx="72.69" cy="235.273" r="7.744"/>
+		<circle fill-rule="evenodd" clip-rule="evenodd" fill="#8DC63F" cx="55.434" cy="176.16" r="5.669"/>
+		
+			<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#8DC63F" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="72.689" y1="232.605" x2="72.689" y2="145.94"/>
+		
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#8DC63F" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="
+			M55.435,180.271c0,14,17.255,14.291,17.255,28.145"/>
+		
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#8DC63F" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="
+			M89.944,161.127c0,14-17.255,14.291-17.255,28.146"/>
+		<rect x="84.274" y="151.748" fill-rule="evenodd" clip-rule="evenodd" fill="#8DC63F" width="11.339" height="11.338"/>
+		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#8DC63F" points="80.356,145.672 65.021,145.672 72.689,130.337 		"/>
+	</g>
+</g>
+</svg>

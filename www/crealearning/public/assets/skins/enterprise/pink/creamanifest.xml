@@ -1,0 +1,11 @@
+<manifest>
+	<name>Entreprise (rose)</name>
+	<author>Logipro</author>
+	<description>Template entreprise (rose)</description>
+	<uuid>2b85bwa4-76d4-408c-b8cb-c4e71c7e5f30</uuid>
+	<version>1.0</version>
+	<color_code>#ff208c</color_code>
+	<color_name>Rose</color_name>
+	<order>2</order>
+	<theme>Entreprise</theme>
+</manifest>

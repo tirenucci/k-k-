@@ -1,0 +1,110 @@
+.button-container{
+    padding: 5px;
+    position: relative;
+
+    .button-block{
+        background: url('/assets/img/blocks.png') center;
+        height: 112px;
+        width: 112px;
+    }
+
+    p{
+        bottom: 0px;
+        color: #333;
+        font-weight: bold;
+        height: 18px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .title-block{
+        background-position: -448px 0;
+    }
+
+    .paragraph-block{
+        background-position: 0 0;
+    }
+
+    .hr-block{
+        background-position: -336px -112px;
+    }
+
+    .img-block{
+        background-position: -336px 0;
+    }
+
+    .left-img-block {
+        background-position: -112px 0;
+    }
+
+    .right-img-block {
+        background-position: -224px 0;
+    }
+
+    .video-block{
+        background-position: -112px -112px;
+    }
+
+    .capture-block{
+        background-position: -112px -336px;
+    }
+    
+    .audio-block{
+        background-position: -224px -112px;
+    }
+
+    .document-block{
+        background-position: 0 -112px;
+    }
+
+    .formula-block{
+        background-position: 0 -224px;
+    }
+
+    .integrate-block{
+        background-position: 0 -336px;
+    }
+
+    .pdf-block{
+        background-position: -224px -336px;
+    }
+
+    .quiz-block{
+        background-position: -112px -224px;
+    }
+
+    .true-block{
+        background-position: -224px -224px;
+    }
+
+    .num-block{
+        background-position: -336px -224px;
+    }
+
+    .qcm-block{
+        background-position: -448px -112px;
+    }
+
+    .gaps-block{
+        background-position: -560px 0;
+    }
+
+    .pairing-block{
+        background-position: -560px -112px;
+    }
+
+    .sequence-block{
+        background-position: -448px -224px;
+    }
+
+    .likert-block{
+        background-position: -560px -224px;
+    }
+}
+
+.en{
+    font-size: 0.95em;
+}

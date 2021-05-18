@@ -1,0 +1,11 @@
+<manifest>
+	<name>3D (rouge)</name>
+	<author>Logipro</author>
+	<description>Template 3D (rouge)</description>
+	<uuid>2500a4c4-0356-4c4c-ad81-ebe1df90e9a2</uuid>
+	<version>1.0</version>
+	<color_code>#c44445</color_code>
+	<color_name>Rouge</color_name>
+	<order>3</order>
+	<theme>3D</theme>
+</manifest>

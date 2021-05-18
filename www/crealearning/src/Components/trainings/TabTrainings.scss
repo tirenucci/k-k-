@@ -1,0 +1,132 @@
+@import '../../responsive.scss';
+
+.trainingList__wrapper{
+	width: 98%;
+	margin: 0 auto;
+}
+
+#tableTraining {
+	font-family: 'avantgarde_bk_btbook';
+	padding-bottom: 20px;
+	width: 100%;
+	text-align: center;
+
+	th {
+		background: linear-gradient(to bottom, #2bb9ee,#38cef3);
+		padding: 6px 4px;
+		border-radius: 5px;
+		color: #fff;
+
+		span{
+			padding: 0 5px;
+		}
+
+		//La colonne action doit sur mobile avoir un padding plus important
+		@media  #{$large-down}{
+			&:last-child{
+				padding: 5px 20px;
+			}
+		}
+	}
+
+	td {
+		background: #e1e1e1;
+		border-radius: 5px;
+		color: #000;
+		font-family: 'avant_guardregular';
+		padding: 6px 10px;
+		transition: background-color .4s ease;
+
+		&:hover{
+			cursor: pointer;
+		}
+
+		a {
+			color: #000;
+		}
+
+		@media #{$large-down}{
+			padding: 5px;
+		}
+	}
+	
+	tr:nth-child(odd) td {
+		background: #f7f7f7;
+	}
+	
+	tr td:last-child {
+		width: 7%;
+		text-align: center;
+	}
+
+	tr:hover td {
+		background: #58d5f4;
+		color: #fff;
+		a{
+			color: #fff
+		}
+	}
+
+	a:visited, a:active{
+		color: inherit;
+	}
+
+	.statut-termine, .statut-encours {
+		box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.2);
+		border-radius: 50%;
+		height: 40px;
+		width: 40px;
+		font-size: 0;
+		margin: 0 auto;
+		display: flex;
+	}
+
+	.statut-termine{
+		background: url('/assets/img/trainingsList/ico-statut.png') #75bf01 center no-repeat;
+	}
+
+	.statut-encours {
+		background: url('/assets/img/trainingsList/pickaxe.svg') #ff8a00 center no-repeat;
+	}
+
+	.table__actions{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.btn__delete {
+		&:hover,&:focus {
+			background-color: #f00;
+		  }
+	}
+}
+
+.tool__box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height: 65px;
+}
+
+//On adapte la taille des colonnes en desktop
+@media #{$large-up}{
+	#col2 {
+		width:15%;
+	}
+
+	#col3 {
+		width:10%;
+	}
+
+	#col10 {
+		width:8%;
+	}
+}
+
+@media  #{$small-down} {
+	.mobile__title{
+		justify-content: unset;
+		padding-left: 5%;
+	}
+}

@@ -1,0 +1,211 @@
+@import './responsive.scss';
+
+@font-face {
+  font-family: 'AV';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AV'), url('/assets/fonts/AV/avaswfte.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avant_guardregular';
+  src: url('/assets/fonts/AV/avaswfte-webfont.eot');
+  src: url('/assets/fonts/AV/avaswfte-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/AV/avaswfte-webfont.woff2') format('woff2'),
+       url('/assets/fonts/AV/avaswfte-webfont.woff') format('woff'),
+       url('/assets/fonts/AV/avaswfte-webfont.ttf') format('truetype'),
+       url('/assets/fonts/AV/avaswfte-webfont.svg#avant_guardregular') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avantgarde_md_btmedium';
+  src: url('/assets/fonts/AV/avbswfte-webfont.eot');
+  src: url('/assets/fonts/AV/avbswfte-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/AV/avbswfte-webfont.woff2') format('woff2'),
+       url('/assets/fonts/AV/avbswfte-webfont.woff') format('woff'),
+       url('/assets/fonts/AV/avbswfte-webfont.ttf') format('truetype'),
+       url('/assets/fonts/AV/avbswfte-webfont.svg#avantgarde_md_btmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans_Bold';
+  src: url('/assets/fonts/OSB/OpenSans-Bold-webfont.eot');
+  src: url('/assets/fonts/OSB/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/OSB/OpenSans-Bold-webfont.woff2') format('woff2'),
+       url('/assets/fonts/OSB/OpenSans-Bold-webfont.woff') format('woff'),
+       url('/assets/fonts/OSB/OpenSans-Bold-webfont.ttf') format('truetype'),
+       url('/assets/fonts/OSB/OpenSans-Bold-webfont.svg#avantgarde_md_btmedium') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/assets/fonts/OS/OpenSans-Regular-webfont.eot');
+  src: url('/assets/fonts/OS/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/OS/OpenSans-Regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/OS/OpenSans-Regular-webfont.woff') format('woff'),
+       url('/assets/fonts/OS/OpenSans-Regular-webfont.ttf') format('truetype'),
+       url('/assets/fonts/OS/OpenSans-Regular-webfont.svg#avantgarde_md_btmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avantgarde_bk_btbook';
+  src: url('/assets/fonts/AV/avgardn-webfont.eot');
+  src: url('/assets/fonts/AV/avgardn-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/AV/avgardn-webfont.woff2') format('woff2'),
+       url('/assets/fonts/AV/avgardn-webfont.woff') format('woff'),
+       url('/assets/fonts/AV/avgardn-webfont.ttf') format('truetype'),
+       url('/assets/fonts/AV/avgardn-webfont.svg#avantgarde_bk_btbook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-image: none;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding-bottom: 24px;
+  font-family: 'avant_guardregular', 'AV', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mobile__header{
+  position: absolute;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+figure{
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+fieldset{
+  display: flex;
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
+}
+
+legend {
+  position: absolute;
+    left: -7000px;
+}
+
+textarea, input, select{
+  &:hover, &:focus{
+    outline: none;
+  }
+}
+
+/*Permet de cibler les footer et header de tout les habillages sans avoir à le réécrire dans chaque fichier style*/
+#cle-container{
+  #cle-inner-container{
+    #header, #footer {
+      background-size: contain;
+    }
+  }
+}
+
+//Permet d'aligner deux champs
+.one__row{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*A utiliser pour changer la couleur d'un texte*/
+.red{
+  color: rgb(255, 0, 0);
+}
+
+.grey{
+  color: #797979;
+}
+
+//Toute les sections englobant le contenu dans le main
+.main__section{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: auto;
+  font-size: 1.6em;
+}
+
+/*A utiliser pour masquer un élément selon la taille de l'écran*/
+@media #{$large-down}{
+  .large__view{
+      display: none;
+  }
+}
+
+@media #{$medium-down}{
+  .medium__view{
+      display: none;
+  }
+}
+
+@media #{$small-down}{
+  .small__view{
+      display: none;
+  }
+}
+
+/**@media (prefers-reduced-motion: reduce) {
+  body *,
+  body *::before,
+  body *::after {
+    animation: none !important;
+    transition: none !important;
+    transition-duration: none !important;
+  }
+}**/

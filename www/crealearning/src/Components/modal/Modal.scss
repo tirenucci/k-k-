@@ -1,0 +1,224 @@
+@import './../../responsive.scss';
+
+/*GLOBAL*/
+.modal__wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    z-index: 9999;
+
+    .modal__section{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        position: relative;
+        width: 600px;
+        background-color: #fff;
+        box-shadow: 0 0 18px 0 rgba($color: #000000, $alpha: 0.5);
+        z-index: 1;
+
+        
+
+        @media #{$small-down}{
+            width: 350px;
+        }
+
+        h4 {
+            font-size: 2.4rem;
+            padding: 0em 0.6em;
+            margin: 15px 0 0 0;
+        }
+
+        .close__btn{
+            top: 5px;
+        }
+    
+        article{
+            padding: 0em 1em;
+            margin: 15px 0;
+        }
+    }
+    .modal__filemanager {
+         width: 75% !important;
+     }
+
+    /*Liste des boutons dans les modals*/
+    .modal__btn__list{
+        display: flex;
+        justify-content: flex-end;;
+        border-top: 1px #4b4b4b solid;
+        padding: 10px 5px;
+    
+        li{
+            margin: 5px;
+        }
+    }
+
+    /*Modal de chargement*/
+    .loader{
+        width: 300px;
+        text-align: center;
+
+        p {
+            background: url('/assets/img/modal/cle-loader-popup.gif') 100% no-repeat;
+            margin: 5px;
+            font-size: 1.6rem;
+        }
+    }
+
+    /*Modal d'envoi d'un grain vers un autre grain*/
+    .grain-selector{
+        display: flex;
+        flex-direction: column;
+
+        select{
+            border-radius: 4px;
+            width: fit-content;
+            margin: 15px 0;
+        }
+    }
+
+    /*Modal au clic sur un bouton désactivé*/
+    .subscribe{
+        margin: 10% auto;
+        background-size: cover;
+        height: 360px!important;
+        display: flex;
+        flex-direction: column;
+        width: 980px;
+        color: #fff;
+        padding: 2% 0 0 30%;
+
+        @media #{$small-down}{
+            width: 350px;
+        }
+
+        p{
+            font-weight: bold;
+        }
+    
+        span{
+            color: #FFC926;
+        }
+    }
+
+    .import__bkgd{
+        background: url('/assets/img/import-bkgd.jpg') no-repeat;
+    }
+
+    .author__bkgd{
+        background: url('/assets/img/author-bkgd.jpg') no-repeat;
+    }
+
+    .skin__bkgd{
+        background: url('/assets/img/skin-bkgd.jpg') no-repeat;
+    }
+
+    .lib__bkgd{
+        background: url('/assets/img/lib-bkgd.jpg') no-repeat;
+    }
+
+    .quota__bkgd{
+        background: url('/assets/img/quota_bkgd.jpg') center no-repeat;
+    }
+}
+
+.modal__section {
+
+    hr{
+        width: 100%;
+    }
+
+    .title{
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        margin: 0;
+        position: relative;
+        text-align: left;
+       
+        .modal-h2{
+            margin: 0;
+        }
+    }
+    .body{
+        height: auto;
+        width: auto;
+        position: relative;
+        border: 0;
+        padding: 1.5em 1em;
+        background: 0;
+        overflow: auto;
+        font-family: Verdana, Arial, sans-serif;
+        
+        p{
+            margin: 0em 1em;
+        }
+    }
+
+    //formulaire de création d'un auteur
+    .authors__form{
+        margin: 10px 0 20px 0;
+
+        legend{
+            position: inherit;
+            border-bottom: 1px #4b4b4b solid;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        li{
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+
+            input, select{
+                border: 2px #adadad solid;
+                border-radius: 5px;
+                font-family: 'avant_guardregular';
+                font-size: 1.2em;
+                padding: 10px;
+
+                &:hover{
+                    border-color: #4b4b4b;
+                }
+
+                &:focus{
+                    border-color: #ff6701;
+                }
+            }
+
+            p{
+                margin: 0;
+                font-size: 0.85em;
+            }
+
+            &:last-child{
+                font-style: italic;
+            }
+        }
+    }
+
+    .modal-button{
+        display: flex;
+        justify-content: flex-end;
+        padding: .2em 1em .2em .4em;
+
+        .orange__btn{
+            margin: 5px;
+        }
+    }
+}
+
+.input__change__grain_name {
+    width: 100%;
+}
+.change__grain_name {
+    width: 40% !important;
+}

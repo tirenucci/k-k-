@@ -1,0 +1,11 @@
+<manifest>
+	<name>Bien-être</name>
+	<author>Logipro</author>
+	<description>Template Bien-être</description>
+	<uuid>be392cd2-7063-4bbe-aa33-791e6253e003</uuid>
+	<version>1.0</version>
+	<color_code>#f23737</color_code>
+	<color_name>Rouge</color_name>
+	<order>1</order>
+	<theme>Bien être</theme>
+</manifest>

@@ -1,0 +1,11 @@
+<manifest>
+	<name>Langues</name>
+	<author>Logipro</author>
+	<description>Template langues</description>
+	<uuid>0c737fa8-73b5-4aad-b6f6-fda29e4d3837</uuid>
+	<version>1.0</version>
+	<color_code>#9ec028</color_code>
+	<color_name>Vert</color_name>
+	<order>1</order>
+	<theme>Langues</theme>
+</manifest>

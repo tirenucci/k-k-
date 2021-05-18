@@ -1,0 +1,11 @@
+<manifest>
+	<name>cuisine (bleu)</name>
+	<author>Logipro</author>
+	<description>Template cuisine (bleu)</description>
+	<uuid>7f0c2c89-b09b-42d5-8ea0-1f020d2420b6</uuid>
+	<version>1.0</version>
+	<color_code>#30b2f5</color_code>
+	<color_name>Bleu</color_name>
+	<order>1</order>
+	<theme>Cuisine</theme>
+</manifest>

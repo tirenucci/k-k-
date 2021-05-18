@@ -1,0 +1,11 @@
+<manifest>
+	<name>Finances (vert)</name>
+	<author>Logipro</author>
+	<description>Template Finances (vert)</description>
+	<uuid>cf592674-e2fd-4db5-b0ac-0f5dd53a4495</uuid>
+	<version>1.0</version>
+	<color_code>#27ae60</color_code>
+	<color_name>Vert</color_name>
+	<order>4</order>
+	<theme>Finances</theme>
+</manifest>

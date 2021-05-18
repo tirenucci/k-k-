@@ -1,0 +1,293 @@
+@import './../../responsive.scss';
+
+.customer-content{
+    margin: 0 auto;
+    width: 50%;
+
+    @media #{$medium-down}{
+        width: 75%;
+        margin-left: 30px;
+    }
+
+    @media #{$small-down}{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    h3{
+        color: #529200;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 0;
+        text-align: center;
+
+        @media #{$small-down}{
+            margin-top: 1em;
+        }
+    }
+
+    li{
+        color: #333;
+        padding: 5px 0;
+    }
+
+    .data__list__form{
+        width: 100%;
+        margin: 0 auto;
+
+        li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .login{
+            display: inherit;
+        }
+    }
+
+    /*Onglet nos offres*/
+    .offer__list{
+        display: flex;
+        justify-content: center;
+
+        .offer-wrapper{
+            list-style: none;
+            padding:0;
+            font-size: inherit;
+            padding: .5em 1em;
+        }
+
+        .green-part{
+            border-top: 7px solid #7dcf1c;
+            border-left: 1px solid #CECEBF;
+            border-bottom: 1px solid #CECEBF;
+            border-right: none;
+        }
+
+        .orange-part{
+            border-top: 7px solid #ff6609;
+            border-left: none;
+            border-right: 1px solid #CECEBF;
+            border-bottom: 1px solid #CECEBF;
+            background: url('/assets/img/arrow-offer.png') no-repeat -20px center #e4e4e4;
+        }
+
+        /*Le titre de l'offre*/
+        .offer{
+            color: #7dcf1c;
+            margin: 0;
+            padding: 1em 0 0 0;
+            font-size: 1.2em;
+        }
+
+        .price{
+            margin: 0;
+            font-family: 'avantgarde_bk_btbook';
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: bold;
+            color: #7dcf1c;
+            margin-bottom: 1em;
+        }
+    
+        .orange{
+            color: #ff6609;
+        }
+
+        li{
+            padding-left: 20px;
+        }
+    }
+
+    /*Onglet Mon compte*/
+    .customer__area{
+        width: 100%;
+        text-align: center;
+
+        figure{
+            width: 100px;
+            margin: 0 auto;
+        }
+    }
+
+    //L'avatar
+    .avatar__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        figure{
+            position: relative;
+
+            img{
+                border: 2px solid #5D9900;
+                width: 100px;
+                height: 100px;
+            }
+
+            figcaption{
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+            }
+
+            a{
+                display: inline-block;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                color: #fff;
+                font-size:1em;
+                text-align: center;
+            }
+        }
+    }
+
+    /*On change le comportement initial des boutons*/
+    .btn__list{
+        background: none;
+
+        li{
+            list-style: inherit;
+            margin: 5px;
+
+            .orange__btn{
+                background: linear-gradient(to bottom, rgba(86,148,0,1) 0%, rgba(137,183,0,1) 100%);
+                border: 1px solid #539200;
+                transition: background-color .3s;
+
+                &:hover{
+                    background: #539200;
+                }
+            }
+
+            .grey__btn{
+                background: #C8C8C8;
+                border: 1px solid #ccc;
+                color: #fff;
+                text-decoration: none;
+
+                &:hover{
+                    background: #999;
+                }
+            }
+        }
+    }
+
+/*Onglet données de facturation*/
+    .customer__help{
+        font-weight: bold;
+        font-family: 'avantgarde_bk_btbook';
+        margin: 0;
+        text-align: center;
+    }
+
+    .bill-warning{
+        font-size: 0.8em;
+        margin: 0;
+        text-align: center;
+
+        span{
+            color: #539200;
+            font-weight: bold;
+            font-family: 'avantgarde_bk_btbook';
+        }
+    }
+
+    .invoice__table{
+        border: 1px solid #CECEBF;
+        border-collapse: collapse;
+        margin: 10px auto;
+
+        th{
+            background: #f7f7f7;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-family: 'avantgarde_bk_btbook';
+            border-bottom: 1px solid #CECEBF;
+        }
+
+        td{
+            padding: 5px 10px;
+            text-align: center;
+        }
+
+        tbody{
+            tr{
+                border-bottom: 1px solid #CECEBF;
+            }
+        }
+    }
+
+    .customer-data{
+        width: 80%;
+        margin: 0 auto;
+
+        fieldset{
+            flex-direction: column;
+        }
+
+        @media #{$small-down}{
+            width: 100%;
+        }
+
+        #gender{
+            width: fit-content;
+        }
+
+        .group-input{
+            display: flex;
+            justify-content: space-between;
+
+            @media #{$small-down}{
+                display: block;
+            }
+        }
+
+        li{
+            display: flex;
+            flex-direction: column;
+
+            label{
+                font-size: 1.1em;
+                padding-right: 5px;
+            }
+
+            select, input{
+                border: 2px #adadad solid;
+                border-radius: 5px;
+                font-family: "avant_guardregular";
+                font-size: 1.2em;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            input:hover{
+                border-color: #4b4b4b;
+            }
+
+            input:focus{
+                border-color: #ff6701;
+            }
+        }
+
+        .required{
+            font-style: italic;
+            font-size: 1em;
+            margin-bottom: 1em;
+        }
+
+        .orange__btn{
+            background: linear-gradient(to bottom, rgba(86,148,0,1) 0%, rgba(137,183,0,1) 100%);
+            border: 1px solid #539200;
+            transition: background-color .3s;
+            margin: 0 auto;
+
+            &:hover{
+                background: #539200;
+            }
+        }
+    }
+}

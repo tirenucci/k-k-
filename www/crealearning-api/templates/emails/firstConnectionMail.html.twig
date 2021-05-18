@@ -1,0 +1,41 @@
+{% apply inline_css(source("mail.css")) %}
+
+
+{% block body %}
+<main>
+ <table cellspacing='0' cellpadding='10' border='0' width='100%'>
+    <tbody>
+        <tr>
+            <td>
+                <div>
+                    <img src='{{ absolute_url(asset('images/logo_cercle.png')) }}' alt='logo Créa Learning'/>
+                </div>
+                <p>{{hello}}</p>
+                <p>
+                    {{connectionRegistration}}{% if role == 'Consultant' %} {{connectionA}} {% else %} {{connectionAn}}{% endif %}<b>{{ role }}</b>
+                    <br/>
+                    {{connectionID}} : <b>{{ author.email }}</b>
+                </p>
+                <p>
+                    {{connectionMessage}} :
+                </p>
+                <p>
+                    <a href='localhost:3000/connection/{{token}}' class='password__btn' target='_blank'>{{connectionButton}}</a>
+                </p>
+                <small>
+                    <ul class='link__list'>
+                        <li>
+                            <a href={{termsLink}}>{{terms}}</a> -&nbsp;
+                            <a href={{legalLink}}>{{legal}}</a> -&nbsp;
+                            <a href={{contactLink}}>{{contact}}</a>
+                        </li>
+                    </ul>
+                </small>
+            </td>
+        <tr>
+        </tbody>
+    </table>
+</main>
+{% endblock %}
+
+{% endapply %}

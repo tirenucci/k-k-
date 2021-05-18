@@ -1,0 +1,11 @@
+<manifest>
+	<name>Connaissances (Bleu)</name>
+	<author>Logipro</author>
+	<description>Template Connaissances (bleu)</description>
+	<uuid>6fab23fe-ac2f-4061-910f-3cd2cf05ec1b</uuid>
+	<version>1.0</version>
+	<color_code>#05abc0</color_code>
+	<color_name>Bleu</color_name>
+	<order>3</order>
+	<theme>Connaissances</theme>
+</manifest>

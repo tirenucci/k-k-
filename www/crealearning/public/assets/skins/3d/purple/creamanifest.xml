@@ -1,0 +1,11 @@
+<manifest>
+	<name>3D (violet)</name>
+	<author>Logipro</author>
+	<description>Template 3D (violet)</description>
+	<uuid>99d9ca66-2b51-4384-a493-38282b1ddbe1</uuid>
+	<version>1.0</version>
+	<color_code>#8846de</color_code>
+	<color_name>Violet</color_name>
+	<order>5</order>
+	<theme>3D</theme>
+</manifest>

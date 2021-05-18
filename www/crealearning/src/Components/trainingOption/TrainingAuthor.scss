@@ -1,0 +1,126 @@
+@import '../../responsive.scss';
+
+.authors__section{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 900px;
+
+    ul{
+        width: 100%;
+    }
+
+    .search__author{
+        margin: 20px 0;
+
+        input{
+            padding-left: 8px;
+            height: 23px;
+            background: linear-gradient(to top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+            box-shadow: 0 0 3px white inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+            color: #444;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+
+        input::-webkit-calendar-picker-indicator {
+            background-color: inherit;
+            display: block;
+        }
+    }
+
+    table{
+        text-align: center;
+        width: 100%;
+
+        th{
+            border-radius: 5px;
+            color: #fff;
+            font-family: 'avantgarde_bk_btbook';
+            padding: 6px 10px;
+            background: linear-gradient(to bottom, #6f3d17,#8d4d1c);
+            cursor: default;
+
+            @media  #{$small-down} {
+                padding: 6px 20px;
+            }
+
+            img{
+                width: 15px;
+                display: flex;
+
+                @media  #{$small-down} {
+                    max-width: inherit;
+                }
+            }
+        }
+
+        tr:nth-child(odd) td {
+            background: #f7f7f7;
+        }
+
+        tr:hover td{
+            background: #d8894c;
+            color: #fff;
+        }
+
+        td{
+            background: #e1e1e1;
+            border-radius: 5px;
+            color: #000;
+            font-family: 'avant_guardregular';
+            font-size: 0.9em;
+            padding: 6px 10px;
+
+            select{
+                border: 2px #adadad solid;
+                border-radius: 5px;
+                font-family: 'avant_guardregular';
+                padding: 4px;
+            }
+
+            img:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.lock-author-access{
+    margin: 15px auto;
+    background: url('/assets/img/author-bkgd.jpg') no-repeat;
+    background-size: cover;
+    height: 360px!important;
+    display: flex;
+    flex-direction: column;
+    max-width: 980px;
+    padding: 2% 0 0 35%;
+    color: #fff;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.5);
+
+    @media  #{$medium-down} {
+        width: 90%;
+    }
+
+    @media  #{$small-down} {
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        max-width: 360px;
+        padding: 0 1%;
+    }
+    
+
+    h2{
+        font-size: 2.2em;
+    }
+
+    p{
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    span{
+        color: #FFC926;
+    }
+}

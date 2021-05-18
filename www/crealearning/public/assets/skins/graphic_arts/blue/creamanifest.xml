@@ -1,0 +1,11 @@
+<manifest>
+	<name>Arts graphiques (bleu)</name>
+	<author>Logipro</author>
+	<description>Template Arts graphiques (bleu)</description>
+	<uuid>862eee37-a79f-4a6c-b7cd-313f9f919005</uuid>
+	<version>1.0</version>
+	<color_code>#73b7f7</color_code>
+	<color_name>Bleu</color_name>
+	<order>1</order>
+	<theme>Arts graphiques</theme>
+</manifest>

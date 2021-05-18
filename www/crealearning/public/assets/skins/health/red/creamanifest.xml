@@ -1,0 +1,11 @@
+<manifest>
+	<name>Santé (rouge)</name>
+	<author>Logipro</author>
+	<description>Template Santé (rouge)</description>
+	<uuid>16368bb2-ef3f-4856-86e5-e5241b1624ea</uuid>
+	<version>1.0</version>
+	<color_code>#d81c1c</color_code>
+	<color_name>Rouge</color_name>
+	<order>3</order>
+	<theme>Santé</theme>
+</manifest>

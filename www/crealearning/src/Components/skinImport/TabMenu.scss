@@ -1,0 +1,68 @@
+@import './../../responsive.scss';
+
+.form__skin {
+	ul{
+		width: 100%;
+	}
+
+	fieldset{
+		margin: 20px auto;
+		max-width: 600px;
+		width: 95%;
+
+		@media #{$small-down}{
+			.one__row{
+				display: block;
+			}
+		}
+	}
+
+	.archive__field{
+		display: flex;
+		flex-direction: column;
+		align-items: center
+	}
+	
+	.archive__infos {
+		display:none;
+		flex-direction: column;
+		position: relative;
+		
+		li{
+			margin: 15px 0;
+			display: flex;
+		}
+	}
+
+	.skin__info{
+		@media #{$small-down}{
+			li{
+				margin: 0 auto;
+			}
+		}
+
+		.fields__el{
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+			width: 250px;
+
+			@media #{$small-down}{
+				width: 100%;
+			}
+		}
+
+		//Cercle de rendu de la couleur
+		.circle {
+			width: 35px;
+			height: 35px;
+			border-radius: 70px;
+			float: right;
+			border:1px solid #000;
+		}
+	}
+
+	#skin__thumb {
+		display:none;
+	}
+}

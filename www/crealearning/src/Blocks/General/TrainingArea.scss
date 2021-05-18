@@ -1,0 +1,39 @@
+
+@import '../../responsive.scss';
+
+.training-section{
+    #cle-container {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        position: relative;
+        margin: 0 1.5% !important;
+
+        @media #{$small-down}{
+            margin: 0!important;
+        }
+
+        #cle-block-list{
+            margin: 1em 0;
+        }
+
+        .cle-drop-zone{
+            background: #dbdbdb none repeat scroll 0 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            margin: 1em auto;
+            width: 95%;
+    
+            @media #{$small-down}{
+                display: none;
+            }
+    
+            p{
+                color: #333;
+                font-family: 'avantgarde_bk_btbook';
+                font-weight: bold;
+            }
+        }
+    }
+}

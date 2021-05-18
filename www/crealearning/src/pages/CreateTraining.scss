@@ -1,0 +1,14 @@
+@import '../responsive.scss';
+
+.form__training{
+    width: 100%;
+    margin: 5em auto;
+
+    .form__step__list {
+        display: flex;
+
+        @media #{$large-down} {
+            flex-direction: column;
+        }
+    }
+}

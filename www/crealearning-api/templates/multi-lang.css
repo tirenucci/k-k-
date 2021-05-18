@@ -1,0 +1,230 @@
+/* GENERAL */
+
+    p{
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+/* END GENERAL */
+
+
+/* ENTETE DE LA PAGE */
+
+    #lang_header{
+        padding: 2% 10% 2% 10%;
+        position: relative;
+        top: 0px;
+        height: 73px;
+    }
+
+    #lang_left_header{
+        float: left;
+    }
+
+    #lang_right_header{
+        float: right;
+    }
+
+    #lang_left_header  P{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    #lang_right_header  img{
+        max-width: 100px;
+    }
+
+    @media(max-width: 700px){
+        #lang_header{
+            padding: 2% 2% 2% 2%;
+            position: relative;
+            top: 0px;
+            height: 73px;
+        }
+
+        #lang_left_header  P{
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            word-wrap: wrap;
+        }
+    }
+
+/* FIN ENTETE DE LA PAGE */
+
+/* BODY */
+
+    body{
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #fff !important;
+
+    }
+
+    section{
+        clear:both;
+    }
+
+    /* TEXTS */
+
+    #lang_description,
+    #lang_text_choose{
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px !important;
+    }
+
+    #lang_text_choose{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-weight: bold;
+        font-size: 12px !important;
+    }
+
+    /* END TEXTS */
+
+    /* LISTE D'ITEM */
+
+    ul{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .flags{
+        width: 170px;
+        height: 115px;
+    }
+
+    ul li{
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        width: 20%;
+        min-width: 250px;
+        border-radius: 6px;
+        transition: ease-in-out 0.4s;
+        opacity: 0.45;
+    }
+
+    ul li:hover, .active{
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    ul li a{
+        display: block;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        /* text-shadow: 0px 3px 20px #00000096; */
+        width: 75%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul li a p{
+        margin: 0;
+        margin-top: -12px;
+        background-color: #909090;
+        padding: 15px;
+        z-index: 60;
+        position: relative;
+        border-top: 1px solid #9a9a9a;
+        background-color: white;
+
+        /* box-shadow: 0px 4px 20px #00000047; */
+        /* border-radius: 8px */
+    }
+
+    ul li a img{
+    	height: 113px;
+        width: 170px;
+        /* border: 2px solid white; */
+        border-radius: 6px;
+        box-shadow: 0px 6px 20px #00000073;
+    }
+
+    .lang_arrow{
+        display: none;
+    }
+
+    @media(max-width: 550px){
+        ul{
+            width: 100%;
+        } 
+        
+        ul li{
+            margin: 0;
+            padding: 20px;
+            width: 100%;
+            border-radius: 0;
+            border-bottom: 2px solid gray;
+            opacity: 1;
+            height: 60px;
+        }
+
+        ul li a{
+            width: 102%;
+        }
+
+        ul li a,
+        ul li a p,
+        ul li a img{
+            word-wrap: wrap;
+            float: left;
+        }
+
+        ul li a img{
+            width: 100px;
+            height: 65px;
+        }
+
+        ul li a p{
+            padding: 18px;
+            font-size: 14px;
+            border: none;
+            background-color: #fff;
+        }
+
+        .lang_arrow{
+            display: block;
+            box-shadow: none;
+            float: right;
+            margin-top: 5px;
+            width: 25px;
+        }
+
+        #lang_description{
+            font-size: 11px;
+        }
+    }
+
+    /* END liste */
+
+/* END BODY */
+
+/* FOOTER */
+
+    footer p{
+        width: 250px;    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+/* END FOOTER */

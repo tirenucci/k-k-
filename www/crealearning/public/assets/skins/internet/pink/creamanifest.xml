@@ -1,0 +1,11 @@
+<manifest>
+	<name>Internet</name>
+	<author>Logipro</author>
+	<description>Template Internet</description>
+	<uuid>8c5a922f-5610-48e2-9728-5bdf925bb4e1</uuid>
+	<version>1.0</version>
+	<color_code>#f72198</color_code>
+	<color_name>Rose</color_name>
+	<order>1</order>
+	<theme>Internet</theme>
+</manifest>
